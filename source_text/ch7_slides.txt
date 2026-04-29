@@ -1,0 +1,231 @@
+=== CH7 (49 slides) ===
+--- SLIDE 1 ---
+Chapter 7: MICROBIAL BIOCHEMISTRY
+BIO203 -- National University
+Wikimedia commons This file is licensed under the Creative Commons Attribution 3.0 Unported license.
+--- SLIDE 2 ---
+Learning outcomes chapter 8
+Define the building blocks of life: biomolecules
+Carbohydrates
+Lipids
+Proteins
+Nucleic acids
+--- SLIDE 3 ---
+Life as we know it is based on carbon
+4 most common elements in living matter: C, N, O, and H
+A carbon atom can form 4 covalent bonds, allowing it to build large and diverse organic compounds
+Hydrocarbons only have C and H
+Are energy rich & nonpolar
+Most biomolecules contain functional groups
+--- SLIDE 4 ---
+Carbon skeleton diversity
+Carbon can form
+single and double bonds
+long chains, with simple and double bonds
+branched chains
+rings
+--- SLIDE 5 ---
+Examples of organic molecules
+--- SLIDE 6 ---
+Carbon can form 4 covalent bonds
+Single bonds= tetrahedral
+Double bonds= planar
+--- SLIDE 7 ---
+Isomers
+Same atomic makeup but different structures
+Different bonding sequence: structural isomers
+Different spatial arrangements: stereoisomers (ex. enantiomers- mirror images)
+--- SLIDE 8 ---
+Functional groups
+Distinctive properties of organic molecules depend on the carbon skeleton and on the chemical groups attached to it
+A functional group is a group of atoms bonded to a carbon of an organic compound giving a property (polarity, acidity etc), ex.-COOH (acid), -OH (alcohol)
+--- SLIDE 9 ---
+Functional groups
+--- SLIDE 10 ---
+Hydroxyl group -OH
+Organic alcohols
+Example: ethanol (ethyl alcohol) CH3-CH2-OH
+Present in sugars also
+Can contain one or more -OH
+--- SLIDE 11 ---
+Carbonyl group C=O
+Aldehyde: end of the chain
+Ketone: not at the end of the chain
+Present in sugars (aldoses, ketoses)
+--- SLIDE 12 ---
+Carboxyl group -COOH
+Organic acids
+Ex. vinegar: acetic acid
+CH3-COOH
+--- SLIDE 13 ---
+Amino groups –NH2
+Give the molecule a basic (alkaline) character
+Amino acids
+--- SLIDE 14 ---
+Sulfhydryl group -SH
+Amino acids
+See example => cysteine
+Attribution 2.0 Generic (CC BY 2.0)
+--- SLIDE 15 ---
+Phosphate group –PO4-
+Negative charge
+Nucleic acids
+ATP
+Phospholipids
+--- SLIDE 16 ---
+Methyl group –CH3
+Adding the group may change the character of the molecule, ex adding methyl groups to DNA makes it less accessible (silences it)
+Wikimedia commons
+--- SLIDE 17 ---
+Monomers and polymers
+Most biomolecules are built of smaller subunits (monomers)
+Polymers contain many monomers
+Examples: monosaccharides/polysaccharides; amino acids/proteins, nucleotides/nucleic acids
+Dehydration reaction builds polymers from monomers, hydrolysis breaks them down
+--- SLIDE 18 ---
+Hydrolysis and dehydration
+Adding water breaks polymers to monomers
+Removal of water makes polymers out of monomers
+--- SLIDE 19 ---
+Molecules of life
+Compare and contrast the main structural and functional characteristics of :
+Carbohydrates,
+Lipids,
+Proteins
+Nucleic acids
+--- SLIDE 20 ---
+Carbohydrates
+Contain C,H,O
+Major function is to supply a source of cellular food
+Monosaccharides or simple sugars (monomers)
+Disaccharides
+Polysaccharides (polymers)
+Pixabay image by Jacob5200
+Flickr Attribution-ShareAlike 2.0 Generic
+--- SLIDE 21 ---
+Monosaccharides
+6 carbons (hexoses): glucose/dextrose, fructose
+5 carbons (pentoses): ribose, deoxyribose
+Present carbonyl (C=O) and hydroxyl (-OH) groups
+Can be ketoses or aldoses
+--- SLIDE 22 ---
+Disaccharides
+2 monosaccharides
+Table sugar (saccharose/sucrose) = glucose + fructose
+Lactose= glucose + galactose
+Maltose = 2x glucose
+--- SLIDE 23 ---
+Polysaccharides
+Polymers of sugars: structural or storage role (straight, helical, branched)
+Storage: starch (plants) & glycogen (animals)
+Structural: cellulose (plants) & chitin (arthropods)
+--- SLIDE 24 ---
+Comparison of polysaccharides
+(credit “iodine granules”: modification of work by Kiselov Yuri; credit “glycogen granules”: modification of work by St.ckel J, Elvitigala TR, Liberton M, Pakrasi HB; credit “cellulose”: modification of work by American Society for Microbiology)
+--- SLIDE 25 ---
+Modified glucose molecules
+Bacterial cell wall: N-acetyl glucosamine (NAG) & N-acetyl muramic acid (NAM) are part of peptidoglycan
+Polymers of NAG forms chitin
+--- SLIDE 26 ---
+Lipids (fats)
+Contain C, H, and O. Hydrophobic.
+Examples:
+Neutral fats or triglycerides
+Phospholipids
+Waxes
+Steroids
+No monomers
+--- SLIDE 27 ---
+Triglycerides: glycerol + 3 fatty acids
+Glycerol is a three-carbon alcohol with a hydroxyl group attached to each carbon
+A fatty acid consists of a carboxyl group attached to a long carbon skeleton
+--- SLIDE 28 ---
+Triglycerides from through dehydration
+--- SLIDE 29 ---
+Fatty acids
+Long carbon skeleton + carboxyl group
+Non polar, hydrophobic
+If it contains only single bonds => saturated (solid at room temp)
+If it contains double bonds => unsaturated (liquid at room temp, oils)
+Wikimedia commons)
+--- SLIDE 30 ---
+Phospholipids and Biological Membranes
+Phospholipids – modified triglycerides with two fatty acid groups (apolar, hydrophobic) and a phosphorus group (polar, hydrophilic))
+Structure allows to interact with BOTH water & fats => lipid bilayers in cell membranes
+--- SLIDE 31 ---
+Phospholipids form membranes
+(credit: modification of work by Mariana Ruiz Villarreal)
+--- SLIDE 32 ---
+Isoprenoids
+Modification of isoprene
+Multiple roles: can be used as pigments, fragrances, pharmaceuticals
+--- SLIDE 33 ---
+Steroids
+Flat molecules with four interlocking hydrocarbon rings, main example: cholesterol
+--- SLIDE 34 ---
+Proteins (polypeptides)
+Contain C, H, N, and O, some also S and P
+Monomers: amino acids
+20 amino acids
+Can perform a variety of functions, such as catalysis (enzymes), transport, structure, communication (receptors, hormones), defense (antibodies, clotting factors) etc.
+The sequence of amino acids is the information coded in the genes
+--- SLIDE 35 ---
+Amino Acids
+20 (plus some extras), contain an amino group and a carboxyl group
+Amino group NH2; Carboxyl group COOH
+Side chain (R) can be polar, non-polar, charged.
+--- SLIDE 36 ---
+Peptide bond
+The –NH2 group of one amino acid can bind to the –COOH group of another => peptide bond (dehydration reaction)
+Less than 50 amino acids= peptides
+Many amino acids bound by peptide bonds = polypeptide (aka protein)
+--- SLIDE 37 ---
+Protein Structure
+Primary – amino acid sequence
+Secondary – alpha helices or beta pleated sheets
+Tertiary – superimposed folding of secondary structures (H-bonds, disulfide bridges, van der Waals)
+Quaternary – polypeptide chains linked together in a specific manner
+Non-protein groups: lipo- and glycoproteins
+ALL together determine the structure of the protein, which is NECESSARY for its function.
+--- SLIDE 38 ---
+Primary structure
+(credit: modification of work by National Human Genome Research Institute)
+--- SLIDE 39 ---
+Secondary structure
+--- SLIDE 40 ---
+Tertiary structure
+--- SLIDE 41 ---
+Quaternary structure
+--- SLIDE 42 ---
+Summary protein structures
+(credit: modification of work by National Human Genome Research Institute)
+--- SLIDE 43 ---
+Structure & function (ex. hemoglobin)
+Wikimedia commons, public domain
+--- SLIDE 44 ---
+Native structure
+Protein requires its „native” structure for correct functioning
+Denaturation: unfolding of proteins due to drops in pH and/or increased temperature
+Can be reversible or irreversible
+--- SLIDE 45 ---
+Using Biochemistry to Identify Microorganisms
+Biochemical tests can detect unique molecules
+Commercial systems may identify multiple reactions in an automated way: ex. Biolog
+(credit a: modification of work by the Centers for Disease Control and Prevention)
+--- SLIDE 46 ---
+Mass spectrometry
+Mass spectrometry compares the chemicals released from the microbe after UV radiation to a database
+MALDI-TOF: matrix-assisted laser desorption/ionization time-of-flight mass spectrometry
+(credit “MALDI plate photo”: modification of work by Chen Q, Liu T, Chen G; credit “graphs”: modification of work by Bailes J, Vidal L, Ivanov DA, Soloviev M)
+--- SLIDE 47 ---
+Unique lipid profiles
+Fatty acid methyl ester (FAME) analysis
+(credit “culture”: modification of work by the Centers for Disease Control and Prevention; credit “graph”: modification of work by Zhang P. and Liu P.)
+--- SLIDE 48 ---
+Proteomic analysis
+Looks at proteins produced under specific conditions
+Proteins are separated, digested, and analyzed by MALDI-TOF, compared to database
+Serological tests
+--- SLIDE 49 ---
+End of chapter 7Microbial Biochemistry
+“Download for free at https://openstax.org/details/books/microbiology.”

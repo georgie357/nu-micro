@@ -1,0 +1,218 @@
+=== CH1 (29 slides) ===
+--- SLIDE 1 ---
+Chapter 1: AN INVISIBLE WORLD
+OpenStax. Figure 1.15 Assorted diatoms. Credit: modification of work by National Oceanic and Atmospheric Administration.
+BIO203 -- National University
+--- SLIDE 2 ---
+Learning outcomes
+Define microbiology
+List the milestones in the history of microbiology
+Explain the basis of classification of microbes
+--- SLIDE 3 ---
+Microbiology and microorganisms
+It is the the science that studies microorganisms
+What is a microorganism? An organism too small to see with the unaided eye.
+Many sub-disciplines:
+By application: medical, industrial, agricultural etc.
+By type of microorganism studied: bacteriology, virology etc.
+Credit: NIAID.  HIV-infected T cell. CC BY 2.0.
+Credit: James Golden. Cyanobacteria. CC BY-NC-SA 2.0.
+--- SLIDE 4 ---
+History: Fermented foods and beverages
+Fermentation was known long time before knowing what caused it
+Humans used high osmotic environment to preserve food (salted/pickled food, jams, jellies, preserves)
+OpenStax. Figure 1.3. credit middle: modification of work by Janus Sandsgaard; credit right: modification of work by “MDreibelbis”/Flickr)
+--- SLIDE 5 ---
+History: transmission of diseases
+Use of quarantine mentioned in the Bible
+Ancient hygiene practices and infrastructure (Greeks and Romans)
+Early concepts of immunity (Greeks)
+Marcus Terentius: ”things we cannot see can cause disease”
+OpenStax. Figure 1.5. (a) Hippocrates (b) Thucydides (c) Marcus Terentius Varro (credit c: modification of work by Alessandro Antonelli)
+--- SLIDE 6 ---
+Microscopes: first observations
+In 1675 Anton van Leeuwenhoek described live microorganisms (animalcule)
+Probably protists and bacteria
+Credit:
+Anne Ronan. Heritage Images. Animalcules.
+Credit: Rob Koopman. Anthonie van Leeuwenhoek by Jan Verkolje oil painting. CC BY-SA 2.0.
+--- SLIDE 7 ---
+Edward Jenner and immunity
+Observation:
+Dairymaids who had mild cowpox infections were protected from smallpox
+Hypothesis
+Cowpox infection provides protection against smallpox
+Experiment
+Inoculated boy with cowpox fluid and later challenged with smallpox fluid
+Result
+Boy did not get smallpox
+Credit: Oil painting by E.-E. Hillemacher, 1884. Edward Jenner vaccinating a boy.
+--- SLIDE 8 ---
+Golden Era of Microbiology: Pasteur
+Louis Pasteur, French microbiologist
+(1822–1895)
+Pasteur demonstrated that microbes are responsible for fermentation
+Pasteurization is the application of a high heat for a short time.
+Pasteur developed several vaccines
+OpenStax. Figure 1.6 Louis Pasteur.
+--- SLIDE 9 ---
+Golden Era of Microbiology: Koch
+Robert Koch, German microbiologist
+(1843–1910)
+1876: Robert Koch proved that a bacterium causes anthrax
+Germ Theory of disease
+Provided the experimental steps, Koch’s postulates, to prove that a specific microbe causes a specific disease
+Breakthroughs in microbial culture (although agar was Fanny Hesse’s idea- not recognized)
+Credit: William Fechner. Robert Koch.
+Credit: U.S. National Library of Medicine. Fanny Hesse, ca. 1883.
+--- SLIDE 10 ---
+Taxonomy
+Naming and classifying organisms
+Carolus Linnaeus’s system (1758) still used (with modifications)
+Each organism has two names: the genus and specific epithet
+Ex. Escherichia coli, or Staphylococcus aureus
+OpenStax. Figure 1.8 Carolus Linnaeus.
+--- SLIDE 11 ---
+Chemotherapy
+= Treating disease with chemicals
+Paul Erhlich’s idea of the “magic bullet”
+Selective toxicity:  only harmful for the pathogen not the host
+Drug for syphilis (salvarsan)
+Synthetic drugs
+Sulfa drugs in 1930s
+--- SLIDE 12 ---
+Antibiotics
+Antibiotics: produced by microorganisms, inhibit or kill other microbes
+First antibiotic Penicillin (Fleming, 1928)
+Petri dish with Staphylococcus was left open, the plate got contaminated with Penicillum mold
+Clear zone around mold, no bacterial growth
+Credit. Center for Research Collections University of Edinburgh. Penicillin Mold. CC BY-NC-SA 2.0.
+--- SLIDE 13 ---
+Penicillin saved lives during WW2
+Mass production just in time for WW2
+Alexander Fleming was hailed for his discovery
+Less known are the contributions of his colleague and spouse Mrs. Fleming (Dr. Voureka from Greece).
+Credit: National Archives. Penicillin…Saves Soldiers Lives!
+--- SLIDE 14 ---
+Modern Biotechnology and Genetic Engineering
+Biotechnology, the use of microbes to produce foods and chemicals, is centuries old.
+Genetic engineering : bacteria and fungi can produce a variety of proteins including vaccines and enzymes.
+Missing or defective genes in human cells can be replaced in gene therapy.
+Genetically modified bacteria are used to protect crops from insects and from freezing.
+CRISPR: gene editing based on normal bacterial processes, allow to make precise changes to DNA
+--- SLIDE 15 ---
+Microbes and disease
+Human microbiome: microbes naturally inhabiting locations in the human body, contribute to health
+Pathogens cause diseases
+Epidemiology studies how diseases are transmitted
+Pathogenic factors contribute to disease
+Outbreaks
+Foodborne diseases
+Emerging diseases (Covid-19)
+Recurring epidemics (flu)
+Public health
+--- SLIDE 16 ---
+Environmental microbiology
+Microbial ecology
+Bacteria recycle carbon, nutrients, sulfur, and phosphorus that can be used by plants and animals.
+Bioremediation: bacteria degrading pollutants
+OpenStax, Figure 1.1. A veterinarian gets ready to clean a sea turtle covered in oil following the Deepwater Horizon oil spill in the Gulf of Mexico in 2010. Credit: modification of work by NOAA’s National Ocean Service.
+--- SLIDE 17 ---
+Phylogeny & Tree of Life
+Linnaeus established the first classification of organisms based on visible characteristics
+Phylogeny: evolutionary relationships
+Currently: genetic, biochemical, and embryological considerations
+1970s Carl Woese used ribosomal RNA sequences to establish the three-domain system: Bacteria, Archaea, Eukarya
+OpenStax, Figure 1.10. This timeline shows how the shape of the tree of life has changed over the centuries.
+--- SLIDE 18 ---
+The three domain system
+Three domain system, based on rRNA sequences
+Bacteria
+Archaea
+Eukarya
+Protists (Algae and Protozoa are here)
+Fungi
+Plants
+Animals
+OpenStax. Figure 1.11. Credit: modification of work by Eric Gaba.
+--- SLIDE 19 ---
+Binomial nomenclature
+Genus & specific epithet
+Italicized, genus capitalized, often only first letter used ex. E.coli
+--- SLIDE 20 ---
+Bacteria
+Prokaryotes
+Peptidoglycan cell walls
+Divide by binary fission (no mitosis!)
+Variety of energy sources: some use organic chemicals, others inorganic chemicals, or photosynthesis
+OpenStax. Figure 1.13. Credit “Coccus”: modification of work by Janice Haney Carr, Centers for Disease Control and Prevention; credit “Coccobacillus”: modification of work by Janice Carr, Centers for Disease Control and Prevention; credit “Spirochete”: Centers for Disease Control and Prevention.
+--- SLIDE 21 ---
+Archaea
+Prokaryotic
+Cell wall different- no peptidoglycan
+Live in extreme environments
+Include
+Methanogens (make methane, think landfills, deep mud, your gut)
+Extreme halophiles (like salt)
+Extreme thermophiles (like it hot)
+OpenStax. Figure 1.14. The Morning Glory pool, a hot spring in Yellowstone National Park.
+--- SLIDE 22 ---
+Bergey’s Manuals
+Bacteria and Archaea
+Based on genetic, biochemical, and immunological characteristics.
+Gram-staining is a differential staining based on cell wall properties
+Bergey's Manual of Systematic Bacteriology: Five volumes published
+Bergey's Manual of Determinative Bacteriology
+http://www.bergeys.org/
+--- SLIDE 23 ---
+Protists: algae
+Informal grouping of  eukaryotes that are not plants, animals, and fungi
+Algae
+Cellulose cell walls
+Use photosynthesis for energy
+Produce molecular oxygen and organic compounds
+Not pathogenic
+OpenStax. Figure 1.15 Assorted diatoms.
+Credit: modification of work by National Oceanic and Atmospheric Administration.
+--- SLIDE 24 ---
+Protists: protozoa
+Most complex one-celled organisms
+Absorb or ingest organic chemicals
+May be motile via pseudopods, cilia, or flagella
+Many are human pathogens
+OpenStax. Figure 1.16 Giardia lamblia. Credit: modification of work by Centers for Disease Control and Prevention.
+--- SLIDE 25 ---
+Fungi
+Chitin cell walls
+Use organic chemicals for energy
+Molds and mushrooms are multicellular.
+Yeasts are unicellular (ex. Candida)
+Molds can produce antibiotics
+OpenStax. Figure 1.17 Candida albicans. Credit: modification of work by Centers for Disease Control and Prevention.
+OpenStax. Figure 1.18 Large colonies of microscopic fungi.
+--- SLIDE 26 ---
+Helminths
+Multicellular animals
+Parasitic flatworms and roundworms are called helminths.
+Microscopic stages in life cycles.
+OpenStax. Figure 1.19 (a) the beef tapeworm, Taenia saginata. (b) An adult guinea worm, Dracunculus medinensis. Credit a, b: modification of work by Centers for Disease Control and Prevention.
+--- SLIDE 27 ---
+Viruses
+Acellular
+Consist of DNA or RNA core
+Core is surrounded by a protein coat
+Coat may be enclosed in a lipid envelope
+Viruses are replicated only when they are in a living host cell
+OpenStax. Figure 1.20 (a) Members of the Coronavirus family. (b) Ebolavirus.(credit a: modification of work by Centers for Disease Control and Prevention; credit b: modification of work by Thomas W. Geisbert)
+--- SLIDE 28 ---
+Prions
+No nucleic acid- only proteins
+Prusiner, Nobel prize 1998
+The prion protein is an altered protein- makes a “healthy” molecule to change and become prion
+Prions accumulate, form fibrils & cause disease
+Degenerative CNS diseases
+“Mad cow” disease
+Credit: Astrojan. Amyloid polymer structure of prions. CC BY 4.0.
+--- SLIDE 29 ---
+End of chapter 1An invisible world
+Download for free at https://openstax.org/details/books/microbiology.

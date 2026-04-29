@@ -448,14 +448,16 @@ ans = ParagraphStyle('ans', fontName='Helvetica-Oblique', fontSize=8, leftIndent
 
 | Script | Location | Output file |
 |---|---|---|
-| `make_chX_pdf_v2.py` | `Desktop\recent\` | `Dropbox\Nu micro\Ch X\BIO203_ChX_Study_Guide_v2.pdf` |
-| `make_chX_mc_v2.py` | `Desktop\recent\` | `Dropbox\Nu micro\Ch X\BIO203_ChX_MC_Questions_v2.pdf` |
-| `make_labX_report.py` | `Desktop\recent\` | `Dropbox\Nu micro\chapter X\BIO203A_LabX_Filled_v2.pdf` |
-| `make_labX_guide.py` | `Desktop\recent\` | `Dropbox\Nu micro\chapter X\BIO203A_LabX_Study_Guide_v2.pdf` |
+| `make_chX_pdf_v2.py` | `Dropbox\Nu micro\scripts\` + `Desktop\recent\` | `Dropbox\Nu micro\Ch X\BIO203_ChX_Study_Guide_v2.pdf` |
+| `make_chX_mc_v2.py` | `Dropbox\Nu micro\scripts\` + `Desktop\recent\` | `Dropbox\Nu micro\Ch X\BIO203_ChX_MC_Questions_v2.pdf` |
+| `make_labX_report.py` | `Dropbox\Nu micro\scripts\` + `Desktop\recent\` | `Dropbox\Nu micro\chapter X\BIO203A_LabX_Filled_v2.pdf` |
+| `make_labX_guide.py` | `Dropbox\Nu micro\scripts\` + `Desktop\recent\` | `Dropbox\Nu micro\chapter X\BIO203A_LabX_Study_Guide_v2.pdf` |
 
 **Version suffix rule:** If rebuilding a file that was previously made from memory or without source material, append `_v2` to the filename. New chapters start without suffix (already using the correct method).
 
 **Retired files:** v1 files remain in Dropbox but should not be used. Only use the most recent version.
+
+**Canonical script location:** `Dropbox\Nu micro\scripts\` is the authoritative copy (in git). `Desktop\recent\` is a working copy. Always keep them in sync — after editing on Desktop, copy to scripts/ and commit.
 
 ---
 
@@ -465,12 +467,113 @@ ans = ParagraphStyle('ans', fontName='Helvetica-Oblique', fontSize=8, leftIndent
 # Set UTF-8 output to avoid encoding errors on Windows
 $env:PYTHONIOENCODING="utf-8"
 
-python "C:\Users\User\Desktop\recent\make_chX_pdf_v2.py"
-python "C:\Users\User\Desktop\recent\make_chX_mc_v2.py"
-python "C:\Users\User\Desktop\recent\make_labX_report.py"
-python "C:\Users\User\Desktop\recent\make_labX_guide.py"
+python "C:\Users\User\Dropbox\Nu micro\scripts\make_chX_pdf_v2.py"
+python "C:\Users\User\Dropbox\Nu micro\scripts\make_chX_mc_v2.py"
+python "C:\Users\User\Dropbox\Nu micro\scripts\make_labX_report.py"
+python "C:\Users\User\Dropbox\Nu micro\scripts\make_labX_guide.py"
 ```
 
 Always run in PowerShell (not Bash). Always set `$env:PYTHONIOENCODING="utf-8"` first — Windows default encoding (cp1252) chokes on Unicode arrows and Greek letters in print statements.
 
 Check for `Done ->` confirmation line before declaring done. If no confirmation, there was a silent error — run again with error capture.
+
+---
+
+## Phone + PC Setup — Remote Control Workflow
+
+### What "Claude Code on phone" actually is
+
+The Claude mobile app (iOS/Android) is **not** a code execution environment. It is a **remote control interface** for a Claude Code session running on your PC.
+
+- Phone: sends messages, monitors progress, gets push notifications
+- PC: executes all Python scripts, writes files, runs git — the actual work machine
+- Dropbox: syncs PDFs from PC to phone automatically
+- GitHub repo: syncs scripts, source text, and the MD file — readable on phone via GitHub app or browser
+
+### Full phone → PDF workflow
+
+```
+1. Phone: open Claude app → connect to "Micro" Remote Control session
+2. Phone: "Make the Ch3 study guide PDF"
+3. PC (Remote Control): runs make_ch3_pdf.py from Dropbox\Nu micro\scripts\
+4. PC: PDF saved to Dropbox\Nu micro\Ch 3\ folder
+5. Dropbox: auto-syncs PDF to phone within seconds
+6. Phone: open Dropbox app → read PDF
+```
+
+### One-time PC setup (Remote Control auto-start)
+
+Run this once in PowerShell to register the Task Scheduler entry:
+
+```powershell
+schtasks /create /tn "ClaudeCode-Micro-RemoteControl" `
+  /tr "cmd /c 'claude --remote-control --name Micro'" `
+  /sc ONLOGON /ru "%USERNAME%" /f
+```
+
+Or start it manually any time before using from phone:
+```powershell
+claude --remote-control --name "Micro"
+```
+
+**Requirements for Remote Control to work:**
+- PC must be powered on and internet connected
+- Claude Code CLI must be installed on PC (`npm install -g @anthropic-ai/claude-code`)
+- The `--remote-control` process must be running
+- Phone and PC do NOT need to be on the same network — works over internet
+
+### Repo structure for phone use
+
+```
+Dropbox\Nu micro\               ← git repo (github.com/georgie357/nu-micro)
+  NU_Micro_Study_Method.md      ← this file — readable on phone via GitHub
+  README.md                     ← course schedule, assignments, key dates
+  scripts\                      ← all make_*.py scripts (version controlled)
+    make_ch1_ch2_pdf_v2.py
+    make_ch1_ch2_mc_v2.py
+    make_ch7_pdf.py
+    make_ch7_mc.py
+    make_lab1_report.py
+    make_lab1_guide.py
+  source_text\                  ← extracted slide + textbook text (version controlled)
+    ch1_slides.txt              ← Popa Ch.1 slides verbatim (29 slides)
+    ch2_slides.txt              ← Popa Ch.2 slides verbatim (33 slides)
+    ch7_slides.txt              ← Popa Ch.7 slides verbatim (49 slides)
+    ch1_textbook_raw.txt        ← OpenStax Ch.1 extracted text
+    ch2_textbook_raw.txt        ← OpenStax Ch.2 extracted text
+    ch7_textbook_raw.txt        ← OpenStax Ch.7 extracted text
+  .gitignore                    ← blocks *.pdf *.pptx *.docx from git
+  sync.ps1                      ← auto-sync script (runs daily via Task Scheduler)
+```
+
+PDFs, pptx, docx → Dropbox only (not in git)
+Scripts, source text, MD → git + Dropbox
+
+### What to tell Claude on phone for Q&A
+
+When starting a new chat session on phone, paste this at the start:
+> "I'm studying BIO203 Microbiology at National University with Dr. Popa. Answer my questions using the Popa lecture slides first, then expand with the OpenStax textbook. Cite the slide number and OpenStax section. The source material is in the GitHub repo: github.com/georgie357/nu-micro in source_text/"
+
+Then ask questions normally. Claude can read the source_text files from the repo URL.
+
+### What to tell Claude on phone to make a PDF
+
+Via Remote Control session (PC must be on):
+> "Make the Ch3 study guide PDF. Use the script at Dropbox\Nu micro\scripts\make_ch3_pdf.py. Save to Dropbox\Nu micro\Ch 3\"
+
+Claude Code on PC will run the script, PDF lands in Dropbox, syncs to phone.
+
+### Adding source text for future chapters
+
+Every time a new chapter is covered, extract its slides and textbook pages and save to `source_text\`:
+
+```powershell
+# After extracting chX_slides.txt and chX_textbook_raw.txt to Desktop:
+Copy-Item "C:\Users\User\Desktop\chX_slides.txt" "C:\Users\User\Dropbox\Nu micro\source_text\"
+Copy-Item "C:\Users\User\Desktop\chX_textbook_raw.txt" "C:\Users\User\Dropbox\Nu micro\source_text\"
+# Then commit — sync.ps1 will pick it up, or commit manually:
+cd "C:\Users\User\Dropbox\Nu micro"
+git add source_text/
+git commit -m "Add Ch.X source text"
+git push origin master
+```

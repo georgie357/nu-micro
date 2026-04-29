@@ -1,0 +1,178 @@
+=== CH2 (33 slides) ===
+--- SLIDE 1 ---
+Chapter 2: HOW WE SEE THE INVISIBLE WORLD
+((credit left: modification of work by Centers for Disease Control and Prevention; credit right: modification of work by American Society for Microbiology))
+.
+BIO203 -- National University
+--- SLIDE 2 ---
+Learning outcomes
+To be familiar  with the sizes of various specimens and the resolution of the human eye, light, and electron microscope.
+What are resolution, magnification, and refraction index
+Compare and contrast light and electron microscopy
+Compare transmission and scanning EM.
+Stainings: simple, differential, steps, examples
+--- SLIDE 3 ---
+Relative sizes of microorganisms
+Typical virus measures about 100 nm, 10 times smaller than a typical bacterium (~1 µm), which is at least 10 times smaller than a typical plant or animal cell (~10–100 µm).
+An object must measure about 100 µm to be visible without a microscope.
+--- SLIDE 4 ---
+Properties of waves
+Wavelength: distance between one peak of a wave and the next peak.
+Amplitude: height of each peak (or depth of each trough)
+Frequency: rate of vibration of the wave, or the number of wavelengths within a specified time period
+--- SLIDE 5 ---
+Properties of light
+Reflection: wave bounces off of a material.
+Absorbance: material captures the energy of a light wave.
+Transmission: wave travels through a material
+Transparency vs opacity
+credit a: modification of work by Umberto Salvagnin; credit b: modification of work by “Waifer X”/Flickr)
+--- SLIDE 6 ---
+Refraction
+The refractive index is a measure of the light-bending ability of a medium
+The light may bend in air so much that it misses the small high-magnification lens
+Immersion oil is used to keep light from bending
+--- SLIDE 7 ---
+Electromagnetic Spectrum and Color
+Visible light is a narrow range of electromagnetic radiations
+Longer wavelength= less energy
+Shorter wavelength= higher energy
+(credit: modification of work by Johannes Ahlmann)
+--- SLIDE 8 ---
+Magnification, Resolution, and Contrast
+Magnification: ability of a lens to enlarge the image of an object when compared to the real object.
+Resolution is the ability of the lenses to distinguish two points
+A microscope with a resolving power of 0.4 nm can distinguish between two points ≥ 0.4 nm
+Shorter wavelengths of light provide greater resolution
+NA- numerical aperture, the higher=> the better the resolution
+--- SLIDE 9 ---
+Compound light microscope
+--- SLIDE 10 ---
+Oil immersion lens
+To decrease refraction, oil is used between the lens and the specimen
+Refraction index of oil and glass are very similar
+--- SLIDE 11 ---
+Darkfield microscope
+Light objects are visible against a dark background
+Light reflected off the specimen enters the objective lens
+(credit: Centers for Disease Control and Prevention)
+--- SLIDE 12 ---
+Phase-contrast microscope
+Accentuates diffraction of the light that passes through a specimen
+High contrast, high resolution
+Bright field                            Phase contrast
+--- SLIDE 13 ---
+Fluorescence microscopy
+Uses UV light
+Fluorescent substances absorb UV light and emit visible light
+Cells may be stained with fluorescent dyes (fluorochromes)
+(credit: National Institutes of Health)
+--- SLIDE 14 ---
+Confocal microscopy
+Confocal microscopy is like a CT scan=> “slices” of specimens
+(credit: modification of work by American Society for Microbiology)
+--- SLIDE 15 ---
+Electron Microscopy
+Uses electrons instead of light
+The shorter wavelength of electrons gives greater resolution
+Can be transmission or scanning
+--- SLIDE 16 ---
+Transmission Electron Microscopy (TEM)
+Ultrathin sections of specimens
+Light passes through specimen, then an electromagnetic lens, to a screen or film
+Specimens may be stained with heavy metal salts
+10,000–100,000; resolution 2.5 nm
+--- SLIDE 17 ---
+Scanning Electron Microscopy (SEM)
+An electron gun produces a beam of electrons that scans the surface of a whole specimen
+Secondary electrons emitted from the specimen produce the image
+1,000–10,000; resolution 20 nm
+--- SLIDE 18 ---
+Comparison TEM vs SEM
+(credit a: modification of work by American Society for Microbiology; credit b: modification of work by Centers for Disease Control and Prevention)
+--- SLIDE 19 ---
+Other microscopy types
+Two-photon microscopy
+Scanning tunneling
+Atomic force microscopy
+Scanning tunneling (gold)                          AFM nanocellulose)
+(credit a: modification of work by “Erwinrossen”/Wikimedia Commons)
+--- SLIDE 20 ---
+Preparing Specimens for Light Microscopy
+Wet mount: specimen placed on slide in a drop of liquid
+Live or unstained cells have little contrast with the surrounding medium
+Fixation:
+Attaches specimen
+Kills specimen
+Allow for staining
+--- SLIDE 21 ---
+Smear: A thin film of a solution of microbes on a slide
+Fixing: heat or chemical
+(credit a: modification of work by Nina Parker; credit b: modification of work by Nina Parker; credit c: modification of work by “University of Bristol”/YouTube)
+Fixing and Staining
+--- SLIDE 22 ---
+Staining
+Staining: Coloring the microbe with a dye that emphasizes certain structures
+Stains are salts composed of a positive and a negative ion, one of which is colored (chromophore)
+Basic dyes: color is in the positive ion
+Acidic dyes: color is in the negative ion
+Negatively charged bacteria will attract positively charged (basic) dyes
+Crystal violet, methylene blue, malachite green, safranin
+--- SLIDE 23 ---
+Simple stain
+Only one stain is used, all cells are stained
+Aqueous or alcohol solution of a single, basic dye
+Stain is applied to fixed smear and then washed off
+(credit a: modification of work by Centers for Disease Control and Prevention; credit b: modification of work by Roberto Danovaro, Antonio Pusceddu, Cristina Gambi, Iben Heiner, Reinhardt Mobjerg Kristensen; credit c: modification of work by Anh-Hue Tu)
+--- SLIDE 24 ---
+Use of simple stains
+Determine the shape of the cells (i.e., cocci, bacilli, spirilla)
+Look at the arrangement of the cells
+Singles, pairs, tetrads, etc.
+Estimate size of cells
+Can use ocular micrometer if available
+Estimate size based on field of view diameter
+--- SLIDE 25 ---
+Differential stains
+React differently with different kinds of bacteria and can be used to distinguish among them
+Sometimes a special treatment/chemical is used to “set” the stain => mordant
+Gram stain is most frequently used differential stain: Gram + and Gram - bacteria
+Acid fast stain
+--- SLIDE 26 ---
+Gram staining
+Developed in 1884 by Hans Christian Gram
+Differentiates bacteria into two large groups
+Gram positive and Gram negative
+Based on difference in cell wall structure
+All cells are stained with crystal violet
+Destained with alcohol: Gram + stay purple, Gram – lose color
+Counterstained with safranin (pink)
+--- SLIDE 27 ---
+Examples of Gram staining
+Adobe stock
+--- SLIDE 28 ---
+Acid Fast Staining
+Mycobacterium, Nocardia
+Have a waxy cell wall, difficult to destain
+Cells are stained with carbofuschin (pink) & decolorized with acid-alcohol
+Only acid fast cells stay pink, rest counterstained with blue
+(credit: modification of work by American Society for Microbiology)
+--- SLIDE 29 ---
+Acid Fast (cont)
+Wikimedia commons This file is licensed under the Creative Commons Attribution-Share Alike 3.0 Unported license.
+--- SLIDE 30 ---
+Negative staining
+Negative staining is useful for capsules (stains background)
+(credit a: modification of work by American Society for Microbiology; credit b: modification of work by American Society for Microbiology)
+--- SLIDE 31 ---
+Endospore Staining
+Endospores: very resistant structures produced by the genera Bacillus and Clostridium if the environment is unfavorable
+Heat is required to drive a stain into endospores.
+(credit: modification of work by American Society for Microbiology)
+--- SLIDE 32 ---
+Flagella staining
+Flagella staining requires a mordant to make the flagella wide enough to see.
+(credit: modification of work by Centers for Disease Control and Prevention)
+--- SLIDE 33 ---
+End of chapter 2How we see the invisible world
+“Download for free at https://openstax.org/details/books/microbiology.”
