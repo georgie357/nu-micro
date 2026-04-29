@@ -549,12 +549,33 @@ Dropbox\Nu micro\               ← git repo (github.com/georgie357/nu-micro)
 PDFs, pptx, docx → Dropbox only (not in git)
 Scripts, source text, MD → git + Dropbox
 
+### How phone Q&A actually works — searching real slide + textbook content
+
+When you ask a question from phone via Remote Control, Claude Code on PC:
+1. Runs `answer_question.py` which searches the actual Popa slide text + OpenStax textbook
+2. Prints the matching excerpts (slides first, textbook second)
+3. Answers from that content following the answering protocol in CLAUDE.md
+
+This means answers reflect what Popa actually put on his slides — not general knowledge.
+
+**The search script:**
+```
+C:\Users\User\Dropbox\Nu micro\scripts\answer_question.py
+```
+
+Usage (Claude Code runs this automatically):
+```powershell
+python answer_question.py "what is the gram stain" ch2
+python answer_question.py "what is peptidoglycan"        # searches all chapters
+```
+
+**CLAUDE.md** — this file lives in the repo root and is read automatically by Claude Code at session start. It tells Claude the answering protocol, where scripts are, and where source text is. This is what makes Remote Control sessions on PC answer correctly without any manual setup each time.
+
 ### What to tell Claude on phone for Q&A
 
-When starting a new chat session on phone, paste this at the start:
-> "I'm studying BIO203 Microbiology at National University with Dr. Popa. Answer my questions using the Popa lecture slides first, then expand with the OpenStax textbook. Cite the slide number and OpenStax section. The source material is in the GitHub repo: github.com/georgie357/nu-micro in source_text/"
+Just ask the question normally via the Remote Control session. Claude Code on PC reads CLAUDE.md at startup and knows to run the search script first before answering.
 
-Then ask questions normally. Claude can read the source_text files from the repo URL.
+No special prompt needed on phone — the protocol is baked into CLAUDE.md.
 
 ### What to tell Claude on phone to make a PDF
 
