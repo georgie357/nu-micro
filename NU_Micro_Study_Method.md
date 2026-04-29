@@ -52,6 +52,38 @@ Go chapter by chapter, concept by concept. Never jump ahead. Always anchor to **
 
 ---
 
+## 🎯 HIGHEST YIELD PRINCIPLE — VERSION 3 AND ALL FUTURE PDFs
+
+**This rule applies to every study guide, MC set, and lab document made for this course.**
+
+Starting with Version 3 (April 2026), all PDFs use the **highest yield** approach:
+
+### What "highest yield" means:
+1. **Every major table gets an "Exam trap" or "What Popa emphasizes" column** — not just content, but what gets tested and how students get it wrong
+2. **Key distinctions are called out explicitly** — e.g., Hooke saw DEAD cells / Leeuwenhoek saw LIVING organisms; G+ = PURPLE / G- = PINK; TEM = internal 2D / SEM = surface 3D
+3. **HIGHEST YIELD callout boxes** (yellow background, bold) flag the 2–3 facts that are most likely on the exam for each section
+4. **Common confusions are named** — e.g., "Lipids have NO true monomer/polymer" in a boxed callout, not buried in a paragraph
+5. **Popa slide numbers cited for every section header** — so when studying, you know which slides to re-read
+6. **No background fluff** — if a fact won't appear on a test, it's not in the guide
+
+### What this looks like in practice:
+| V2 approach (before) | V3 approach (highest yield) |
+|---|---|
+| Table with concept + definition | Table with concept + definition + "Exam trap" column |
+| "Hooke saw cells in cork (1665)" | "Hooke saw DEAD cell walls only — this is always tested against Leeuwenhoek" |
+| Information about lipids | Bold callout: "LIPIDS HAVE NO TRUE MONOMER AND NO TRUE POLYMER — most tested trap in Ch.7" |
+| Koch's postulates listed | Koch's postulates listed + "Over-decolorize in Gram stain → G+ looks G-" trap explicitly named |
+
+### Apply this when building new chapter PDFs:
+- Before writing any section, ask: "What are the 2–3 facts most likely to be on a MC exam?"
+- Put those in HIGHEST YIELD callout boxes (yellow background style in scripts)
+- Add exam trap column to EVERY comparison table
+- Read Popa's slides first — wherever he dedicated a full slide = exam priority flag it
+
+---
+
+---
+
 ## Step 1 — Identify What the Chapter Covers
 Before studying, list the chapter's concepts at a high level.
 Example — Ch.1 Intro to Microbiology:
@@ -150,16 +182,18 @@ This mistake was made for Ch.7 — study guide was written without reading the t
 
 ## Materials Per Chapter
 
-### Chapter 1 & 2 — ✓ COMPLETE (Version 2)
+### Chapter 1 & 2 — ✓ COMPLETE (Version 3 — Current)
 **Folder:** `chapter 1 and 2\`
-**Scripts:** `Desktop\recent\make_ch1_ch2_pdf_v2.py`, `Desktop\recent\make_ch1_ch2_mc_v2.py`
+**Scripts (v3):** `scripts\make_ch1_ch2_pdf_v3.py`, `scripts\make_ch1_ch2_mc_v3.py`
 
 | File | Version | Status | Built from |
 |---|---|---|---|
 | BIO203_Ch1_Ch2_Study_Guide.pdf | v1 — RETIRED | ⚠️ Written from memory, do not use | — |
 | BIO203_Ch1_Ch2_MC_Questions.pdf | v1 — RETIRED | ⚠️ Written from memory, do not use | — |
-| BIO203_Ch1_Ch2_Study_Guide_v2.pdf | **v2 — CURRENT** | ✓ Done | Ch.1 slides (29) + Ch.2 slides (33) + textbook PDF pages 22–82 |
-| BIO203_Ch1_Ch2_MC_Questions_v2.pdf (50 Qs) | **v2 — CURRENT** | ✓ Done | All 50 questions cite specific Popa slide + OpenStax section |
+| BIO203_Ch1_Ch2_Study_Guide_v2.pdf | v2 — superseded | Source-based but no exam traps | Ch.1 slides + Ch.2 slides + textbook |
+| BIO203_Ch1_Ch2_MC_Questions_v2.pdf | v2 — superseded | 50 Qs, good but no trap focus | Popa slides + OpenStax |
+| **BIO203_Ch1_Ch2_Study_Guide_v3.pdf** | **v3 — CURRENT** | ✓ Done | Highest yield: exam trap columns, HIGHEST YIELD callouts, key distinctions |
+| **BIO203_Ch1_Ch2_MC_Questions_v3.pdf (55 Qs)** | **v3 — CURRENT** | ✓ Done | 55 questions including trap questions (Q54 = over-decolorization trap) |
 
 **What v2 covers (Ch.1):** microbiology definition, size scale, full history timeline (Leeuwenhoek 1675 through Fleming 1928), key scientists table (Pasteur/Koch/Jenner/Ehrlich/Fleming with exact contributions), taxonomy history (Linnaeus 1758 → Woese/Fox 1970s rRNA → three-domain), binomial nomenclature rules, 8 groups table (Bacteria/Archaea/Algae/Protozoa/Fungi/Helminths/Viruses/Prions) with full detail on viruses and prions, modern biotech/microbiome/CRISPR.
 
@@ -167,38 +201,42 @@ This mistake was made for Ch.7 — study guide was written without reading the t
 
 ---
 
-### Chapter 7 — Biochemistry (Thu Apr 30) ✓ COMPLETE
+### Chapter 7 — Biochemistry ✓ COMPLETE (Version 3 — Current)
 **Folder:** `Ch 7\`
-**Scripts:** `Desktop\recent\make_ch7_pdf.py`, `Desktop\recent\make_ch7_mc.py`
-
-| File | Status | Built from |
-|---|---|---|
-| BIO203_Ch7_Study_Guide.pdf | ✓ Done | Ch.7 slides (49) + textbook PDF pages 267–294 |
-| BIO203_Ch7_MC_Questions.pdf (50 Qs) | ✓ Done | All questions cite specific Popa slide + OpenStax section |
-
----
-
-### Lab 1 — Microscopy ✓ COMPLETE (Version 2)
-**Folder:** `chapter 1 and 2\`
-**Scripts:** `Desktop\recent\make_lab1_report.py`, `Desktop\recent\make_lab1_guide.py`
+**Scripts (v3):** `scripts\make_ch7_pdf_v3.py`, `scripts\make_ch7_mc_v3.py`
 
 | File | Version | Status | Built from |
 |---|---|---|---|
-| BIO203A_Lab1_Filled.pdf | v1 — RETIRED | ⚠️ No lecture connections, do not use | — |
-| BIO203A_Lab1_Study_Guide.pdf | v1 — RETIRED | ⚠️ No lecture connections, do not use | — |
-| BIO203A_Lab1_Filled_v2.pdf | **v2 — CURRENT** | ✓ Done | Lab 1 docx + Ch.1 slides + Ch.2 slides |
-| BIO203A_Lab1_Study_Guide_v2.pdf | **v2 — CURRENT** | ✓ Done | Lab 1 docx + Ch.1 slides + Ch.2 slides |
+| BIO203_Ch7_Study_Guide.pdf | v1 — superseded | Source-based but no exam traps | Ch.7 slides (49) + textbook |
+| BIO203_Ch7_MC_Questions.pdf | v1 — superseded | 50 Qs, good but no trap focus | Popa slides + OpenStax |
+| **BIO203_Ch7_Study_Guide_v3.pdf** | **v3 — CURRENT** | ✓ Done | Exam trap columns on all tables, NAM/chitin/hopanoids distinctions called out |
+| **BIO203_Ch7_MC_Questions_v3.pdf (40 Qs)** | **v3 — CURRENT** | ✓ Done | 40 highest-yield questions, last 6 flagged as TRAP questions |
 
-**What Lab 1 v2 covers:** Full microscope parts table with critical rules (coarse/fine focus, handling, storage), magnification+FOV table for all 4 objectives with FOV calculation formula, immersion oil/refraction/RI explanation tied to Ch.2 slides 6&10, organisms observed table (Paramecium/yeast/Bacillus/algae/mold) each linked to Ch.1 domain/classification, staining connections (simple/Gram/wet mount/endospore), worked FOV calculation examples (Bacillus 2µm and yeast 10µm across 450µm FOV), 8 practice Q&A pairs, key numbers table with slide citations.
+---
 
-### Lab 2 — Plating of Soil Samples ✓ COMPLETE
+### Lab 1 — Microscopy ✓ COMPLETE (Version 3 — Current)
 **Folder:** `chapter 1 and 2\`
-**Scripts:** `Desktop\make_lab2_report.py`, `Desktop\make_lab2_guide.py`
+**Scripts (v3):** `scripts\make_lab1_report_v3.py`, `scripts\make_lab1_guide_v3.py`
 
-| File | Status | Built from |
+| File | Version | Status |
 |---|---|---|
-| BIO203A_Lab2_Filled.pdf | ✓ Done | Lab 2 docx + Ch.7 biochemistry connections |
-| BIO203A_Lab2_Study_Guide.pdf | ✓ Done | Lab 2 docx + Ch.7 biochemistry connections |
+| BIO203A_Lab1_Filled.pdf | v1 — RETIRED | No lecture connections |
+| BIO203A_Lab1_Study_Guide.pdf | v1 — RETIRED | No lecture connections |
+| BIO203A_Lab1_Filled_v2.pdf | v2 — superseded | Good content, no exam traps |
+| BIO203A_Lab1_Study_Guide_v2.pdf | v2 — superseded | Good content, no exam traps |
+| **BIO203A_Lab1_Filled_v3.pdf** | **v3 — CURRENT** | ✓ Done — exam trap column on parts table, HIGHEST YIELD callouts |
+| **BIO203A_Lab1_Study_Guide_v3.pdf** | **v3 — CURRENT** | ✓ Done — exam trap column, trap Q on over-decolorization |
+
+### Lab 2 — Plating of Soil Samples ✓ COMPLETE (Version 3 — Current)
+**Folder:** `chapter 1 and 2\`
+**Scripts (v3):** `scripts\make_lab2_report_v3.py`, `scripts\make_lab2_guide_v3.py`
+
+| File | Version | Status |
+|---|---|---|
+| BIO203A_Lab2_Filled.pdf | v1 — superseded | No exam traps |
+| BIO203A_Lab2_Study_Guide.pdf | v1 — superseded | No exam traps |
+| **BIO203A_Lab2_Filled_v3.pdf** | **v3 — CURRENT** | ✓ Done — exam tip column on colony table, HIGHEST YIELD CFU callout |
+| **BIO203A_Lab2_Study_Guide_v3.pdf** | **v3 — CURRENT** | ✓ Done — exam trap column on serial dilution, CFU calculation traps |
 
 ---
 
@@ -448,12 +486,17 @@ ans = ParagraphStyle('ans', fontName='Helvetica-Oblique', fontSize=8, leftIndent
 
 | Script | Location | Output file |
 |---|---|---|
-| `make_chX_pdf_v2.py` | `Dropbox\Nu micro\scripts\` + `Desktop\recent\` | `Dropbox\Nu micro\Ch X\BIO203_ChX_Study_Guide_v2.pdf` |
-| `make_chX_mc_v2.py` | `Dropbox\Nu micro\scripts\` + `Desktop\recent\` | `Dropbox\Nu micro\Ch X\BIO203_ChX_MC_Questions_v2.pdf` |
-| `make_labX_report.py` | `Dropbox\Nu micro\scripts\` + `Desktop\recent\` | `Dropbox\Nu micro\chapter X\BIO203A_LabX_Filled_v2.pdf` |
-| `make_labX_guide.py` | `Dropbox\Nu micro\scripts\` + `Desktop\recent\` | `Dropbox\Nu micro\chapter X\BIO203A_LabX_Study_Guide_v2.pdf` |
+| `make_chX_pdf_v3.py` | `Dropbox\Nu micro\scripts\` | `Dropbox\Nu micro\Ch X\BIO203_ChX_Study_Guide_v3.pdf` |
+| `make_chX_mc_v3.py` | `Dropbox\Nu micro\scripts\` | `Dropbox\Nu micro\Ch X\BIO203_ChX_MC_Questions_v3.pdf` |
+| `make_labX_report_v3.py` | `Dropbox\Nu micro\scripts\` | `Dropbox\Nu micro\chapter X\BIO203A_LabX_Filled_v3.pdf` |
+| `make_labX_guide_v3.py` | `Dropbox\Nu micro\scripts\` | `Dropbox\Nu micro\chapter X\BIO203A_LabX_Study_Guide_v3.pdf` |
 
-**Version suffix rule:** If rebuilding a file that was previously made from memory or without source material, append `_v2` to the filename. New chapters start without suffix (already using the correct method).
+**Version suffix rule:**
+- v1 = written from memory — RETIRED, never use
+- v2 = built from actual source material (Popa slides + textbook) — good content
+- **v3 = highest yield** — v2 content + exam trap columns + HIGHEST YIELD callouts + key distinctions flagged
+
+**All new chapters should start at v3 (highest yield) immediately** — do not make v1 or v2 first.
 
 **Retired files:** v1 files remain in Dropbox but should not be used. Only use the most recent version.
 
