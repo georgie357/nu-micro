@@ -106,44 +106,83 @@ story.append(tbl([
 story.append(sp())
 
 # History
-story.append(Paragraph("1.4  History of Microbiology (Popa slides 4–13; OpenStax 1.2)", h2))
-story.append(Paragraph(B("Early observations and practices:"), h3))
-for item in [
-    "Fermentation used for 7,000+ years before the cause was known; pickled/salted foods exploit osmotic preservation",
-    "Quarantine: mentioned in the Bible (Leviticus) for isolation of diseased individuals",
-    "Hippocrates (460–370 BC): father of Western medicine — disease has natural, not supernatural, causes",
-    "Thucydides (460–395 BC): observed survivors of plague were immune — early concept of immunity",
-    "Marcus Terentius Varro (116–27 BC): proposed 'things we cannot see' (seminaria morbi) can cause disease",
-    "Islamic scholars: Ibn Sina (Avicenna, 980–1037 AD) — quarantine; al-Razi differentiated smallpox from measles",
-    "Ötzi the Iceman (~3300 BC, discovered 1991): ancient human with evidence of pathogenic infection",
-]:
-    story.append(Paragraph(f"• {item}", bul))
-story.append(sp(4))
+story.append(Paragraph("1.4  History of Microbiology (Popa slides 4–13; OpenStax 1.1–1.2)", h2))
 
-story.append(Paragraph(B("First microscopic observations:"), h3))
-for item in [
-    "Zacharias Janssen (late 1500s): credited with first compound microscope",
-    "Galileo Galilei: adapted compound microscope to study insects",
-    "Robert Hooke (1665): Micrographia — described cells in cork; used compound microscope",
-    "Anton van Leeuwenhoek (1675): described live microorganisms ('animalcules') — probably protists and bacteria; used simple (single-lens) microscope; reported to Royal Society of London",
-]:
-    story.append(Paragraph(f"• {item}", bul))
-story.append(sp(4))
-
-story.append(Paragraph(B("Golden Age of Microbiology (1857–1914) — Key scientists:"), h3))
+story.append(Paragraph(B("Ancient world — disease concepts before microscopes:"), h3))
 story.append(tbl([
-    ["Scientist", "Country", "Key Contributions"],
-    ["Louis Pasteur\n(1822–1895)", "France",
-     "Disproved spontaneous generation (swan-neck flask experiment)\nDemonstrated microbes cause fermentation\nPasteurization (high heat, short time)\nDeveloped vaccines for chicken cholera, anthrax, rabies\nCo-developed germ theory of disease"],
-    ["Robert Koch\n(1843–1910)", "Germany",
-     "Proved bacterium causes anthrax (1876)\nDeveloped Koch's Postulates (steps to prove a microbe causes a specific disease)\nBreakthroughs in pure culture techniques\nNote: solid agar medium was Fanny Hesse's idea — not credited at the time"],
-    ["Edward Jenner\n(1749–1823)", "England",
-     "Observed dairymaids with cowpox were protected from smallpox\nInoculated boy with cowpox, challenged with smallpox — boy did not get sick\nDeveloped first vaccine (smallpox)"],
-    ["Paul Ehrlich\n(1854–1915)", "Germany",
-     "Concept of 'magic bullet' — selective toxicity\nDeveloped salvarsan (arsenic-based) for syphilis (1910)\nFounded chemotherapy"],
-    ["Alexander Fleming\n(1881–1955)", "Scotland",
-     "Noticed clear zone of no bacterial growth around contaminating Penicillium mold\nDiscovered penicillin (1928)\nLess known: contributions of colleague/spouse Dr. Sarah Voureka (Greece)"],
-], [1.5*inch, 1.0*inch, 4.5*inch]))
+    ["Person / Event", "Date", "What they did", "Why it matters for the test"],
+    ["Fermented foods\n(Neolithic China)", "~7000 BC",
+     "Rice, honey, fruit fermented in pottery jars",
+     "Humans used microbes thousands of years before knowing they existed"],
+    ["Otzi the Iceman", "~3300 BC\n(found 1991)",
+     "Frozen mummy infected with Trichuris parasite eggs and Borrelia burgdorferi (Lyme disease); carried a fungus (Fomitopsis) with antibiotic properties",
+     "Evidence that prehistoric humans attempted to treat infections"],
+    ["Quarantine\n(Bible — Leviticus)", "Ancient",
+     "Isolation of people with leprosy and other diseases",
+     "Early recognition that disease could spread person to person"],
+    ["Hippocrates\n(460–370 BC)", "Ancient Greece",
+     "Father of Western medicine. Dismissed supernatural causes of disease. Said diseases have NATURAL causes from within patients or their environments. Wrote Hippocratic Corpus. Associated with Hippocratic Oath.",
+     "First to argue disease = natural, not divine punishment. This is the foundation of medicine."],
+    ["Thucydides\n(460–395 BC)", "Ancient Greece",
+     "Survived Athenian plague (430–410 BC, killed 1/3 of Athens). Observed that survivors did NOT get re-infected even when caring for sick people.",
+     "First recorded observation of IMMUNITY — the body remembers a disease"],
+    ["Marcus Terentius Varro\n(116–27 BC)", "Ancient Rome",
+     "In Res Rusticae (36 BC): 'certain minute creatures [animalia minuta] grow there which cannot be seen by the eye, which float in the air and enter the body through the mouth and nose and there cause serious diseases'",
+     "First to propose invisible creatures cause disease — 1,700 years before germ theory was proven"],
+    ["al-Razi (Rhazes)\n(854–925 AD)", "Islamic / Persia",
+     "First to distinguish measles from smallpox. Selected hospital locations by hanging raw meat and choosing where it rotted slowest.",
+     "Early experimental medicine; differential diagnosis"],
+    ["Ibn Sina (Avicenna)\n(980–1037 AD)", "Islamic / Persia",
+     "Canon of Medicine (1025): described contagion, organisms infected by foreign substances, illness transmitted by breath. Advanced quarantine practice.",
+     "Canon used as medical textbook worldwide through the Renaissance"],
+], [1.4*inch, 0.8*inch, 2.8*inch, 2.0*inch]))
+story.append(sp())
+
+story.append(Paragraph(B("Birth of microbiology — invention of the microscope:"), h3))
+story.append(tbl([
+    ["Person", "Date", "Microscope type", "Key contribution", "Critical distinction"],
+    ["Zacharias Janssen\n(+ father Hans)", "Late 1500s–\nearly 1600s",
+     "Compound\n(two lenses)",
+     "Dutch spectacle-makers. May have invented the compound microscope, simple microscope, AND telescope.",
+     "IMPORTANT: evidence is INCONCLUSIVE. They were secretive, never published, records lost. Neighbor Hans Lippershey also built same instruments. Cannot be confirmed as inventor."],
+    ["Galileo Galilei\n(1564–1642)", "~1609",
+     "Compound\n(two lenses)",
+     "Used compound microscope to examine INSECT PARTS (compound eyes).",
+     "NOT the discoverer of microorganisms. More famous for the telescope. Contribution = applying compound design to small objects."],
+    ["Robert Hooke\n(1635–1703)", "1665",
+     "Compound",
+     "Published Micrographia (1665) — became a bestseller across Europe. Viewed thin slice of CORK. Saw box-like structures he called CELLS (Latin: cella = small room). Described them as resembling a honeycomb.",
+     "Hooke saw DEAD PLANT CELL WALLS only — cells appeared hollow because cork cells are dead. He did NOT see living microorganisms."],
+    ["Anton van Leeuwenhoek\n(1632–1723)", "1674–1675",
+     "Simple\n(one lens — more powerful than compound of his era)",
+     "Cloth merchant from Delft who became a lens-maker. First to see LIVING microorganisms. Called them animalcules ('wee little beasties'). Observed pond water, rain water, dental scrapings. Sent letters to Royal Society of London from 1673. Initially met with skepticism — Society sent delegation to verify. Became a celebrity (visited by Czar of Russia).",
+     "KEY DISTINCTION from Hooke: Leeuwenhoek saw LIVING organisms. His drawings = bacteria and protists. Called 'father of microbiology.'"],
+    ["Girolamo Fracastoro\n(Italian scholar)", "1546",
+     "None\n(pre-microscope)",
+     "De Contagione (1546): proposed disease spread by tiny invisible seminaria ('seeds of contagion') that attach to objects (fomes = cloth) and transfer person to person.",
+     "Purely theoretical — no microscope to prove it. Conceptual precursor to germ theory."],
+], [1.3*inch, 0.7*inch, 0.8*inch, 2.3*inch, 1.9*inch]))
+story.append(sp())
+
+story.append(Paragraph(B("Golden Age of Microbiology (1857–1914):"), h3))
+story.append(tbl([
+    ["Scientist", "Dates / Country", "Key Contributions", "What Popa emphasizes"],
+    ["Louis Pasteur", "1822–1895\nFrance",
+     "Disproved spontaneous generation (swan-neck flask — boiled broth stayed sterile until neck broken)\nProved microbes cause FERMENTATION\nInvented PASTEURIZATION (high heat, short time — kills spoilage organisms)\nDeveloped vaccines: chicken cholera, anthrax, RABIES\nCo-developed germ theory of disease",
+     "Popa gave him a full slide (slide 8). Fermentation + pasteurization + vaccines + germ theory. All four testable."],
+    ["Robert Koch", "1843–1910\nGermany",
+     "Proved Bacillus anthracis causes ANTHRAX (1876) — first proof a single microbe causes a specific disease\nDeveloped KOCH'S POSTULATES: 4-step experimental proof that a microbe causes a disease\nMajor advances in pure culture technique (isolating single species)\nSolid agar medium = FANNY HESSE's idea — she was not credited",
+     "Popa slide 9. Koch's postulates are tested repeatedly. Fanny Hesse always comes up — know her name."],
+    ["Edward Jenner", "1749–1823\nEngland",
+     "Observed: dairymaids who got mild COWPOX were protected from SMALLPOX\nHypothesis: cowpox provides protection\nExperiment: inoculated boy with cowpox fluid, later challenged with smallpox fluid\nResult: boy did not get smallpox\nDeveloped FIRST VACCINE (smallpox)",
+     "Popa slide 7. Know the experiment structure (observation → hypothesis → experiment → result). Cowpox = vaccinia virus, smallpox = variola virus — related viruses."],
+    ["Paul Ehrlich", "1854–1915\nGermany",
+     "Concept of 'MAGIC BULLET' — a drug with SELECTIVE TOXICITY: kills the pathogen but not the host\nDeveloped SALVARSAN (arsenic compound, 1910) for syphilis — first modern chemotherapy drug\nFounded the field of chemotherapy",
+     "Popa slide 11. Magic bullet = selective toxicity. Salvarsan = syphilis. These two facts are always tested."],
+    ["Alexander Fleming", "1881–1955\nScotland",
+     "Left a Staphylococcus plate open → contaminated with Penicillium mold → saw clear zone of NO bacterial growth around mold\nDiscovered PENICILLIN (1928)\nMass production in time for WW2 — saved countless soldiers' lives\nDr. Sarah Voureka (Greece) — colleague and later spouse — contributed significantly but received less credit",
+     "Popa slides 12–13. The accidental discovery story is testable. Voureka mentioned by Popa specifically — know her name."],
+], [1.1*inch, 0.9*inch, 3.2*inch, 1.8*inch]))
 story.append(sp())
 
 # Taxonomy and Classification
