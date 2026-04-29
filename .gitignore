@@ -1,2 +1,11 @@
-
+﻿# Large textbook
 microbiology_-_WEB.pdf
+
+# All PDFs, slides, and Word docs - synced via Dropbox, no need in git
+*.pdf
+*.pptx
+*.docx
+*.xlsx
+*.png
+*.jpg
+*.jpeg
