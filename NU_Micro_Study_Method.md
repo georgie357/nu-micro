@@ -52,6 +52,44 @@ Go chapter by chapter, concept by concept. Never jump ahead. Always anchor to **
 
 ---
 
+## 🎯 VERSION 4 PRINCIPLE — LECTURE-SLIDE-ONLY CONTENT FILTER
+
+**Added April 2026. Applies to all v4 PDFs and all future rebuilds.**
+
+### What v4 changes:
+- **Only topics that appear in Popa's actual lecture slides are included.** If a topic shows up only in the OpenStax textbook but was never mentioned on any slide (not even one word), it is **excluded from study guides and MC questions.**
+- **If a topic is mentioned even once on any slide, it stays** — and can be expanded if it's important for understanding.
+- **Why this rule exists:** Popa tests what he taught in lecture. Textbook-only topics waste study time and create false exam anxiety.
+
+### Topics REMOVED in v4 (textbook-only, not on any Popa slide):
+| Topic | Removed from |
+|---|---|
+| Robert Hooke (cork/cells, 1665) | Ch1 study guide + MC |
+| Zacharias Janssen (first microscope) | Ch1 study guide + MC |
+| Galileo Galilei (microscope) | Ch1 study guide + MC |
+| Girolamo Fracastoro (contagion theory) | Ch1 study guide + MC |
+| al-Razi / Rhazes | Ch1 study guide + MC |
+| Ibn Sina / Avicenna | Ch1 study guide + MC |
+| Ernst Haeckel (protists kingdom) | Ch1 study guide + MC |
+| Robert Whittaker (5-kingdom system) | Ch1 study guide + MC |
+| Spontaneous generation (swan-neck flask experiment) | Ch1 study guide + MC |
+| Bioterrorism / CDC Category A agents | Ch1 study guide + MC |
+| DIC (Nomarski) microscopy | Ch2 study guide + Lab1 guide |
+| Hopanoids | Ch7 study guide + MC |
+| Ergosterol | Ch7 study guide + MC |
+| PLFA (phospholipid fatty acid) analysis | Ch7 study guide + MC |
+| PHB (polyhydroxybutyrate) granules | Ch7 study guide + MC |
+
+### Topics ADDED in v4 (appeared on slide but missing from v3):
+| Topic | Added to | Popa slide |
+|---|---|---|
+| Bergey's Manual of Systematic Bacteriology | Ch1 study guide (section 1.8) + MC (Q31) | Ch1 slide 22 |
+
+### V4 rule for future chapters:
+Before adding ANY topic to a study guide or MC set, verify it appears in the actual slide text file (`source_text/chX_slides.txt`). If it does not appear there, do not include it regardless of how important it seems in the textbook.
+
+---
+
 ## 🎯 HIGHEST YIELD PRINCIPLE — VERSION 3 AND ALL FUTURE PDFs
 
 **This rule applies to every study guide, MC set, and lab document made for this course.**
@@ -182,9 +220,9 @@ This mistake was made for Ch.7 — study guide was written without reading the t
 
 ## Materials Per Chapter
 
-### Chapter 1 & 2 — ✓ COMPLETE (Version 3 — Current)
+### Chapter 1 & 2 — ✓ COMPLETE (Version 4 — Current)
 **Folder:** `chapter 1 and 2\`
-**Scripts (v3):** `scripts\make_ch1_ch2_pdf_v3.py`, `scripts\make_ch1_ch2_mc_v3.py`
+**Scripts (v4):** `scripts\make_ch1_ch2_pdf_v4.py`, `scripts\make_ch1_ch2_mc_v4.py`
 
 | File | Version | Status | Built from |
 |---|---|---|---|
@@ -192,8 +230,10 @@ This mistake was made for Ch.7 — study guide was written without reading the t
 | BIO203_Ch1_Ch2_MC_Questions.pdf | v1 — RETIRED | ⚠️ Written from memory, do not use | — |
 | BIO203_Ch1_Ch2_Study_Guide_v2.pdf | v2 — superseded | Source-based but no exam traps | Ch.1 slides + Ch.2 slides + textbook |
 | BIO203_Ch1_Ch2_MC_Questions_v2.pdf | v2 — superseded | 50 Qs, good but no trap focus | Popa slides + OpenStax |
-| **BIO203_Ch1_Ch2_Study_Guide_v3.pdf** | **v3 — CURRENT** | ✓ Done | Highest yield: exam trap columns, HIGHEST YIELD callouts, key distinctions |
-| **BIO203_Ch1_Ch2_MC_Questions_v3.pdf (55 Qs)** | **v3 — CURRENT** | ✓ Done | 55 questions including trap questions (Q54 = over-decolorization trap) |
+| BIO203_Ch1_Ch2_Study_Guide_v3.pdf | v3 — superseded | Highest yield, but included textbook-only topics | Slides + textbook |
+| BIO203_Ch1_Ch2_MC_Questions_v3.pdf | v3 — superseded | 55 Qs, had textbook-only Qs | Slides + textbook |
+| **BIO203_Ch1_Ch2_Study_Guide_v4.pdf** | **v4 — CURRENT** | ✓ Done | Lecture-slide-only. Added Bergey's (slide 22). Removed Hooke/Janssen/swan-neck/bioterrorism. |
+| **BIO203_Ch1_Ch2_MC_Questions_v4.pdf (51 Qs)** | **v4 — CURRENT** | ✓ Done | 51 Qs. Added Bergey's Q31. Removed textbook-only Qs. Ch1=Q1-31, Ch2=Q32-51. |
 
 **What v2 covers (Ch.1):** microbiology definition, size scale, full history timeline (Leeuwenhoek 1675 through Fleming 1928), key scientists table (Pasteur/Koch/Jenner/Ehrlich/Fleming with exact contributions), taxonomy history (Linnaeus 1758 → Woese/Fox 1970s rRNA → three-domain), binomial nomenclature rules, 8 groups table (Bacteria/Archaea/Algae/Protozoa/Fungi/Helminths/Viruses/Prions) with full detail on viruses and prions, modern biotech/microbiome/CRISPR.
 
@@ -201,22 +241,24 @@ This mistake was made for Ch.7 — study guide was written without reading the t
 
 ---
 
-### Chapter 7 — Biochemistry ✓ COMPLETE (Version 3 — Current)
+### Chapter 7 — Biochemistry ✓ COMPLETE (Version 4 — Current)
 **Folder:** `Ch 7\`
-**Scripts (v3):** `scripts\make_ch7_pdf_v3.py`, `scripts\make_ch7_mc_v3.py`
+**Scripts (v4):** `scripts\make_ch7_pdf_v4.py`, `scripts\make_ch7_mc_v4.py`
 
 | File | Version | Status | Built from |
 |---|---|---|---|
 | BIO203_Ch7_Study_Guide.pdf | v1 — superseded | Source-based but no exam traps | Ch.7 slides (49) + textbook |
 | BIO203_Ch7_MC_Questions.pdf | v1 — superseded | 50 Qs, good but no trap focus | Popa slides + OpenStax |
-| **BIO203_Ch7_Study_Guide_v3.pdf** | **v3 — CURRENT** | ✓ Done | Exam trap columns on all tables, NAM/chitin/hopanoids distinctions called out |
-| **BIO203_Ch7_MC_Questions_v3.pdf (40 Qs)** | **v3 — CURRENT** | ✓ Done | 40 highest-yield questions, last 6 flagged as TRAP questions |
+| BIO203_Ch7_Study_Guide_v3.pdf | v3 — superseded | Good, but included hopanoids/ergosterol/PHB/PLFA (textbook-only) | Slides + textbook |
+| BIO203_Ch7_MC_Questions_v3.pdf | v3 — superseded | 40 Qs, some textbook-only | Slides + textbook |
+| **BIO203_Ch7_Study_Guide_v4.pdf** | **v4 — CURRENT** | ✓ Done | Lecture-slide-only. Removed hopanoids, ergosterol, PLFA, PHB. Kept cholesterol + isoprenoids. |
+| **BIO203_Ch7_MC_Questions_v4.pdf (37 Qs)** | **v4 — CURRENT** | ✓ Done | 37 Qs. Removed hopanoids Q15, ergosterol Q16, PHB Q20. Renumbered. |
 
 ---
 
-### Lab 1 — Microscopy ✓ COMPLETE (Version 3 — Current)
+### Lab 1 — Microscopy ✓ COMPLETE (Version 4 — Current)
 **Folder:** `chapter 1 and 2\`
-**Scripts (v3):** `scripts\make_lab1_report_v3.py`, `scripts\make_lab1_guide_v3.py`
+**Scripts (v4):** `scripts\make_lab1_report_v4.py`, `scripts\make_lab1_guide_v4.py`
 
 | File | Version | Status |
 |---|---|---|
@@ -224,19 +266,23 @@ This mistake was made for Ch.7 — study guide was written without reading the t
 | BIO203A_Lab1_Study_Guide.pdf | v1 — RETIRED | No lecture connections |
 | BIO203A_Lab1_Filled_v2.pdf | v2 — superseded | Good content, no exam traps |
 | BIO203A_Lab1_Study_Guide_v2.pdf | v2 — superseded | Good content, no exam traps |
-| **BIO203A_Lab1_Filled_v3.pdf** | **v3 — CURRENT** | ✓ Done — exam trap column on parts table, HIGHEST YIELD callouts |
-| **BIO203A_Lab1_Study_Guide_v3.pdf** | **v3 — CURRENT** | ✓ Done — exam trap column, trap Q on over-decolorization |
+| BIO203A_Lab1_Filled_v3.pdf | v3 — superseded | Good content |
+| BIO203A_Lab1_Study_Guide_v3.pdf | v3 — superseded | Had DIC (textbook-only) |
+| **BIO203A_Lab1_Filled_v4.pdf** | **v4 — CURRENT** | ✓ Done — lecture-slide-only |
+| **BIO203A_Lab1_Study_Guide_v4.pdf** | **v4 — CURRENT** | ✓ Done — removed DIC/Nomarski (not in Ch2 slides) |
 
-### Lab 2 — Plating of Soil Samples ✓ COMPLETE (Version 3 — Current)
+### Lab 2 — Plating of Soil Samples ✓ COMPLETE (Version 4 — Current)
 **Folder:** `chapter 1 and 2\`
-**Scripts (v3):** `scripts\make_lab2_report_v3.py`, `scripts\make_lab2_guide_v3.py`
+**Scripts (v4):** `scripts\make_lab2_report_v4.py`, `scripts\make_lab2_guide_v4.py`
 
 | File | Version | Status |
 |---|---|---|
 | BIO203A_Lab2_Filled.pdf | v1 — superseded | No exam traps |
 | BIO203A_Lab2_Study_Guide.pdf | v1 — superseded | No exam traps |
-| **BIO203A_Lab2_Filled_v3.pdf** | **v3 — CURRENT** | ✓ Done — exam tip column on colony table, HIGHEST YIELD CFU callout |
-| **BIO203A_Lab2_Study_Guide_v3.pdf** | **v3 — CURRENT** | ✓ Done — exam trap column on serial dilution, CFU calculation traps |
+| BIO203A_Lab2_Filled_v3.pdf | v3 — superseded | Good content |
+| BIO203A_Lab2_Study_Guide_v3.pdf | v3 — superseded | Good content |
+| **BIO203A_Lab2_Filled_v4.pdf** | **v4 — CURRENT** | ✓ Done — lecture-slide-only |
+| **BIO203A_Lab2_Study_Guide_v4.pdf** | **v4 — CURRENT** | ✓ Done — all content lab/lecture-based |
 
 ---
 
@@ -495,8 +541,9 @@ ans = ParagraphStyle('ans', fontName='Helvetica-Oblique', fontSize=8, leftIndent
 - v1 = written from memory — RETIRED, never use
 - v2 = built from actual source material (Popa slides + textbook) — good content
 - **v3 = highest yield** — v2 content + exam trap columns + HIGHEST YIELD callouts + key distinctions flagged
+- **v4 = lecture-slide-only** — v3 content filtered to remove anything not in Popa's actual slide text. Bergey's Manual added (was missing from v3). This is the current standard.
 
-**All new chapters should start at v3 (highest yield) immediately** — do not make v1 or v2 first.
+**All new chapters should start at v4 immediately** — do not make v1, v2, or v3 first. Read `source_text/chX_slides.txt` before writing any topic.
 
 **Retired files:** v1 files remain in Dropbox but should not be used. Only use the most recent version.
 
