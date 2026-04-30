@@ -1,4 +1,4 @@
-# BIO203A Lab 1: Microscopy - Filled Report (Version 4 - Lecture Slides Only)
+﻿# BIO203A Lab 1: Microscopy - Filled Report (Version 4 - Lecture Slides Only)
 # V4: All content tied to Popa Ch.2 slides and Lab 1 docx. No textbook-only additions.
 
 from reportlab.lib.pagesizes import letter
@@ -236,3 +236,4 @@ story.append(Paragraph(
 
 doc.build(story)
 print("Done -> " + OUTPUT)
+

@@ -1,4 +1,4 @@
-# BIO203 Ch.7 Multiple Choice Questions - Version 4
+﻿# BIO203 Ch.7 Multiple Choice Questions - Version 4
 # V4: Lecture-slide-only. REMOVED: Q15 (hopanoids), Q16 (ergosterol), Q20 (PHB granules)
 # 37 questions total (was 40). Renumbered.
 
@@ -403,3 +403,4 @@ story.append(Paragraph(
 
 doc.build(story)
 print("Done -> " + OUTPUT)
+

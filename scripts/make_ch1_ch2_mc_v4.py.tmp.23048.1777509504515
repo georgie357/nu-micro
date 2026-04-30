@@ -1,4 +1,4 @@
-﻿# BIO203 Ch.1 & Ch.2 - Multiple Choice Questions - Version 4
+# BIO203 Ch.1 & Ch.2 - Multiple Choice Questions - Version 4
 # V4: Lecture-slide-only. REMOVED: Hooke (Q7), Hooke vs Leeuwenhoek (Q8),
 #     Janssen (Q9), spontaneous generation (Q10), al-Razi (Q35)
 #     ADDED: Bergey's Manual Q31
@@ -445,8 +445,8 @@ for (num, qtext, opts, correct, citation) in questions:
         story.append(HRFlowable(width=W, thickness=0.75, color=colors.HexColor('#1a1a6e')))
         story.append(sp(4))
         ch1_done = True
-    if num == 32 and not ch2_done:
-        story.append(Paragraph("CHAPTER 2 QUESTIONS (Q32–Q51)", h2))
+    if num == 31 and not ch2_done:
+        story.append(Paragraph("CHAPTER 2 QUESTIONS (Q31–Q50)", h2))
         story.append(HRFlowable(width=W, thickness=0.75, color=colors.HexColor('#1a1a6e')))
         story.append(sp(4))
         ch2_done = True
@@ -463,11 +463,11 @@ story.append(Paragraph("ANSWER KEY — Version 4", h1))
 story.append(HRFlowable(width=W, thickness=1, color=colors.HexColor('#1a1a6e')))
 story.append(sp(6))
 
-rows = [["Q#", "Ans", "Q#", "Ans", "Q#", "Ans", "Q#", "Ans", "Q#", "Ans", "Q#", "Ans"]]
-per_col = 9
+rows = [["Q#", "Ans", "Q#", "Ans", "Q#", "Ans", "Q#", "Ans", "Q#", "Ans"]]
+per_col = 10
 for i in range(per_col):
     row = []
-    for j in range(6):
+    for j in range(5):
         idx = j * per_col + i
         if idx < len(questions):
             row += [str(questions[idx][0]), questions[idx][3]]
@@ -475,14 +475,13 @@ for i in range(per_col):
             row += ["", ""]
     rows.append(row)
 
-col_w = [0.5*inch, 0.4*inch] * 6
+col_w = [0.5*inch, 0.4*inch] * 5
 story.append(tbl(rows, col_w))
 story.append(sp(8))
 story.append(Paragraph(
     "Sources: Popa BIO203 lecture slides (Ch.1: 29 slides; Ch.2: 33 slides). "
-    "Version 4 — 51 questions, lecture-slide content only. Textbook-only topics excluded.",
+    "Version 4 — 50 questions, lecture-slide content only. Textbook-only topics excluded.",
     ParagraphStyle('CT', fontName='Helvetica-Oblique', fontSize=7.5, textColor=colors.grey)))
 
 doc.build(story)
 print("Done -> " + OUTPUT)
-

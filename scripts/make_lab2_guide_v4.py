@@ -1,4 +1,4 @@
-# BIO203A Lab 2: Soil Plating - Study Guide (Version 4 - Lecture Slides Only)
+﻿# BIO203A Lab 2: Soil Plating - Study Guide (Version 4 - Lecture Slides Only)
 # V4: All content is lab-based or tied to Ch.7 lecture slides.
 # Isoprenoids (pigments/carotenoids) reference kept — isoprenoids ARE in Ch.7 slides.
 # No textbook-only additions vs v3.
@@ -101,22 +101,22 @@ story.append(tbl([
     ['Step', 'What you do', 'Dilution factor', 'Meaning', 'Exam trap'],
     ['Master suspension',
      '1 g soil + 9 mL saline; vortex',
-     '10⁻¹', '1 part soil in 10 total',
+     '10<super>-1</super>', '1 part soil in 10 total',
      '10 mL total = 1 g in 10 mL'],
     ['1st dilution',
      '1 mL from master → 9 mL saline',
-     '10⁻²', '1/100 of original',
+     '10<super>-2</super>', '1/100 of original',
      'Transfer exactly 1 mL each time'],
     ['2nd dilution',
-     '1 mL from 10⁻² → 9 mL saline',
-     '10⁻³', '1/1,000 of original', ''],
+     '1 mL from 10<super>-2</super> → 9 mL saline',
+     '10<super>-3</super>', '1/1,000 of original', ''],
     ['3rd dilution',
-     '1 mL from 10⁻³ → 9 mL saline',
-     '10⁻⁴', '1/10,000 of original', ''],
+     '1 mL from 10<super>-3</super> → 9 mL saline',
+     '10<super>-4</super>', '1/10,000 of original', ''],
     ['Plating 0.1 mL',
      '0.1 mL from chosen tube → spread on agar',
      'Adds 10× more (×0.1)',
-     '0.1 mL from 10⁻³ tube = effective 10⁻⁴',
+     '0.1 mL from 10<super>-3</super> tube = effective 10<super>-4</super>',
      'Common error: forgetting the 0.1 mL factor in the formula'],
 ], [0.85*inch, 1.7*inch, 0.85*inch, 1.1*inch, 2.7*inch]))
 story.append(Paragraph('Use a NEW sterile pipette/spreader at every transfer — carryover contaminates the entire series.', note))
@@ -135,18 +135,18 @@ story.append(sp(1))
 story.append(tbl([
     ['Calculation step', 'Work shown', 'Result'],
     ['Step 1: CFU/mL',
-     '180 colonies ÷ (10⁻³ × 0.1 mL) = 180 ÷ 0.0001',
-     '1.8 × 10⁶ CFU/mL'],
+     '180 colonies ÷ (10<super>-3</super> × 0.1 mL) = 180 ÷ 0.0001',
+     '1.8 × 10<super>6</super> CFU/mL'],
     ['Step 2: CFU/g',
-     '1.8 × 10⁶ × (10 mL ÷ 1 g)',
-     '1.8 × 10⁷ CFU/g of soil'],
+     '1.8 × 10<super>6</super> × (10 mL ÷ 1 g)',
+     '1.8 × 10<super>7</super> CFU/g of soil'],
 ], [1.8*inch, 2.8*inch, 2.6*inch]))
-story.append(Paragraph('Typical range: healthy soil = 10⁶–10⁹ CFU/g. Sandy/dry = lower; rich organic = higher.', note))
+story.append(Paragraph('Typical range: healthy soil = 10<super>6</super>–10<super>9</super> CFU/g. Sandy/dry = lower; rich organic = higher.', note))
 story.append(sp(1))
 story.append(tbl([
     ['Common mistake', 'Correct approach'],
     ['Using dilution factor without accounting for 0.1 mL volume plated',
-     'Plating 0.1 mL from 10⁻³ tube = effective dilution 10⁻⁴. Use BOTH in denominator.'],
+     'Plating 0.1 mL from 10<super>-3</super> tube = effective dilution 10<super>-4</super>. Use BOTH in denominator.'],
     ['Forgetting to convert CFU/mL to CFU/g',
      'Multiply CFU/mL × (10 mL suspension ÷ 1 g soil) to get CFU per gram.'],
     ['Counting plates with <25 or >250 colonies',
@@ -211,8 +211,8 @@ story.append(tbl([
      'Carotenoid pigment producers — moderate antibiotic interest.',
      'Medium'],
     ['Spreading, flat, irregular, thin',
-     'Pseudomonas or motile Gram⁻ rods',
-     'Lower priority — Gram⁻ pathogens themselves.',
+     'Pseudomonas or motile Gram- rods',
+     'Lower priority — Gram- pathogens themselves.',
      'Low'],
 ], [1.7*inch, 1.4*inch, 2.6*inch, 0.65*inch]))
 story.append(sp(2))
@@ -268,14 +268,15 @@ story.append(tbl([
     ['CFU/g formula', 'CFU/mL × (suspension volume mL ÷ soil mass g)'],
     ['Countable plate range', '25–250 colonies (below = unreliable; above = TNTC)'],
     ['Standard volume plated', '0.1 mL per plate (spread plate method)'],
-    ['Master suspension dilution', '1 g soil + 9 mL saline = 10⁻¹ (1:10)'],
-    ['Typical soil CFU/g', '10⁶–10⁹ CFU/g depending on soil type'],
+    ['Master suspension dilution', '1 g soil + 9 mL saline = 10<super>-1</super> (1:10)'],
+    ['Typical soil CFU/g', '10<super>6</super>–10<super>9</super> CFU/g depending on soil type'],
     ['Incubation: R2A soil plates', '25°C room temp, 5–7 days'],
     ['Best antibiotic producer morphology', 'Chalky/powdery, white-gray, filamentous = Actinomycetes (Streptomyces)'],
     ['Why saline diluent?', 'Isotonic — prevents osmotic lysis of bacteria during dilution'],
     ['Why invert plates?', 'Prevents condensation drips from spreading/merging colonies'],
-    ['Effective dilution: 0.1 mL from 10⁻³', '10⁻³ × 0.1 mL = effective 10⁻⁴ — use this in formula'],
+    ['Effective dilution: 0.1 mL from 10<super>-3</super>', '10<super>-3</super> × 0.1 mL = effective 10<super>-4</super> — use this in formula'],
 ], [2.7*inch, 4.5*inch]))
 
 doc.build(story)
 print('Done -> ' + OUTPUT)
+

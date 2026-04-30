@@ -1,4 +1,4 @@
-# BIO203A Lab 1: Microscopy - Study Guide (Version 4 - Lecture Slides Only)
+﻿# BIO203A Lab 1: Microscopy - Study Guide (Version 4 - Lecture Slides Only)
 # V4: Removed DIC (Nomarski) microscope reference from practice Q7 — not in lecture slides.
 # All other content directly tied to Popa Ch.2 slides and Lab 1 docx.
 
@@ -252,3 +252,4 @@ story.append(Paragraph(
 
 doc.build(story)
 print("Done -> " + OUTPUT)
+

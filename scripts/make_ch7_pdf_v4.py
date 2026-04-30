@@ -1,4 +1,4 @@
-# BIO203 Ch.7 Study Guide - Version 4
+﻿# BIO203 Ch.7 Study Guide - Version 4
 # V4: Lecture-slide-only. REMOVED: hopanoids, ergosterol, PLFA analysis, PHB granules
 # (none of these appear in Popa's Ch.7 lecture slides)
 # Cholesterol and isoprenoids remain (both in slides). Mycolic acid remains (slides 25+47).
@@ -381,3 +381,4 @@ story.append(tbl([
 
 doc.build(story)
 print("Done -> " + OUTPUT)
+

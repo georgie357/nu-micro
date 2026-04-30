@@ -1,4 +1,4 @@
-# BIO203 Ch.1 & Ch.2 Study Guide - Version 4
+﻿# BIO203 Ch.1 & Ch.2 Study Guide - Version 4
 # V4 PRINCIPLE: Lecture-slide-only content. Topics that appear ONLY in the textbook
 # (not in any Popa lecture slide) are EXCLUDED.
 # REMOVED vs v3: Hooke, Janssen, Galileo, Fracastoro, al-Razi, Ibn Sina,
@@ -416,3 +416,4 @@ story.append(Paragraph(
 
 doc.build(story)
 print("Done -> " + OUTPUT)
+

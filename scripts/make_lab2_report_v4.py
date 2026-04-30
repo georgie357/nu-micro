@@ -1,4 +1,4 @@
-# BIO203A Lab 2: Soil Plating - Filled Report (Version 4 - Lecture Slides Only)
+﻿# BIO203A Lab 2: Soil Plating - Filled Report (Version 4 - Lecture Slides Only)
 # V4: All content based on lab activity + Popa lecture slides. No textbook-only additions.
 
 from reportlab.lib.pagesizes import letter
@@ -95,13 +95,13 @@ story.append(HY("Serial dilution: 1 g soil + 9 mL saline = 10^-1. Each 1:10 tran
 story.append(tbl([
     ['Procedure Step', 'Details Used', 'Exam tip'],
     ['Amount of soil used',
-     '1.0 g soil → 9 mL sterile saline = 10⁻¹ master dilution (1:10)',
+     '1.0 g soil → 9 mL sterile saline = 10<super>-1</super> master dilution (1:10)',
      '1 g in 10 mL total = 10-fold dilution'],
     ['Type of medium',
      'R2A agar — low-nutrient medium for soil/water bacteria; promotes slow-growing organisms',
      'R2A = oligotrophic medium. Rich TSA would overgrow/suppress rare soil organisms.'],
     ['Dilutions used',
-     'Serial dilutions: 10⁻¹ → 10⁻² → 10⁻³ → 10⁻⁴\nPlated 0.1 mL of 10⁻², 10⁻³, and 10⁻⁴ onto separate R2A plates',
+     'Serial dilutions: 10<super>-1</super> → 10<super>-2</super> → 10<super>-3</super> → 10<super>-4</super>\nPlated 0.1 mL of 10<super>-2</super>, 10<super>-3</super>, and 10<super>-4</super> onto separate R2A plates',
      '0.1 mL plating adds another 10× factor to effective dilution'],
     ['Incubation',
      '25°C (room temperature) for 5–7 days',
@@ -113,7 +113,7 @@ story.append(sp(1))
 story.append(Paragraph('Best Plate — Colony Details (Table 2)', h2))
 story.append(hr())
 story.append(Paragraph(
-    'Best plate: <b>10⁻³ dilution plate</b> — ~180 colonies, well separated, countable. '
+    'Best plate: <b>10<super>-3</super> dilution plate</b> — ~180 colonies, well separated, countable. '
     'Colony descriptions use Tiny Earth manual p.48 terminology.',
     body))
 story.append(sp(1))
@@ -137,14 +137,14 @@ story.append(Paragraph('<b>Formula:</b> CFU/g = CFU/mL × (suspension volume mL 
 story.append(sp(1))
 story.append(tbl([
     ['Variable', 'Value', 'Notes'],
-    ['Colonies counted',    '180',         'From 10⁻³ plate (best plate)'],
-    ['Dilution factor',     '10⁻³ = 0.001','Cumulative dilution'],
+    ['Colonies counted',    '180',         'From 10<super>-3</super> plate (best plate)'],
+    ['Dilution factor',     '10<super>-3</super> = 0.001','Cumulative dilution'],
     ['Volume plated',       '0.1 mL',      'Standard spread-plate volume'],
-    ['CFU/mL calculation',  '180 ÷ (0.001 × 0.1) = 180 ÷ 0.0001 = 1,800,000', '= 1.8 × 10⁶ CFU/mL'],
+    ['CFU/mL calculation',  '180 ÷ (0.001 × 0.1) = 180 ÷ 0.0001 = 1,800,000', '= 1.8 × 10<super>6</super> CFU/mL'],
     ['Initial suspension',  '10 mL (1 g soil + 9 mL saline)', ''],
-    ['CFU/g calculation',   '1.8 × 10⁶ × (10 mL ÷ 1 g) = 18,000,000', '= 1.8 × 10⁷ CFU/g'],
+    ['CFU/g calculation',   '1.8 × 10<super>6</super> × (10 mL ÷ 1 g) = 18,000,000', '= 1.8 × 10<super>7</super> CFU/g'],
 ], [1.4*inch, 3.0*inch, 2.8*inch]))
-story.append(Paragraph('Typical soil: 10⁶–10⁹ CFU/g. 1.8 × 10⁷ is realistic for loamy campus soil.', note))
+story.append(Paragraph('Typical soil: 10<super>6</super>–10<super>9</super> CFU/g. 1.8 × 10<super>7</super> is realistic for loamy campus soil.', note))
 story.append(sp(1))
 
 # Discussion Questions
@@ -158,8 +158,8 @@ story.append(Paragraph(
     'Rich media (TSA, LB) preferentially grow fast heterotrophs and overgrow/suppress slow-growing soil organisms. '
     'Incubation at 25°C favors mesophilic soil bacteria (adapted to ambient temperatures). '
     '37°C would select for body-temperature adapted organisms — not representative of soil community.<br/><br/>'
-    '10⁻³ plate produced ~180 colonies — best countable result. 10⁻² plate was too crowded (TNTC). '
-    '10⁻⁴ had too few (~15 — below 25 minimum for reliable count). '
+    '10<super>-3</super> plate produced ~180 colonies — best countable result. 10<super>-2</super> plate was too crowded (TNTC). '
+    '10<super>-4</super> had too few (~15 — below 25 minimum for reliable count). '
     'Classmates from sunlit exposed soil reported fewer CFUs and less diversity — '
     'UV radiation reduces microbial load. Shaded, moist soils = greater diversity and higher counts.',
     ans))
@@ -168,7 +168,7 @@ story.append(sp(1))
 story.append(Paragraph(
     'Q2. What would you change next time to get better results?', h3))
 story.append(Paragraph(
-    '• Use wider dilution range (10⁻² through 10⁻⁵) to ensure countable plate regardless of soil load.<br/>'
+    '• Use wider dilution range (10<super>-2</super> through 10<super>-5</super>) to ensure countable plate regardless of soil load.<br/>'
     '• Plate duplicates at each dilution for statistical confidence.<br/>'
     '• Use multiple media in parallel (R2A + TSA) to capture more biodiversity.<br/>'
     '• Collect soil at multiple depths (0–2 cm, 5–10 cm) to compare surface vs. subsurface communities.<br/>'
@@ -194,3 +194,4 @@ story.append(Paragraph(
 
 doc.build(story)
 print('Done -> ' + OUTPUT)
+
