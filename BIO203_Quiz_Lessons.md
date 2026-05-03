@@ -96,6 +96,23 @@ I confused Bond A and Bond B.
 
 ---
 
+## Chemistry Pre-Quiz — Attempt 2
+**Date:** May 2, 2026
+**Score:** 13.6 / 15 — 90.67% (lower than attempt 1 — 92% overall stays)
+**Points lost:** Q1 (−1.0 wrong) · Q2 (−0.2 partial) · Q3 (−0.2 partial)
+
+### ❌ WRONG
+#### Q1 — Inert atom diagram (0/1)
+There were 5 options (a-e). Picked a) — has 2 electrons in outer shell = NOT inert. Correct answer = atom with full outer shell of 8 electrons (octet = inert like Neon). Lesson: always scroll to see ALL options, count outer shell electrons only.
+
+### ⚠️ PARTIAL
+#### Q2 — Astatine isotope fill-in (0.8/1)
+Answers were correct (atomic number, atomic mass, 85, 85, 125) but drag-and-drop issue caused 0.2 deduction. Always drag from word bank, never type.
+#### Q3 — pH fill-in (0.8/1)
+Answers correct (100, higher, 100, lower, acid) — same drag-and-drop capitalization issue.
+
+---
+
 ## Quiz 2 — Quiz M1: Introduction to Microbial World and Principles of Chemistry/Biomolecules
 **Date:** May 1, 2026
 **Score:** 13.8 / 15 — 92.03%
@@ -161,9 +178,45 @@ Before starting any BIO203 quiz or exam:
 
 ---
 
+---
+
+## Quiz 3 — Post Lab Quiz 1 (Safety, Tiny Earth Section 2, Microscopy)
+**Date:** May 2, 2026
+**Score:** 9 / 10 — 90% (Proficient)
+**Points lost:** Q8 (−1.0 wrong)
+
+---
+
+### ✅ CORRECT ANSWERS
+
+| Q | Topic | Answer |
+|---|-------|--------|
+| 1 | Soil science | Rhizosphere — soil directly in contact with plant roots and secretions |
+| 2 | Lab safety EXCEPT | "All are safety rules" — "Use the big white trays" is NOT a standard safety rule |
+| 3 | Soil components EXCEPT | Mud — soil components are silt, clay, sand, organic matter. Mud is not a soil type |
+| 4 | Microscope matching | Magnify=Lenses; Carry=Arm; Concentrate light=Condenser; Control light=Iris diaphragm; Hold slide=Stage |
+| 5 | Resolution | True — shorter wavelength = higher resolution (RP = λ ÷ 2NA) |
+| 6 | Microscope guidelines EXCEPT | "Always wipe lenses with Kleenex" — WRONG, only lens paper allowed |
+| 7 | Total magnification | 3500X — 350 × 10 = 3,500 |
+| 9 | Fine focus knob | 5 — small dial on the arm |
+| 10 | Soil horizons | B = subsoil (O=organic, A=topsoil, B=subsoil, C=parent material, R=bedrock) |
+
+---
+
+### ❌ WRONG
+
+#### Q8 — Disposal matching (0 / 1)
+**My answers:** Biohazard red bin=1, Regular waste=3, Decontamination=4, Sharps=2
+**Lesson:** Need to verify correct disposal matching from Tiny Earth lab manual safety section. Sharps container = needles/broken glass, NOT broth cultures in glass tubes. Broth cultures in glass tubes may go to autoclave/biohazard, not sharps.
+
+---
+
 ## Claude Answer Errors — Lessons for Claude
 
 | # | Rule | Source |
 |---|------|--------|
 | 1 | ALWAYS look at answer choice units BEFORE giving a calculation answer. Convert the result to match the units shown in the choices. FOV = 0.055 mm = 55 µm — if choices are in µm, answer is 55 µm, not 0.055 mm. | Lab 1 Q4 |
 | 2 | NEVER skip a visible unanswered question. Go through every question in order — Q1, Q2, Q3... If a question is visible and unanswered, address it before moving on. | Lab 1 Q1 |
+| 3 | Always give answers individually copy-paste ready with surrounding context showing WHERE each answer goes. Format: "context phrase ___:" then answer in code block. | User preference |
+| 4 | For inert atom diagrams: scroll to see ALL options before answering. Inert = full outer shell of 8 electrons (octet). An atom with only 2 electrons in its outer shell is NOT inert unless it has only 1 shell (Helium). Count outer shell electrons carefully — do not confuse inner and outer shells. | Chem Pre-Quiz A2 Q1 |
+| 5 | Q3 pH partial (0.8/1) — answers were scientifically correct but drag-and-drop capitalization caused deduction. Always use word bank drag items directly, never type. Same issue as M1 Q3. | Chem Pre-Quiz A2 Q3 |
