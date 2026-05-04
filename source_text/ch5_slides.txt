@@ -1,0 +1,111 @@
+--- Slide 1 ---
+Chapter 5: THE EUKARYOTES OF MICROBIOLOGY
+This file is licensed under the Creative Commons Attribution 2.0 Generic license.
+BIO203 -- National University
+--- Slide 2 ---
+Protists
+Unicellular eukaryote parasites
+Not a formal taxonomic term (no shared evolutionary origin)
+Animal-like (protozoa)
+Plant-like (ex. algae)
+Fungus-like (water molds)
+--- Slide 3 ---
+Protozoa
+--- Slide 4 ---
+Eukaryotic supergroups
+Classification based on evolutionary history
+Protists places across different taxonomic groups
+6 supergroups of eukaryotes
+Amoebozoa, Excavata, and Chromalveolata contain most of the protozoa
+--- Slide 5 ---
+Comparison of different protozoa
+Paramecium is ciliated, cytostome to ingest and cytoproct to excrete
+Amoeba has pseudopods & distinct layers of cytoplasms
+Euglena has flagellum
+Many have contractile vacuole
+--- Slide 6 ---
+Protozoa
+Amoebozoa
+Use pseudopods to move
+Entamoeba hystolytica (causes dysentery)
+Slime molds have unicelled and multicelled life stages
+Chromalveolata
+Apicomplexa:
+Not motile, obligate intracellular parasites, apical complexes
+Complex life cycles
+Plasmodium, Toxoplasma, Cryptosporidium
+Ciliates: paramecium
+Excavata
+Giardia lamblia
+Trypanosoma
+--- Slide 7 ---
+Helminths
+--- Slide 8 ---
+Nematoda & Platyhelminths
+Nematoda (roundworms)
+>15,000
+Unsegmented bodies, full digestive system
+Common intestinal parasites
+Egg is infective:
+Ascaris lumbricoides: small intestines of humans
+Trichuris trichiura (whipworm)
+Enterobius vermicularis (pinworm)
+Larvae are infective:
+Hookworms
+Trichinella spiralis
+Heartworm (mainly dogs and cats)
+Platyhelminths (flatworms)
+Trematodes (flukes)
+flat, leaf shaped worms; suckers hold organism in place and suck  fluids from host; complicated life cycle: Taenia
+Cestodes (tapeworms):
+have segmented, ribbon shaped bodies; head (scolex) may have suckers and hooks for attachment; no digestive system, absorbs nutrients directly: Schistosoma
+--- Slide 9 ---
+Fungi
+--- Slide 10 ---
+Types of Fungi
+Molds and fleshy fungi:
+Hyphae (filaments) form a thallus (body)
+Hyphae can contain septa or not
+Hyphae can be vegetative or reproductive (aereal)
+Can form a mycelium (visible)
+Yeasts:
+Unicellular
+Often divide by budding or fission
+Can do aerobic or anaerobic growth (fermentation)
+Dimorphic fungi:
+Can grow as mold or as yeast, depending on temp
+--- Slide 11 ---
+Medically Important fungi
+Zygomycota
+Conjugation fungi
+Black bread mold (rhizopus), Mucor
+Ascomycota
+Sac fungi, includes yeasts
+Tricophyton, Microsporum (athletes foot, ringworm)
+Anamorphs
+Asexual fungi
+Candida, Pneumocystis
+Basidiomycota
+Cryptococcus
+--- Slide 12 ---
+Algae
+Photosynthetic eukaryotes
+Unicellular or multicellular
+Important in production of organic matter & O2
+Microscopic algae, diatoms, dinoflagellates
+Macroscopic kelp, seaweed
+Credit a, e: modification of work by NOAA; credit b: modification of work by Ed Bierman; credit c: modification of work by James St. John; credit d: modification of work by “catalano82”/Flickr; credit f: modification of work by Dr. Ralf Wagner)
+--- Slide 13 ---
+Algae of medical interest
+Diatoms: produce domoic acid, a toxin
+Dinoflagellates produce neurotoxins: causing paralytic shellfish poisoning and ciguatera
+Agar used in laboratory is produced by seaweed
+--- Slide 14 ---
+Lichens
+Combination of green algae (or cyanobacteria) and a fungus
+Symbiosis
+Slow growing, can live for centuries
+Importance in the environment
+--- Slide 15 ---
+End of chapter 5The eukaryotes of microbiology
+“Download for free at https://openstax.org/details/books/microbiology.”

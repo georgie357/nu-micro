@@ -1,0 +1,114 @@
+--- Slide 1 ---
+Chapter 6: ACELLULAR PATHOGENS
+BIO203 -- National University
+Felipe Esquivel Reed / CC BY-SA (https://creativecommons.org/licenses/by-sa/4.0
+https://commons.wikimedia.org/wiki/File:Coronavirus_SARS-CoV-2.jpg
+--- Slide 2 ---
+General characteristics of viruses
+Acellular, small: 20-900 nm
+Also called virions (infectious particles)
+Obligatory intracellular parasites, use the metabolic machinery (enzymes) of their host
+All contain DNA or RNA & a protein coat
+Some are enclosed by an envelope
+Most viruses infect only specific types of cells
+Host range is determined by specific host attachment sites and cellular factors
+Bacteriophages infect bacteria
+--- Slide 3 ---
+Viral shapes
+Viral capsids can be (a) helical, (b) polyhedral, or (c) have a complex shape. (credit a “micrograph”: modification of work by USDA ARS; credit b “micrograph”: modification of work by U.S. Department of Energy)
+--- Slide 4 ---
+Examples of viruses
+--- Slide 5 ---
+Viral life cycles; lytic cycle
+Virulent phages use lytic cycles= host cell dies
+Attachment-Penetration-Biosynthesis-Maturation-Release
+--- Slide 6 ---
+Viral life cycles: lysogenic cycle
+Temperate phages can become part of the host genome (lysogenic cycle)= dormant
+If induced, they switch to the lytic cycle
+--- Slide 7 ---
+Transduction
+Genetic exchange in bacteria using viruses as “messengers”
+Can be generalized and specialized
+--- Slide 8 ---
+Life cycle of animal viruses
+Similar to phages, but entry and exit are different
+Penetration: virus is endocytosed
+Extra step: uncoating (release from capsid)
+Release is through budding
+--- Slide 9 ---
+Viral nucleic acids are processed in different ways
+DNA: Both can be transcribed by cellular or viral enzymes
+Ds (double stranded) DNA (business as usual)
+Ss (single stranded) DNA (strand needs to be copied)
+RNA
+Ss +RNA: used as mRNA to make RNA-dependent RNA polymerase, then use minus strands for templates
+Ss –RNA: copied to make mRNA with own polymerase
+--- Slide 10 ---
+Retroviruses
+Retroviruses carry with them the enzyme reverse transcriptase, which makes DNA using RNA as a template
+The DNA made copying the viral RNA is inserted into the host DNA
+The enzyme is an effective antiviral target (many anti-HIV medications target it)
+(credit: modification of work by NIAID, NIH)
+--- Slide 11 ---
+Viral infections
+Acute infections
+Persistent viral infections
+Latent: Virus remains in asymptomatic host cell for long periods.
+Cold sores, chickenpox/shingles
+Chronic: Disease processes occurs over a long period; generally is fatal.
+Subacute sclerosing panencephalitis (measles virus)
+HIV/AIDS
+--- Slide 12 ---
+Latent infections
+Varicella zoster virus causes chickenpox
+Its double-stranded DNA genome becomes incorporated in the host DNA.
+After a period of latency, the virus can reactivate in the form of shingles, usually manifesting as a painful, localized rash on one side of the body.
+(credit a: modification of work by Erskine Palmer and B.G. Partin—scale-bar data from Matt Russell; credit b: modification of work by Rosmarie Voegtli)
+--- Slide 13 ---
+Chronic infections
+After infection, HIV remains “hidden” in tissues (latency)
+As damage to the immune response mount, eventually AIDS may develop
+Jurema Oliveira, licensed under the Creative Commons Attribution-Share Alike 3.0 Unported
+https://commons.wikimedia.org/wiki/File:Hiv-timecourse.png
+--- Slide 14 ---
+Viral growth curve
+Phases:
+Inoculation (attachment to host cells)
+Eclipse (inside the cells)
+Burst (virions released)
+--- Slide 15 ---
+How to culture bacteria: host cells
+Bacteria
+Bacteriophages are added to bacterial lawns
+Viral particles can be estimated by counting plaques
+Animal cells
+Embryo cells (often eggs) or animals are used
+Viruses are separated from cells by filtration or centrifugation (viruses too small to be filtered)
+Credit: pictures from US dept energy & ASM
+--- Slide 16 ---
+How to detect viruses
+cytopathic effects (how cells are affected)
+molecular techniques (PCR, RT-PCR)
+enzyme immunoassays
+serological assays (hemagglutination assay, hemagglutination inhibition assay
+Credit “micrographs”: modification of work by American Society for Microbiology, also Wikimedia commons
+--- Slide 17 ---
+Viroids & virusoids
+Small infectious RNA molecules that can self-replicate (viroids) & non–self-replicating ssRNAs (virusoids)
+Mainly plant infections
+Virusoids need a “helper virus” to reproduce
+These potatoes have been infected by the potato spindle tuber viroid (PSTV), which is typically spread when infected knives are used to cut healthy potatoes, which are then planted. (credit: Pamela Roberts, University of Florida Institute of Food and Agricultural Sciences, USDA ARS)
+--- Slide 18 ---
+Prions
+Infectious proteins
+PrPC: Normal cellular prion protein, on cell surface
+PrPSc: Misfolded  protein; accumulates in brain cells, forming plaques
+Inherited and transmissible by ingestion, transplant, and surgical instruments
+Spongiform encephalopathies:
+Animals: Sheep scrapie, mad cow disease
+Humans: Creutzfeldt-Jakob disease
+modification of work by USDA
+--- Slide 19 ---
+End of chapter 6Acellular pathogens
+“Download for free at https://openstax.org/details/books/microbiology.”

@@ -1,0 +1,191 @@
+--- Slide 1 ---
+Chapter 4: PROKARYOTIC DIVERSITY
+BIO203 -- National University
+Neisseria meningitidis growing in colonies on a chocolate agar plate. (credit: Centers for Disease Control and Prevention)
+.
+--- Slide 2 ---
+Overview of prokaryotes
+Unicellular
+No nucleus
+Bacteria & Archaea
+Can be found in virtually all environments
+Metabolic flexibility
+Communities (with each other and others)
+--- Slide 3 ---
+Human microbiome
+All prokaryotes (mostly bacteria) living in and on the human body
+Changes with among regions
+Affected by diet, lifestyle, and environmental factors
+This file is licensed under the Creative Commons Attribution 2.0 Generic license.
+--- Slide 4 ---
+Classification of prokaryotes
+Bergey’s manual (morphology, physiological & biochemical characteristics)
+Staining: Gram
+Genetic: GC content, sequence similarities
+--- Slide 5 ---
+Proteobacteria
+Gram negatives, chemoheterotrophs
+5 classes
+Alpha
+Beta
+Gamma
+Delta
+Epsilon
+--- Slide 6 ---
+Alphaproteobacteria
+Human pathogens
+Bartonella
+B. hensela: Cat-scratch disease
+Brucella: Brucellosis
+Ehrlichia: Tickborne, ehrlichiosis
+Rickettsia: obligate intracellular parasites
+Arthropod-borne, spotted fevers
+R. rickettsii: Rocky Mountain spotted fever
+Environmentally important
+Nitrobacter: NH3  NO2–
+Nitrosomonas: NO2–  NO3–
+Nitrogen-fixing bacteria
+Azospirillum
+Grow in soil, using nutrients excreted by plants
+Fix nitrogen
+Rhizobium
+Fix nitrogen in the roots of plants
+--- Slide 7 ---
+Betaproteobacteria
+Include important human pathogens
+Neisseria (G- cocci)
+Chemoheterotrophic, cocci
+N. meningitidis
+N. gonorrhoeae
+Bordetella
+Chemoheterotrophic, rods
+B. pertussis (whooping cough)
+Burkholderia:
+Nosocomial infections
+B.pseudomallei (meloidosis)
+Credit: National Institute of Allergy and Infectious Diseases, NIH
+CDC public domain
+--- Slide 8 ---
+Gammaproteobacteria
+Largest and most diverse, many human pathogens
+Order Pseudomonadales
+Common in soils, produce antibiotics & may protect plants
+Opportunistic pathogens
+Metabolically diverse, can grow on unusual nutrients (even in disinfectants)
+P. aeruginosa (cystic fibross, burn patients): very antibiotic resistant
+Acinetobacter baumanii: extremely antibiotic resistant, hospital infections
+Order Enterobacteriales
+Include coliforms (E.coli & others)
+Order Vibrionales
+Found in waters, often coastal
+Vibrio cholerae (cholera), parahemolyticus, vulnificus (flesh eating)
+Others: Haemophilus influenza (pneumonia), Francisella (rabbit fever), Legionella
+--- Slide 9 ---
+Deltaproteobacteria
+Desulfovibrionales: Use S instead of O2 as final electron acceptor in cellular respiration
+Bdellovibrio: Prey on other bacteria
+Myxococcales
+Gliding
+Cells appregate to form myxospores.
+--- Slide 10 ---
+Epsilonproteobacteria
+Campylobacter
+One polar flagellum
+Gastroenteritis (C. jejuni)
+Microaerophilic
+Helicobacter
+Multiple flagella
+Peptic ulcers (pylori)
+Stomach cancer
+Attribution-NonCommercial 2.0 Generic
+--- Slide 11 ---
+Gram negative non-proteobacteria
+Spirochaete
+Present axial filament (inside flagellum)
+Borrelia=> burgdorferi (Lyme disease)
+Leptospira=> leptospirosis
+Treponema => pallidum (syphilis)
+Fusobacterium
+Are found in the mouth.
+Cause dental abscesses
+Purple and Green Photosynthetic Bacteria
+Anoxygenic photosynthesis
+Purple and green sulfur bacteria
+Bacteroidetes
+Bacteroides are found in the mouth and large intestine, participate in the intestinal food web degrading complex carbohydrates
+Prevotella in the mouth
+Cytophaga: Cellulose-degrading in soil
+--- Slide 12 ---
+Phototropic bacteria
+Bacteria able to do photosynthesis
+Across multiple taxa
+Photosynthesis can be oxygenic or non-oxygenic
+Sulphur bacteria use S instead of oxygen (see below)
+Non-sulphur bacteria use organic molecules as electron donors
+Same can in addition fix nitrogen
+Cyanobacteria (oxygenic photosynthesis)
+--- Slide 13 ---
+Gram positive bacteria
+Large and diverse
+Are classified based on their content of guanine (G) and Cytosine (C) in their DNA: high and low
+High GC: Actinobacteria
+Low GC: Firmicutes
+--- Slide 14 ---
+High GC: Actinobacteria
+Actinomyces
+Corynebacterium: diphteria
+Frankia
+Gardnerella: causes vaginitis
+Mycobacterium: tuberculosis, leprae
+Nocardia
+Propionibacterium (acnes => acne)
+Streptomyces: soil bacteria, many antibiotics
+Bifidobacteria: part of gut microbes, used as probiotics
+--- Slide 15 ---
+Low GC: Firmicutes
+Clostridium
+Endospore-producing
+Obligate anaerobes
+C. tetanii (tetanus), botulinum (botulism), perfringens (gas gangrene), difficile (colitis).
+Lactobacillales
+Generally aerotolerant anaerobes, lack an electron-transport chain
+Lactobacillus: produce lactic acid, important in gut and vagina
+Streptococcus: many pathogens, classified according to hemolytic properties (beta/alpha)
+Enterococcus: GI tract, vagina, feces- hospital contaminants
+Listeria: can grow at refrigeration temp, survives inside phagocytes
+--- Slide 16 ---
+Low GC Firmicutes: Bacilli (order)
+Bacillus (genus)
+Endospore-producing rods
+Often in soil
+Many produce antibiotics
+B. anthracis (anthrax)
+B.cereus (food poisoning)
+B. thuringiensis (Bt toxin)
+Staphylococcus (genus)
+Cocci
+Can resist high osmotic pressure (salt)
+S.aureus pathogenic, can be resistant (MRSA)
+Mycoplasma
+No cell wall
+M. pneumoniae (walking pneumonia)
+--- Slide 17 ---
+Deeply branching bacteria
+Ancient bacteria, close to the LUCA (last universal common ancestor)
+Many are extremophiles (ex. Thermotoga)
+Deinococcus radiodurans “Conan the bacterium” very resistant
+--- Slide 18 ---
+Archaea
+Hyperthermophiles
+Pyrodictium
+Sulfolobus
+Methanogens: strictly anaerobic, industrial use,
+also present in the gut
+Methanobacterium
+Extreme halophiles
+Halobacterium
+Halococcus
+No known human pathogens
+--- Slide 19 ---
+End of chapter 4Prokaryotic diversity
+“Download for free at https://openstax.org/details/books/microbiology.”
