@@ -52,6 +52,166 @@ Go chapter by chapter, concept by concept. Never jump ahead. Always anchor to **
 
 ---
 
+## 🛑🛑🛑 HARD RULE — NEVER ALTER, MOVE, OR DELETE THE TEXTBOOK PDF
+
+**The original OpenStax Microbiology textbook PDF must never be modified, moved, renamed, or deleted by Claude under any circumstances.**
+
+**Canonical location:** `C:\Users\User\Dropbox\Nu micro\original textbook\microbiology_-_WEB.pdf`
+
+This file is the **only authoritative source** for verifying lab report citations. If it is missing or altered, every lab report that follows the OpenStax-only citation rule (HARD RULE #1 below) becomes unverifiable, and Claude will either fabricate citations or be unable to write the report at all.
+
+**Forbidden operations on the textbook PDF:**
+- ❌ `rm` / `del` / `Remove-Item` — never delete
+- ❌ `mv` / `move` / `Move-Item` — never move out of Nu micro folder
+- ❌ Rename — must stay as `microbiology_-_WEB.pdf` exactly
+- ❌ Overwrite — never `Write` or `Edit` to that path
+- ❌ Convert to a different format that replaces the original
+- ❌ Compress / re-save through any tool that might alter byte content
+
+**Allowed operations:**
+- ✅ Read with `pdfplumber` or any PDF reader (read-only)
+- ✅ Extract text to `source_text/chN_textbook_raw.txt` (creates a new file, doesn't modify the source)
+- ✅ Reference its location in scripts and rules
+
+**If the textbook PDF goes missing:**
+1. Stop all citation verification work immediately
+2. Tell the user the file is missing and ask them to restore it from openstax.org/details/books/microbiology
+3. Do NOT attempt to write lab reports without it — fake cites will result
+
+This rule was added May 10, 2026 because the textbook went missing during a session in which Claude was modifying scripts in the same folder. Root cause was never confirmed but the rule exists to prevent recurrence.
+
+---
+
+## 🛑 TRADITIONAL LAB REPORT FORMAT (Popa requirement, May 2026 — STRICT v2)
+
+**Professor Popa requires a traditional lab report (Word .docx) for EACH lab — separate from the D2L quiz form.**
+
+Every lab report must contain these sections, in order:
+
+1. **Title** — name of the lab (e.g. "Lab 3: Pick and Patch of Solid Colonies")
+2. **Name** — student name + date + course (BIO203A — Spring 2026 — Popa)
+3. **Scope** — 1–2 sentence statement of the lab's purpose / what was investigated
+4. **Introduction** — background on the technique and why it matters (1–2 paragraphs)
+5. **Materials and Methods** — exact materials used + step-by-step procedure followed
+6. **Results and Discussion** — observations, data tables, photos, calculations + interpretation
+7. **Conclusion** — what was learned + connection to course / Antibiotic Discovery project
+8. **References** — citations
+
+### ⛔⛔⛔ HARD RULE #1 — TEXTBOOK ONLY FOR CITATIONS, CSE NAME-YEAR FORMAT
+
+**The ONLY allowed citation source for lab reports is the assigned textbook: OpenStax Microbiology.**
+
+| Source | Allowed in lab report citations? |
+|---|---|
+| OpenStax Microbiology textbook | ✅ YES — only allowed source |
+| Popa lecture slides | ❌ NO — DO NOT cite in lab reports |
+| Tiny Earth Lab Manual | ❌ NO — DO NOT cite in lab reports |
+| Lab handout / docx | ❌ NO — DO NOT cite in lab reports |
+| Wikipedia, Google, journals, AI | ❌ NEVER, anywhere |
+
+**Citation style: CSE (Council of Science Editors) Name-Year**
+CSE is the gold standard for biology, microbiology, chemistry, and medical lab reports. APA is acceptable at some institutions but CSE is the field standard for the life sciences.
+
+**Authoritative author info for OpenStax Microbiology:**
+- Authors: Parker N, Schneegurt M, Tu A-HT, Lister P, Forster BM
+- Year: 2016 (first published; OpenStax does revisions but 2016 remains the canonical citation date)
+- Publisher: OpenStax (Houston, TX)
+- URL: https://openstax.org/details/books/microbiology
+
+**In-text citation format:**
+- General fact: `(Parker et al. 2016)` — only first author + "et al." for 3+ authors
+- Section-specific: `(Parker et al. 2016, §2.3)` — add section if specifically relevant
+
+**Reference list entry (CSE Name-Year):**
+```
+Parker N, Schneegurt M, Tu A-HT, Lister P, Forster BM. 2016. Microbiology.
+Houston (TX): OpenStax. Available from:
+https://openstax.org/details/books/microbiology
+```
+
+Note: only ONE reference list entry is needed for the entire OpenStax textbook, even if you cite multiple sections in-text. Different sections are distinguished by the in-text `§` callout.
+
+If a factual claim cannot be supported by an OpenStax section, **rewrite the claim to one that can be**, or remove it.
+
+### ⛔⛔⛔ HARD RULE #2 — NO EDITORIAL PARAPHRASING
+
+**Every factual sentence in Introduction / Discussion / Conclusion must trace directly to specific OpenStax content.**
+
+Forbidden:
+- Connector phrases that imply causation/conclusion not in the source: "therefore," "consequently," "thus, the microscope is foundational"
+- Decorative descriptors not in the textbook: "fundamental tool," "primary instrument," "essential method," "foundational instrument"
+- Speculative interpretation: "this matters because..." (unless OpenStax says so)
+- Smooth transitions invented to make the writing flow that aren't supported by content
+
+Required:
+- Each sentence either (a) directly summarizes a passage in OpenStax (with section cite), or (b) describes the student's own observed data / procedure / calculation (no cite needed)
+- Procedure description (Materials and Methods) does NOT need citations — it's first-person past-tense factual narration
+- Results description (own observations) does NOT need citations
+- Background/theory in Introduction MUST have a citation per claim
+
+### ⛔⛔⛔ HARD RULE #3 — VERIFY BEFORE CITING
+
+Before adding any `(OpenStax 2024, §X.Y)` citation:
+1. Open `source_text/chN_textbook_raw.txt` (where N is the chapter number)
+2. Search for the claim in the actual extracted text
+3. Confirm it's there, in that section, before adding the cite
+
+If you cannot find the claim verbatim or as a clear paraphrase, **the cite is fake — remove it or rewrite the claim**.
+
+### 📖 PIPELINE — what to READ vs what to CITE
+
+**Reading sources (used to understand the lab — NOT cited in references):**
+- Lab handout `.docx` files (e.g. `BIO203A_M1_L1_Microscopy.docx`) — tells you procedure, materials, questions to answer
+- Tiny Earth Lab Manual references in the handout
+- Popa lecture slides — for context on what was emphasized in lecture
+- Student's own data, photos, drawings, notes
+- Course syllabus
+
+**Citation sources (used to back factual microbiology claims — DO cite in references):**
+- OpenStax Microbiology textbook ONLY
+
+This is normal scientific writing. You read many things to understand a topic, but you cite only the formal authoritative sources for the factual claims that need backing. The lab handout tells you "what the lab was"; OpenStax tells you "what is true about microbiology."
+
+**Workflow for each lab report:**
+1. Read the lab .docx to understand procedure + questions
+2. Get the student's actual observations / data / photos
+3. Search `source_text/chN_textbook_raw.txt` for verifiable background claims
+4. Write report with: procedure (no cite), observations (no cite), background/discussion (cite OpenStax §X.Y)
+5. References = one entry: Parker et al. 2016
+
+### ⛔⛔⛔ HARD RULE #4 — NO HANDOUT Q&A FORMAT IN TRADITIONAL REPORTS
+
+**The traditional lab report is NOT a fill-in-the-handout document.**
+
+The numbered procedural questions in the lab handout (e.g., "Q1: Which objective is closest to the slide when in focus?", "Q2: Correct procedure to put the microscope away") belong ONLY in the D2L docx quiz form — that is the bare-data submission deliverable.
+
+The traditional lab report is graded as a science paper and must follow scientific writing conventions:
+- ❌ NO "Q1...", "Q2...", "Question 1...", "Procedure Question Responses" section headers
+- ❌ NO numbered question-and-answer blocks
+- ❌ NO copy-paste of handout questions verbatim
+- ✅ Information from those handout questions is integrated into the appropriate section as flowing prose:
+  - Procedural details → into Materials and Methods (past-tense narrative)
+  - Observations → into Results and Discussion (descriptive prose)
+  - Calculations → into Results and Discussion (with formulas shown inline)
+  - Interpretation → into Discussion (analytical prose tied back to OpenStax concepts)
+
+**Why:** A traditional lab report is one continuous scientific narrative. A handout-style Q&A block is the format used for in-class worksheets and online quiz forms — not for graded reports. Submitting Q&A in a traditional report signals to the professor that the writer didn't understand the format.
+
+**Test before adding any sentence:** would this appear in a published microbiology paper or in a homework worksheet? If worksheet, leave it out of the traditional report and put it in the D2L quiz form instead.
+
+### Implementation rule for scripts
+
+Any `make_labX_traditional_report_docx.py` script must:
+1. Generate a Word .docx in the 8-section traditional format above
+2. References section lists ONLY OpenStax sections — nothing else
+3. No `(Popa ...)` cites, no `(Tiny Earth ...)` cites, no `(BIO203A handout ...)` cites, no `(slide N)` cites
+4. Every sentence in Intro/Discussion/Conclusion must map to a specific OpenStax passage (verifiable via source_text)
+5. Save to `Dropbox\Nu micro\lab reports\BIO203A_LabX_Traditional_Report.docx`
+
+The D2L docx quiz form is still required as a separate deliverable. The traditional report .docx is the graded paper Popa actually wants.
+
+---
+
 ## 🎯 VERSION 4 PRINCIPLE — LECTURE-SLIDE-ONLY CONTENT FILTER
 
 **Added April 2026. Applies to all v4 PDFs and all future rebuilds.**

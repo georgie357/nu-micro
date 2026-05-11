@@ -1,0 +1,494 @@
+# BIO203A Lab 2: Plating of Soil Samples — Traditional Lab Report (Popa format, STRICT v2)
+# Author: George Vela
+# References cite ONLY OpenStax Microbiology (Parker et al. 2016).
+# No Popa slide cites, no Tiny Earth manual cites, no lab handout cites.
+# CSE Name-Year style.
+
+import os
+from docx import Document
+from docx.shared import Pt, Inches, RGBColor
+from docx.enum.text import WD_ALIGN_PARAGRAPH, WD_LINE_SPACING
+from docx.oxml.ns import qn
+from docx.oxml import OxmlElement
+
+OUTPUT = r"C:\Users\User\Dropbox\Nu micro\lab reports\BIO203A_Lab2_Traditional_Report.docx"
+
+# Look for plate photo in common locations
+PLATE_PATHS = [
+    r"C:\Users\User\Dropbox\Nu micro\lab reports\lab 2 plate.jpg.JPG",
+    r"C:\Users\User\Dropbox\Nu micro\lab reports\lab 2 plate.png",
+    r"C:\Users\User\Dropbox\Nu micro\lab reports\lab 2 plate.jpg",
+    r"C:\Users\User\Dropbox\Nu micro\lab reports\lab 2 plate.JPG",
+    r"C:\Users\User\Dropbox\Nu micro\lab reports\lab2_plate.png",
+    r"C:\Users\User\Dropbox\Nu micro\lab reports\lab2_plate.jpg",
+    r"C:\Users\User\Dropbox\Nu micro\lab 2 plate.png",
+    r"C:\Users\User\Dropbox\Nu micro\lab2_plate.png",
+]
+PLATE_PATH = next((p for p in PLATE_PATHS if os.path.exists(p)), None)
+
+doc = Document()
+
+# ── Document-wide format defaults ────────────────────────────────────────────
+style = doc.styles['Normal']
+style.font.name = 'Times New Roman'
+style.font.size = Pt(12)
+style.paragraph_format.line_spacing_rule = WD_LINE_SPACING.DOUBLE
+style.paragraph_format.space_after = Pt(0)
+
+for section in doc.sections:
+    section.top_margin = Inches(1.0)
+    section.bottom_margin = Inches(1.0)
+    section.left_margin = Inches(1.0)
+    section.right_margin = Inches(1.0)
+
+
+def add_page_number(footer_para):
+    footer_para.alignment = WD_ALIGN_PARAGRAPH.RIGHT
+    run = footer_para.add_run()
+    fldChar1 = OxmlElement('w:fldChar')
+    fldChar1.set(qn('w:fldCharType'), 'begin')
+    instrText = OxmlElement('w:instrText')
+    instrText.set(qn('xml:space'), 'preserve')
+    instrText.text = 'PAGE'
+    fldChar2 = OxmlElement('w:fldChar')
+    fldChar2.set(qn('w:fldCharType'), 'end')
+    run._r.append(fldChar1)
+    run._r.append(instrText)
+    run._r.append(fldChar2)
+
+
+for section in doc.sections:
+    add_page_number(section.footer.paragraphs[0])
+
+
+def add_paragraph(text_runs, alignment=WD_ALIGN_PARAGRAPH.JUSTIFY,
+                  first_indent=Inches(0.5), space_after=Pt(0)):
+    p = doc.add_paragraph()
+    p.alignment = alignment
+    p.paragraph_format.first_line_indent = first_indent
+    p.paragraph_format.line_spacing_rule = WD_LINE_SPACING.DOUBLE
+    p.paragraph_format.space_after = space_after
+    for text, fmt in text_runs:
+        run = p.add_run(text)
+        run.font.name = 'Times New Roman'
+        run.font.size = Pt(fmt.get('size', 12))
+        if fmt.get('bold'):
+            run.bold = True
+        if fmt.get('italic'):
+            run.italic = True
+    return p
+
+
+def section_heading(text):
+    p = doc.add_paragraph()
+    p.alignment = WD_ALIGN_PARAGRAPH.LEFT
+    p.paragraph_format.line_spacing_rule = WD_LINE_SPACING.DOUBLE
+    p.paragraph_format.space_before = Pt(12)
+    p.paragraph_format.space_after = Pt(0)
+    run = p.add_run(text)
+    run.bold = True
+    run.font.name = 'Times New Roman'
+    run.font.size = Pt(12)
+    return p
+
+
+def subhead(text):
+    p = doc.add_paragraph()
+    p.paragraph_format.line_spacing_rule = WD_LINE_SPACING.DOUBLE
+    p.paragraph_format.space_before = Pt(6)
+    run = p.add_run(text)
+    run.bold = True
+    run.italic = True
+    run.font.name = 'Times New Roman'
+    run.font.size = Pt(12)
+
+
+def add_caption(text_runs):
+    p = doc.add_paragraph()
+    p.alignment = WD_ALIGN_PARAGRAPH.CENTER
+    p.paragraph_format.line_spacing_rule = WD_LINE_SPACING.SINGLE
+    p.paragraph_format.space_before = Pt(2)
+    p.paragraph_format.space_after = Pt(12)
+    for text, fmt in text_runs:
+        run = p.add_run(text)
+        run.font.name = 'Times New Roman'
+        run.font.size = Pt(11)
+        if fmt.get('bold'):
+            run.bold = True
+        if fmt.get('italic', True):
+            run.italic = True
+
+
+def add_image(path, width_inches=4.5):
+    if path and os.path.exists(path):
+        p = doc.add_paragraph()
+        p.alignment = WD_ALIGN_PARAGRAPH.CENTER
+        p.paragraph_format.line_spacing_rule = WD_LINE_SPACING.SINGLE
+        p.paragraph_format.space_before = Pt(6)
+        p.paragraph_format.space_after = Pt(0)
+        run = p.add_run()
+        run.add_picture(path, width=Inches(width_inches))
+    else:
+        p = doc.add_paragraph()
+        p.alignment = WD_ALIGN_PARAGRAPH.CENTER
+        p.paragraph_format.line_spacing_rule = WD_LINE_SPACING.SINGLE
+        run = p.add_run("[Plate photo to be inserted here — see attached file]")
+        run.font.name = 'Times New Roman'
+        run.font.size = Pt(11)
+        run.italic = True
+
+
+# ════════════════════════════════════════════════════════════════════════════
+# TITLE PAGE
+# ════════════════════════════════════════════════════════════════════════════
+for _ in range(4):
+    doc.add_paragraph()
+
+p_title = doc.add_paragraph()
+p_title.alignment = WD_ALIGN_PARAGRAPH.CENTER
+p_title.paragraph_format.line_spacing_rule = WD_LINE_SPACING.DOUBLE
+run = p_title.add_run("Lab 2: Plating of Soil Samples")
+run.bold = True
+run.font.name = 'Times New Roman'
+run.font.size = Pt(16)
+
+p_subtitle = doc.add_paragraph()
+p_subtitle.alignment = WD_ALIGN_PARAGRAPH.CENTER
+p_subtitle.paragraph_format.line_spacing_rule = WD_LINE_SPACING.DOUBLE
+run = p_subtitle.add_run("Enumeration of Cultivable Bacteria from a Backyard Garden Soil Sample by Serial Dilution Plating")
+run.italic = True
+run.font.name = 'Times New Roman'
+run.font.size = Pt(13)
+
+for _ in range(3):
+    doc.add_paragraph()
+
+for line in [
+    "George Vela",
+    "BIO203A — Microbiology Laboratory",
+    "Spring 2026",
+    "Instructor: Dr. Radu Popa",
+    "National University, Los Angeles Campus",
+    "",
+    "Sample Collection: April 29, 2026",
+    "Plating Date: April 30, 2026",
+    "Report Submitted: May 2026",
+]:
+    p = doc.add_paragraph()
+    p.alignment = WD_ALIGN_PARAGRAPH.CENTER
+    p.paragraph_format.line_spacing_rule = WD_LINE_SPACING.DOUBLE
+    run = p.add_run(line)
+    run.font.name = 'Times New Roman'
+    run.font.size = Pt(12)
+
+doc.add_page_break()
+
+# ════════════════════════════════════════════════════════════════════════════
+# SCOPE
+# ════════════════════════════════════════════════════════════════════════════
+section_heading("Scope")
+add_paragraph([
+    ("This laboratory exercise applied the serial dilution plating method to a soil sample "
+     "collected from a backyard garden in North Hollywood, California. The investigation "
+     "had two objectives: to quantify the density of cultivable bacterial colonies per "
+     "gram of soil, and to document the morphological diversity of colonies obtained, in "
+     "support of the semester-long Antibiotic Discovery Project.", {}),
+])
+
+# ════════════════════════════════════════════════════════════════════════════
+# INTRODUCTION
+# ════════════════════════════════════════════════════════════════════════════
+section_heading("Introduction")
+
+add_paragraph([
+    ("Soil is one of the densest microbial habitats on Earth. One gram of soil contains up "
+     "to 10 billion microorganisms (most of them prokaryotic) belonging to about 1,000 "
+     "species (Parker et al. 2016, §4.1). Prokaryotes are essential for soil formation and "
+     "stabilization through the breakdown of organic matter and the development of "
+     "biofilms, and many soil bacteria metabolize substances released by plant roots and "
+     "return the products to the soil as humus, increasing soil fertility (Parker et al. "
+     "2016, §4.1).", {}),
+])
+
+add_paragraph([
+    ("Many of the antibiotics used in modern clinical medicine were originally isolated "
+     "from soil-dwelling bacteria. The genus ", {}),
+    ("Streptomyces", {'italic': True}),
+    (" — Gram-positive, filamentous, aerobic, spore-forming bacteria — is described as a "
+     "scavenger and decomposer found in soil that gives the soil its earthy odor, and is "
+     "used in the pharmaceutical industry as the source of more than two-thirds of "
+     "clinically useful antibiotics (Parker et al. 2016, §4.4). The cultivation of "
+     "morphologically diverse soil bacteria is therefore a logical starting point for "
+     "the search for novel antimicrobial-producing organisms.", {}),
+])
+
+add_paragraph([
+    ("Direct counting of bacteria in a soil sample is not feasible because bacterial cells "
+     "are too small to be seen with the unaided eye and are present at very high density "
+     "(Parker et al. 2016, §1.3). The viable plate count is a count of viable or live cells "
+     "based on the principle that viable cells replicate and give rise to visible colonies "
+     "when incubated under suitable conditions, with results expressed as colony-forming "
+     "units per milliliter (CFU/mL) rather than cells per milliliter because more than one "
+     "cell may have landed on the same spot to give rise to a single colony (Parker et al. "
+     "2016, §9.1). The goal of serial dilution is to obtain plates with CFU counts in the "
+     "range of 30–300, which give statistically reliable numbers (Parker et al. 2016, §9.1). "
+     "In the standard ten-fold serial dilution method, a fixed volume of the original "
+     "culture (1.0 mL) is added to a tube containing 9.0 mL of sterile diluent, which "
+     "represents a 1:10 dilution; 1.0 mL is then withdrawn from this dilution and mixed "
+     "with a fresh tube of 9.0 mL of diluent, and so on, until a dilution series brackets "
+     "the desired cell concentration for accurate counting (Parker et al. 2016, §9.1). "
+     "Two common approaches to plating dilutions are the spread plate and pour plate "
+     "methods, both of which begin with serial dilution (Parker et al. 2016, §9.1).", {}),
+])
+
+# ════════════════════════════════════════════════════════════════════════════
+# MATERIALS AND METHODS
+# ════════════════════════════════════════════════════════════════════════════
+section_heading("Materials and Methods")
+
+subhead("Materials")
+mats = [
+    "Soil sample (approximately 1.1 g) collected from a backyard garden, North Hollywood, CA 91601 (34.1808° N, 118.3862° W; depth 5 inches; air temperature ~75 °F; soil described as dark brown loamy garden soil)",
+    "Sterile 0.9% saline (9 mL aliquots in screw-top tubes for serial dilution)",
+    "Tryptic Soy Agar (TSA) plates, pre-poured",
+    "Sterile micropipettes and disposable pipette tips",
+    "Sterile glass spreader",
+    "Analytical balance",
+    "Vortex mixer",
+    "Bunsen burner and inoculating loops (for sterile technique)",
+    "Permanent marker for plate labeling",
+    "Incubator (room temperature, ~25 °C)",
+]
+for item in mats:
+    p = doc.add_paragraph()
+    p.paragraph_format.line_spacing_rule = WD_LINE_SPACING.DOUBLE
+    p.paragraph_format.left_indent = Inches(0.5)
+    p.paragraph_format.first_line_indent = Inches(-0.25)
+    run = p.add_run(f"• {item}")
+    run.font.name = 'Times New Roman'
+    run.font.size = Pt(12)
+
+subhead("Methods")
+
+add_paragraph([
+    ("On April 29, 2026, a soil sample was collected from a backyard garden in North "
+     "Hollywood, California. Approximately 1.1 g of soil was transferred to a sterile "
+     "tube containing 9 mL of sterile saline solution, producing the first soil suspension "
+     "(designated 10⁻¹) with a total volume of approximately 10.1 mL. The suspension was "
+     "mixed thoroughly by vortexing.", {}),
+])
+
+add_paragraph([
+    ("On April 30, 2026, serial ten-fold dilutions of the soil suspension were prepared "
+     "by transferring 1 mL of the previous dilution into a sterile tube containing 9 mL "
+     "of fresh sterile saline at each step, yielding 10⁻², 10⁻³, and 10⁻⁴ suspensions. "
+     "A 75 µL aliquot of each dilution was plated onto a separate Tryptic Soy Agar (TSA) "
+     "plate using a sterile glass spreader. Plates were labeled with the dilution factor, "
+     "plated volume, investigator initials, and date, and were incubated at room "
+     "temperature (~25 °C).", {}),
+])
+
+add_paragraph([
+    ("After incubation, the plates were retrieved and the plate with the most clearly "
+     "separated, countable colonies was selected as the best plate for enumeration. Colonies "
+     "were counted directly and grouped by morphology, with size, color, surface texture, "
+     "and edge characteristics recorded for each colony type. Colony forming units per mL "
+     "and per gram of soil were calculated from the colony count, plated volume, dilution "
+     "factor, and total suspension volume.", {}),
+])
+
+# ════════════════════════════════════════════════════════════════════════════
+# RESULTS AND DISCUSSION
+# ════════════════════════════════════════════════════════════════════════════
+doc.add_page_break()
+section_heading("Results and Discussion")
+
+subhead("Best Plate Selection and Colony Count")
+add_paragraph([
+    ("The 10⁻³ dilution plate was selected as the best plate for enumeration because it "
+     "contained well-separated, countable colonies distributed across the agar surface. "
+     "A total of 22 colonies were counted on this plate (Figure 1).", {}),
+])
+
+add_image(PLATE_PATH, width_inches=4.5)
+add_caption([
+    ("Figure 1. ", {'bold': True, 'italic': True}),
+    ("Tryptic Soy Agar plate inoculated with 75 µL of the 10", {'italic': True}),
+    ("⁻³", {'italic': True}),
+    (" soil dilution (plated 4/30/2026; photographed after incubation at room temperature). "
+     "Twenty-two well-separated colonies were counted, including several large bright yellow "
+     "circular colonies, smaller yellow colonies, small white/cream pinpoint colonies, a "
+     "single whitish wrinkled colony, and a single white filamentous-textured colony.",
+     {'italic': True}),
+])
+
+subhead("Colony Morphology")
+add_paragraph([
+    ("Six morphologically distinguishable colony types were identified on the best plate. "
+     "Their characteristics are summarized in Table 1.", {}),
+])
+
+# Colony morphology table
+table = doc.add_table(rows=7, cols=5)
+table.style = 'Table Grid'
+table.alignment = WD_ALIGN_PARAGRAPH.CENTER
+
+headers = ['Type', 'Diameter (mm)', 'Color', 'Surface / Edge', 'Approx. count']
+for i, h in enumerate(headers):
+    cell = table.rows[0].cells[i]
+    cell.text = ''
+    p = cell.paragraphs[0]
+    p.paragraph_format.line_spacing_rule = WD_LINE_SPACING.SINGLE
+    run = p.add_run(h)
+    run.bold = True
+    run.font.name = 'Times New Roman'
+    run.font.size = Pt(11)
+
+colony_data = [
+    ['1', '3–5', 'Bright yellow', 'Smooth, raised, circular, entire edge', '4'],
+    ['2', '1–2', 'Yellow', 'Smooth, raised, circular, entire edge', '6'],
+    ['3', '< 1', 'Pale yellow', 'Pinpoint, circular', '4'],
+    ['4', '< 1', 'White / cream', 'Pinpoint, circular', '5'],
+    ['5', '~ 2', 'White / off-white', 'Wrinkled, irregular outline', '1'],
+    ['6', '~ 2–3', 'White', 'Filamentous, cottony texture (possible Streptomyces-like or environmental contaminant)', '2'],
+]
+for i, row in enumerate(colony_data, start=1):
+    for j, val in enumerate(row):
+        cell = table.rows[i].cells[j]
+        cell.text = ''
+        p = cell.paragraphs[0]
+        p.paragraph_format.line_spacing_rule = WD_LINE_SPACING.SINGLE
+        run = p.add_run(val)
+        run.font.name = 'Times New Roman'
+        run.font.size = Pt(11)
+
+# Caption for table
+p = doc.add_paragraph()
+p.alignment = WD_ALIGN_PARAGRAPH.CENTER
+p.paragraph_format.line_spacing_rule = WD_LINE_SPACING.SINGLE
+p.paragraph_format.space_before = Pt(2)
+p.paragraph_format.space_after = Pt(12)
+run = p.add_run("Table 1. ")
+run.bold = True
+run.italic = True
+run.font.name = 'Times New Roman'
+run.font.size = Pt(11)
+run = p.add_run("Morphological descriptions of the six distinguishable colony types observed on the 10⁻³ best plate.")
+run.italic = True
+run.font.name = 'Times New Roman'
+run.font.size = Pt(11)
+
+subhead("CFU per Gram Calculation")
+add_paragraph([
+    ("The colony count and known plating parameters were used to calculate the colony "
+     "forming units (CFU) per gram of soil:", {}),
+])
+
+# Calculation paragraph (single-spaced math)
+p_calc = doc.add_paragraph()
+p_calc.paragraph_format.left_indent = Inches(0.5)
+p_calc.paragraph_format.line_spacing_rule = WD_LINE_SPACING.SINGLE
+p_calc.paragraph_format.space_after = Pt(6)
+run = p_calc.add_run(
+    "  Colonies counted on 10⁻³ plate:  22\n"
+    "  Volume plated:                  75 µL = 0.075 mL\n"
+    "  CFU/mL at 10⁻³ dilution:        22 ÷ 0.075 = 293 CFU/mL\n"
+    "  Correct for dilution factor:    293 × 1,000 = 2.93 × 10⁵ CFU/mL (in first soil suspension)\n"
+    "  Total CFU in suspension:        2.93 × 10⁵ CFU/mL × 10.1 mL = ~2.96 × 10⁶ CFU\n"
+    "  Mass of soil used:              1.1 g\n"
+    "  CFU per gram of soil:           ~2.96 × 10⁶ ÷ 1.1 g ≈ 2.7 × 10⁶ CFU/g"
+)
+run.font.name = 'Courier New'
+run.font.size = Pt(10.5)
+
+add_paragraph([
+    ("The calculated bacterial density of approximately ", {}),
+    ("2.7 × 10⁶ CFU per gram", {'bold': True}),
+    (" of soil is consistent with — though at the lower end of — the published range that "
+     "one gram of soil contains up to 10 billion (10¹⁰) microorganisms (Parker et al. 2016, "
+     "§4.1). Two caveats apply to this estimate. First, the 22 colonies observed on the "
+     "best plate are below the statistically reliable range of 30–300 CFU per plate "
+     "recommended for viable plate counts (Parker et al. 2016, §9.1); the count is "
+     "therefore an approximation, and the experiment would have been improved by plating "
+     "a less dilute suspension (such as 10⁻² in addition to 10⁻³) or by plating multiple "
+     "replicates at each dilution. Second, the viable plate count is by definition a low "
+     "estimate of true cell numbers because some cells in a sample are viable but "
+     "nonculturable and will not form colonies on solid media, and because a single colony "
+     "may arise from more than one cell (Parker et al. 2016, §9.1). Plate-based "
+     "enumeration also only counts the fraction of soil bacteria that grow on the chosen "
+     "medium under the chosen incubation conditions; many soil organisms are uncultivable "
+     "on standard rich media like TSA, which contributes to the gap between the count "
+     "obtained and the upper-bound species diversity reported in §4.1.", {}),
+])
+
+subhead("Significance for the Antibiotic Discovery Project")
+add_paragraph([
+    ("Several of the colony morphologies observed on the 10⁻³ plate are of interest for the "
+     "Antibiotic Discovery Project. Pigmented colonies (in this case the multiple yellow "
+     "colonies of types 1–3) are commonly associated with secondary-metabolite production "
+     "in soil bacteria, and filamentous, dry-textured colonies of the kind described as "
+     "type 6 are morphologically suggestive of members of the genus ", {}),
+    ("Streptomyces", {'italic': True}),
+    (", which are the source of more than two-thirds of clinically useful antibiotics "
+     "(Parker et al. 2016, §4.4). These colony types are therefore the primary candidates "
+     "for selection in the subsequent pick-and-patch and antibiotic-screening exercises "
+     "of this course.", {}),
+])
+
+# ════════════════════════════════════════════════════════════════════════════
+# CONCLUSION
+# ════════════════════════════════════════════════════════════════════════════
+section_heading("Conclusion")
+
+add_paragraph([
+    ("Serial dilution plating of a backyard garden soil sample yielded a calculated "
+     "bacterial density of approximately 2.7 × 10⁶ colony forming units per gram of soil, "
+     "within the published range for soil microbial density (Parker et al. 2016, §4.1). "
+     "Six morphologically distinguishable colony types were recorded on the 10⁻³ best "
+     "plate, including pigmented colonies and one filamentous-textured colony — both "
+     "morphologies that are reasonable starting points for the screening of "
+     "antibiotic-producing isolates in subsequent labs.", {}),
+])
+
+add_paragraph([
+    ("The technique practiced in this laboratory — quantitative plating of an "
+     "environmental sample on a defined medium — is the foundational method by which "
+     "soil microbial communities are sampled for the discovery of novel antimicrobial "
+     "compounds.", {}),
+])
+
+# ════════════════════════════════════════════════════════════════════════════
+# REFERENCES
+# ════════════════════════════════════════════════════════════════════════════
+section_heading("References")
+
+
+def add_reference(text_runs):
+    p = doc.add_paragraph()
+    p.alignment = WD_ALIGN_PARAGRAPH.LEFT
+    p.paragraph_format.line_spacing_rule = WD_LINE_SPACING.DOUBLE
+    p.paragraph_format.left_indent = Inches(0.5)
+    p.paragraph_format.first_line_indent = Inches(-0.5)
+    p.paragraph_format.space_after = Pt(0)
+    for text, fmt in text_runs:
+        run = p.add_run(text)
+        run.font.name = 'Times New Roman'
+        run.font.size = Pt(12)
+        if fmt.get('italic'):
+            run.italic = True
+
+
+add_reference([
+    ("Parker N, Schneegurt M, Tu A-HT, Lister P, Forster BM. 2016. Microbiology. "
+     "Houston (TX): OpenStax. Available from: "
+     "https://openstax.org/details/books/microbiology", {}),
+])
+
+doc.save(OUTPUT)
+print(f"Done -> {OUTPUT}")
+if PLATE_PATH:
+    print(f"Plate photo embedded: {PLATE_PATH}")
+else:
+    print(f"NO plate photo found. Save the plate image to one of these paths and re-run:")
+    for p in PLATE_PATHS:
+        print(f"  {p}")

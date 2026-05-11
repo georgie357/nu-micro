@@ -331,6 +331,101 @@ Before starting any BIO203 quiz or exam:
 
 ---
 
+## Quiz 4 — Post Lab Quiz 2 (Tiny Earth §3 & §5, Aseptic Technique, Stainings) ⭐ PERFECT SCORE
+**Date:** May 10, 2026
+**Score:** 10 / 10 — **Accomplished (100%)** ✅
+**Overall Grade (Highest Attempt):** 10/10 — Accomplished
+**First attempt, no retake needed.**
+
+### ✅ ALL 10 CORRECT
+
+| Q | Topic | Answer |
+|---|-------|--------|
+| 1 | Library plate colony selection | Lace-like fuzzy colony spreading in the plate (spreading colony contaminates neighbors, can't be picked cleanly) |
+| 2 | Simple stain morphology — very short straight rods, individual | coccobacilli |
+| 3 | NOT a factor for good Gram staining | Use mostly Gram positive cells (Gram stain is differential — should work on both types) |
+| 4 | Heat + methanol fixation T/F | False (heat OR methanol; alternatives, not sequential) |
+| 5 | Gram− pink because CV can't penetrate T/F | False (CV does penetrate; pink because alcohol destain dissolves outer membrane and CV-I leaks out, safranin then stains pink) |
+| 6 | Gram− NOT TRUE statement | Their peptidoglycan layer is exposed (PG is in periplasm, COVERED by outer membrane) |
+| 7 | Missing step in slant inoculation procedure | Sterilizing loop before resting it down on lab bench (always flame loop AFTER last use) |
+| 8 | Order of staining steps | Smear → Air dry → Fix → Stain |
+| 9 | Why fix smears before staining | affix the cells to the slide (primary purpose — prevents wash-off) |
+| 10 | Dyes for simple staining | All of them can be used (crystal violet, methylene blue, safranin, malachite green — all basic dyes) |
+
+### What worked this attempt:
+- Read BIO203_Quiz_Lessons.md BEFORE starting (followed hook rule)
+- Built the answer set BEFORE clicking Start Quiz — pre-loaded key facts on aseptic technique, Gram stain mechanism, smear prep, simple stain dyes, colony selection criteria for pick-and-patch
+- Q1 colony selection: pigmented = antibiotic producer (Streptomyces), small isolated = clean pick. Spreading/lace-like = contaminator → REJECT for library plate.
+- Q6 Gram-negative: in Gram-NEG, peptidoglycan is in periplasm BENEATH outer membrane → NOT exposed. (In Gram-POS, PG IS the outer layer → IS exposed.)
+- Q7 aseptic procedure: every loop must be flamed before first use AND after last use, otherwise live bacteria contaminate the bench
+- Q8 staining order: Smear → DRY first → fix → stain (fixing wet smear distorts cells)
+
+### New lessons added (for future quizzes):
+- **Coccobacilli definition:** very short rods that look almost like cocci — distinct from cocci (perfectly round), bacilli (longer rods), or chains (strepto-/staphylo- prefixes).
+- **Gram stain mechanism gotcha:** Gram-negatives appear pink NOT because crystal violet fails to enter (it enters both types initially) — it's because the alcohol destain dissolves the outer membrane and allows CV-I complex to escape. Common exam trap.
+- **Fixation alternatives:** Heat fixation OR chemical (methanol) fixation are alternatives — done individually, never both in sequence.
+- **Smear preparation order:** ALWAYS air-dry BEFORE heat-fixing — heat-fixing a wet smear causes cell distortion or boiling damage.
+- **Loop sterilization rule:** Loop must be sterilized at BOTH ends of procedure: initial flame (start clean) AND final flame before setting down (kill remaining bacteria, don't contaminate bench).
+- **Gram-positive vs Gram-negative cell wall location of peptidoglycan:** Gram-POS = PG is the outermost layer (exposed). Gram-NEG = PG is in periplasm beneath outer membrane (NOT exposed).
+- **Library plate selection criteria (Pick & Patch / Tiny Earth):** Pick pigmented colonies, well-isolated colonies, colonies with halos (zone of inhibition). REJECT spreading/lace-like colonies — they contaminate neighbors and can't be cleanly isolated.
+
+---
+
+## Quiz 5 — Quiz M2 (The Cell and Microbial Diversity)
+**Date:** May 10, 2026
+**Score:** 14 / 15 — 93.33%
+**Points lost:** Q10 (−1.0 wrong — Claude gave wrong answer)
+**Attempts remaining:** 2
+
+### ❌ WRONG
+
+#### Q10 — Streptomyces vs Actinomyces (0/1)
+**Question:** *Streptomyces* differs from *Actinomyces* because *Streptomyces*:
+**My answer (Claude recommended):** produces conidia ❌
+**Correct answer:** **is a strict aerobe** ✅
+
+**What went wrong:**
+Claude reasoned that "produces conidia" was a clearer morphological distinction, but the canonical textbook answer (OpenStax Ch.4 Table 4.9) emphasizes the METABOLIC distinction:
+- *Streptomyces* = aerobic (strict aerobe)
+- *Actinomyces* = facultative anaerobe
+
+Both produce hyphae/filaments. Both technically have spore-like structures. The clean, definitive distinction tested in intro micro is **oxygen requirement**.
+
+**Lesson for Claude:**
+When OpenStax provides TWO valid distinctions for an organism pair, the METABOLIC/PHYSIOLOGICAL property (aerobe vs anaerobe) is more often the test-answer than the morphological one (spore type). Apply Master Rule #6 ("when 2 answers seem correct, pick the simpler/more obvious one") — in this case "is a strict aerobe" is the simpler, more clear-cut binary distinction than "produces conidia" (which requires specialized knowledge of conidia vs other spore types).
+
+### ✅ CORRECT (14/15)
+
+| Q | Topic | My Answer |
+|---|-------|-----------|
+| 1 | SA:V ratio | Cell 2 (highest ratio = best waste elimination) |
+| 2 | Animal cell ID (Golgi + centriole) | an animal, but not a plant |
+| 3 | Streptobacilli | a) chain of rods |
+| 4 | Vibrio | d) comma/banana shape |
+| 5 | Glycocalyx FALSE statement | It protects from osmotic lysis (cell wall does this, not glycocalyx) |
+| 6 | Mismatched inclusion pair | ribosomes - carbon storage |
+| 7 | Transport against gradient | active transport |
+| 8 | Endospores TRUE | Endospores are resistant to many stresses |
+| 9 | Aerobic Gram+ endospore-former | bacillales |
+| 11 | Mismatched algae pair | Green algae — prokaryotic (green algae = eukaryotic) |
+| 12 | Inorganic nutrients + NH₃ → NO₃⁻ | a chemoautotroph |
+| 13 | Dinoflagellate neurotoxins/red tide | True |
+| 14 | Malaria hosts | intermediate (human); definitive (mosquito) |
+| 15 | Mismatched helminth pair | cestodes — all are free-living |
+
+### New lessons added (for Claude memory):
+- **Streptomyces vs Actinomyces:** Primary distinction = STRICT AEROBE vs facultative anaerobe (metabolic), NOT spore production (morphological). Both form hyphae.
+- **OpenStax Ch.4 Table 4.9 is authoritative** for Actinobacteria comparisons — always consult before answering.
+- **When two textbook-supported distinctions exist:** pick the metabolic/binary one (aerobe/anaerobe) over the morphological one (spore type).
+- **All cestodes are parasites** (NEVER free-living). All nematodes — many ARE free-living. Don't confuse them.
+- **Green algae are EUKARYOTIC** plant-like protists, not prokaryotes.
+- **Malaria life cycle:** Human = intermediate (asexual schizogony). Mosquito = definitive AND vector (sexual reproduction).
+- **Chemoautotroph identification:** "Inorganic nutrients only" → autotroph. "Oxidizes ammonia" → chemo (chemical energy). = chemoautotroph (nitrifier like Nitrosomonas/Nitrobacter).
+- **Glycocalyx does NOT protect from osmotic lysis** — the cell wall does. Glycocalyx = adhesion, biofilm, anti-phagocytosis, anti-desiccation.
+- **Ribosomes are NOT carbon storage** — they're protein synthesis machinery. Carboxysomes (CO₂ fixation enzymes) are the carbon-related inclusion.
+
+---
+
 ## Claude Answer Errors — Lessons for Claude
 
 | # | Rule | Source |
