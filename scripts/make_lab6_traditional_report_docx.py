@@ -15,21 +15,14 @@ from docx.oxml import OxmlElement
 
 OUTPUT = r"C:\Users\User\Dropbox\Nu micro\lab reports\BIO203A_Lab6_Traditional_Report.docx"
 
-BACILLUS_IMG_PATHS = [
-    r"C:\Users\User\Dropbox\Nu micro\lab reports\lab 6 gram bacillus.jpg",
-    r"C:\Users\User\Dropbox\Nu micro\lab reports\lab 6 gram bacillus.JPG",
-    r"C:\Users\User\Dropbox\Nu micro\lab reports\lab 6 gram bacillus.png",
-    r"C:\Users\User\Dropbox\Nu micro\lab reports\lab 6 gram subtilis.jpg",
-    r"C:\Users\User\Dropbox\Nu micro\lab reports\lab 6 gram subtilis.JPG",
+MIXED_IMG_PATHS = [
+    r"C:\Users\User\Dropbox\Nu micro\lab reports\lab 6 variable stain.JPG",
+    r"C:\Users\User\Dropbox\Nu micro\lab reports\lab 6 variable stain.jpg",
+    r"C:\Users\User\Dropbox\Nu micro\lab reports\lab 6 mixed stain.JPG",
+    r"C:\Users\User\Dropbox\Nu micro\lab reports\lab 6 mixed stain.jpg",
+    r"C:\Users\User\Dropbox\Nu micro\lab reports\lab 6 gram mixed.JPG",
 ]
-ECOLI_IMG_PATHS = [
-    r"C:\Users\User\Dropbox\Nu micro\lab reports\lab 6 gram ecoli.jpg",
-    r"C:\Users\User\Dropbox\Nu micro\lab reports\lab 6 gram ecoli.JPG",
-    r"C:\Users\User\Dropbox\Nu micro\lab reports\lab 6 gram ecoli.png",
-    r"C:\Users\User\Dropbox\Nu micro\lab reports\lab 6 gram e.coli.jpg",
-]
-BACILLUS_IMG = next((p for p in BACILLUS_IMG_PATHS if os.path.exists(p)), None)
-ECOLI_IMG = next((p for p in ECOLI_IMG_PATHS if os.path.exists(p)), None)
+MIXED_IMG = next((p for p in MIXED_IMG_PATHS if os.path.exists(p)), None)
 
 doc = Document()
 style = doc.styles['Normal']
@@ -132,7 +125,7 @@ run.bold = True; run.font.name = 'Times New Roman'; run.font.size = Pt(16)
 p_subtitle = doc.add_paragraph()
 p_subtitle.alignment = WD_ALIGN_PARAGRAPH.CENTER
 p_subtitle.paragraph_format.line_spacing_rule = WD_LINE_SPACING.DOUBLE
-run = p_subtitle.add_run("Differential Gram Staining of Bacillus subtilis and Escherichia coli")
+run = p_subtitle.add_run("Differential Gram Staining of a Mixed Smear Containing Escherichia coli and Staphylococcus epidermidis")
 run.italic = True; run.font.name = 'Times New Roman'; run.font.size = Pt(13)
 
 for _ in range(3):
@@ -162,15 +155,15 @@ doc.add_page_break()
 section_heading("Scope")
 add_paragraph([
     ("This laboratory exercise performed the Gram stain — the most widely used "
-     "differential staining procedure in clinical microbiology — on two bacterial "
-     "species with known but opposite cell-wall types: ", {}),
-    ("Bacillus subtilis", {'italic': True}),
-    (" (expected gram-positive) and ", {}),
+     "differential staining procedure in clinical microbiology — on a single mixed "
+     "smear containing two bacterial species with opposite cell-wall types: ", {}),
     ("Escherichia coli", {'italic': True}),
-    (" (expected gram-negative). The objective was to apply the four-step Gram "
-     "stain procedure correctly, to observe the resulting differential staining at "
-     "oil-immersion magnification, and to confirm the Gram classification of each "
-     "organism by direct visualization.", {}),
+    (" (expected gram-negative) and ", {}),
+    ("Staphylococcus epidermidis", {'italic': True}),
+    (" (expected gram-positive). The objective was to apply the four-step Gram "
+     "stain procedure correctly to a mixed preparation, and to observe both Gram "
+     "reactions simultaneously in the same microscope field at oil-immersion "
+     "magnification.", {}),
 ])
 
 # ════════════════════════════════════════════════════════════════════════════
@@ -214,12 +207,24 @@ add_paragraph([
      "complex during decolorization, while gram-negative cells have a much thinner "
      "peptidoglycan layer covered by an outer membrane and lose the complex "
      "during the alcohol wash. The two organisms used in this exercise are known "
-     "examples of each type: ", {}),
-    ("Bacillus", {'italic': True}),
-    (" species are gram-positive bacilli (Parker et al. 2016, §4.4), and ", {}),
+     "examples of each type. ", {}),
     ("Escherichia coli", {'italic': True}),
-    (" is a gram-negative member of the family Enterobacteriaceae within the "
-     "Gammaproteobacteria (Parker et al. 2016, §4.4).", {}),
+    (" is a gram-negative bacillus and member of the family Enterobacteriaceae "
+     "within the Gammaproteobacteria (Parker et al. 2016, §4.4). ", {}),
+    ("Staphylococcus epidermidis", {'italic': True}),
+    (" is a gram-positive coccus belonging to the genus ", {}),
+    ("Staphylococcus", {'italic': True}),
+    (", whose name derives from the Greek word for bunches of grapes and "
+     "describes the characteristic microscopic appearance of its cells in "
+     "clusters; ", {}),
+    ("Staphylococcus", {'italic': True}),
+    (" species are facultative anaerobes, halophilic, and nonmotile, and ", {}),
+    ("S. epidermidis", {'italic': True}),
+    (" is a common member of the normal microbiota of human skin (Parker et al. "
+     "2016, §4.4). Combining one organism of each Gram type on a single mixed "
+     "smear allows both reactions — purple and pink — to be observed in one "
+     "microscope field, providing direct visual confirmation that the Gram stain "
+     "differentiates between cell-wall types.", {}),
 ])
 
 # ════════════════════════════════════════════════════════════════════════════
@@ -229,7 +234,7 @@ section_heading("Materials and Methods")
 
 subhead("Materials")
 for item in [
-    "Bacterial cultures: Bacillus subtilis and Escherichia coli (from previous laboratory exercise)",
+    "Bacterial cultures: Escherichia coli and Staphylococcus epidermidis",
     "Clean glass microscope slides",
     "Distilled water in a dropper",
     "Sterile inoculating loops",
@@ -255,37 +260,39 @@ for item in [
 subhead("Methods")
 
 add_paragraph([
-    ("On May 7, 2026, separate smears were prepared on labeled glass slides for ", {}),
-    ("B. subtilis", {'italic': True}),
-    (" and ", {}),
+    ("On May 7, 2026, a mixed smear was prepared on a clean glass slide. A "
+     "loopful of distilled water was placed in the center of the slide, and small "
+     "amounts of ", {}),
     ("E. coli", {'italic': True}),
-    (". For each smear, a loopful of culture (with one drop of distilled water "
-     "added for slants) was spread evenly across a marked area of the slide, "
-     "allowed to air-dry, and then heat-fixed by passing the slide through the "
-     "outer cone of the Bunsen flame two to three times with the smear side up.", {}),
+    (" and ", {}),
+    ("S. epidermidis", {'italic': True}),
+    (" were transferred into the water and mixed thoroughly to form a single "
+     "smear containing cells of both organisms. The smear was spread evenly to a "
+     "thin film, allowed to air-dry completely, and then heat-fixed by passing "
+     "the slide through the outer cone of the Bunsen flame two to three times "
+     "with the smear side up.", {}),
 ])
 
 add_paragraph([
-    ("Each heat-fixed smear was placed on the staining tray and the four-step "
-     "Gram stain procedure was applied. Crystal violet was added to cover the "
-     "smear and left for one minute, then rinsed gently with distilled water. "
-     "Gram's iodine was added next and left for one minute, then rinsed with "
-     "distilled water. The slide was tilted and 95% ethanol was applied "
-     "drop-by-drop until the solvent ran clear from the smear (typically "
+    ("The heat-fixed mixed smear was placed on the staining tray and the "
+     "four-step Gram stain procedure was applied. Crystal violet was added to "
+     "cover the smear and left for one minute, then rinsed gently with distilled "
+     "water. Gram's iodine was added next and left for one minute, then rinsed "
+     "with distilled water. The slide was tilted and 95% ethanol was applied "
+     "drop-by-drop until the solvent ran clear from the smear (approximately "
      "10–20 seconds), and the slide was immediately rinsed with water to halt "
      "decolorization. Safranin was added as a counterstain and left for one "
      "minute, then rinsed and blotted dry with bibulous paper.", {}),
 ])
 
 add_paragraph([
-    ("Additional smears were prepared and stained during the second laboratory "
-     "session on May 9, 2026, to allow time for re-staining if the first set of "
-     "slides did not produce clean results. Stained slides were observed using "
-     "the compound brightfield microscope. Each slide was first located at 4× "
-     "and then brought into focus at 10× and 40× using the parfocal objective "
-     "progression. A drop of immersion oil was applied directly to the smear and "
-     "the 100× oil immersion objective was rotated into the oil for final "
-     "observation. Representative fields were photographed through the ocular.", {}),
+    ("Staining and observation work continued during the second laboratory "
+     "session on May 9, 2026. The stained slide was observed using the compound "
+     "brightfield microscope; the smear was first located at 4× and then brought "
+     "into focus at 10× and 40× using the parfocal objective progression. A drop "
+     "of immersion oil was applied directly to the smear and the 100× oil "
+     "immersion objective was rotated into the oil for final observation. A "
+     "representative field of the smear was photographed through the ocular.", {}),
 ])
 
 # ════════════════════════════════════════════════════════════════════════════
@@ -295,39 +302,37 @@ doc.add_page_break()
 section_heading("Results and Discussion")
 
 add_paragraph([
-    ("Both stained slides produced clear differential staining at 1000× total "
-     "magnification (Figures 1 and 2). The two organisms gave the opposite Gram "
-     "reactions expected from their published cell-wall classifications: ", {}),
-    ("B. subtilis", {'italic': True}),
-    (" retained the crystal-violet stain and appeared purple, while ", {}),
+    ("The stained mixed smear produced clear differential staining at 1000× "
+     "total magnification (Figure 1). Both Gram reactions expected from the "
+     "published cell-wall classifications of the two source organisms were "
+     "visible in the same microscope field: numerous pink rod-shaped cells "
+     "scattered across the field, consistent with the gram-negative bacillus ", {}),
     ("E. coli", {'italic': True}),
-    (" was decolorized by the alcohol step and was counterstained pink by the "
-     "safranin. Observation details are summarized in Table 1.", {}),
+    (", together with a smaller number of darker-stained cells consistent with "
+     "the gram-positive coccus ", {}),
+    ("S. epidermidis", {'italic': True}),
+    (". Observation details are summarized in Table 1.", {}),
 ])
 
-subhead("Bacillus subtilis")
-add_image(BACILLUS_IMG, width_inches=4.5)
+subhead("Mixed Smear at 1000× Total Magnification")
+add_image(MIXED_IMG, width_inches=5.0)
 add_caption([
     ("Figure 1. ", {'bold': True, 'italic': True}),
-    ("Gram stain of ", {'italic': True}),
-    ("Bacillus subtilis", {'italic': True}),
-    (" at 1000× total magnification (100× oil immersion × 10× ocular). The cells "
-     "appear purple, indicating retention of the crystal-violet–iodine complex "
-     "after alcohol decolorization, and confirming the gram-positive "
-     "classification expected for this organism (Parker et al. 2016, §2.4 and §4.4).",
-     {'italic': True}),
-])
-
-subhead("Escherichia coli")
-add_image(ECOLI_IMG, width_inches=4.5)
-add_caption([
-    ("Figure 2. ", {'bold': True, 'italic': True}),
-    ("Gram stain of ", {'italic': True}),
+    ("Gram stain of a mixed smear containing ", {'italic': True}),
     ("Escherichia coli", {'italic': True}),
-    (" at 1000× total magnification. The cells appear pink, indicating loss of "
-     "the crystal-violet–iodine complex during alcohol decolorization and uptake "
-     "of the safranin counterstain, confirming the gram-negative classification "
-     "expected for this organism (Parker et al. 2016, §2.4 and §4.4).", {'italic': True}),
+    (" and ", {'italic': True}),
+    ("Staphylococcus epidermidis", {'italic': True}),
+    (" at 1000× total magnification (100× oil immersion × 10× ocular). Numerous "
+     "small pink rod-shaped cells are visible across the field, indicating "
+     "loss of the crystal-violet–iodine complex during alcohol decolorization "
+     "and uptake of the safranin counterstain — the gram-negative reaction "
+     "expected of ", {'italic': True}),
+    ("E. coli", {'italic': True}),
+    (". Darker-stained cells observable in the same field are consistent with "
+     "the gram-positive reaction expected of ", {'italic': True}),
+    ("S. epidermidis", {'italic': True}),
+    (". The black needle visible in the lower portion of the field is the "
+     "microscope stage pointer, not part of the specimen.", {'italic': True}),
 ])
 
 subhead("Summary of Gram Reactions")
@@ -343,8 +348,8 @@ for i, h in enumerate(headers):
     run = p.add_run(h); run.bold = True; run.font.name = 'Times New Roman'; run.font.size = Pt(11)
 
 rows_data = [
-    ['Bacillus subtilis', 'Purple', 'Gram-positive (+)', 'Bacillus (rod)', 'Singles and short chains'],
     ['Escherichia coli', 'Pink', 'Gram-negative (−)', 'Bacillus (rod)', 'Singles, scattered'],
+    ['Staphylococcus epidermidis', 'Purple / darker', 'Gram-positive (+)', 'Coccus (sphere)', 'Clusters'],
 ]
 for i, row in enumerate(rows_data, start=1):
     for j, val in enumerate(row):
@@ -365,43 +370,48 @@ run.italic = True; run.font.name = 'Times New Roman'; run.font.size = Pt(11)
 
 subhead("Interpretation")
 add_paragraph([
-    ("The purple final color of ", {}),
-    ("B. subtilis", {'italic': True}),
-    (" is consistent with the thick peptidoglycan cell wall characteristic of "
-     "gram-positive bacteria: the thick peptidoglycan layer retains the "
-     "crystal-violet–iodine complex during the alcohol decolorization step, so "
-     "the cells remain purple at the end of the procedure (Parker et al. 2016, "
-     "§2.4). Members of the genus ", {}),
-    ("Bacillus", {'italic': True}),
-    (" are described in OpenStax as large gram-positive bacilli that include "
-     "aerobes or facultative anaerobes and form endospores (Parker et al. 2016, "
-     "§4.4), and the result of this Gram stain is consistent with that "
-     "description.", {}),
-])
-
-add_paragraph([
-    ("The pink final color of ", {}),
-    ("E. coli", {'italic': True}),
-    (" is consistent with the thin peptidoglycan cell wall and outer membrane "
+    ("The pink final color of the dominant rod-shaped cells in the field is "
+     "consistent with the thin peptidoglycan cell wall and outer membrane "
      "characteristic of gram-negative bacteria. During alcohol decolorization, "
      "the crystal-violet–iodine complex is more easily washed out of cells with "
-     "thinner peptidoglycan, so they become colorless and then take up the "
-     "safranin counterstain to appear pink at the end of the procedure (Parker "
-     "et al. 2016, §2.4). ", {}),
+     "thinner peptidoglycan, so these cells become colorless and then take up "
+     "the safranin counterstain to appear pink at the end of the procedure "
+     "(Parker et al. 2016, §2.4). The rod shape and pink color together are "
+     "consistent with the morphology and Gram reaction of ", {}),
     ("E. coli", {'italic': True}),
-    (" is a member of the family Enterobacteriaceae within the "
-     "Gammaproteobacteria, a class of gram-negative bacteria (Parker et al. 2016, "
-     "§4.4), and the observed Gram reaction confirms that classification.", {}),
+    (", a member of the family Enterobacteriaceae within the "
+     "Gammaproteobacteria — a class of gram-negative bacteria (Parker et al. "
+     "2016, §4.4).", {}),
 ])
 
 add_paragraph([
-    ("The successful production of contrasting Gram reactions on the two slides "
-     "indicates that the four-step procedure — primary stain, mordant, "
-     "decolorizer, counterstain — was applied within appropriate time windows. "
-     "Over-decolorization (excess alcohol exposure) can cause gram-positive cells "
-     "to lose the crystal-violet complex and incorrectly appear pink, and "
-     "under-decolorization can cause gram-negative cells to remain purple; "
-     "neither error occurred in the slides photographed here.", {}),
+    ("The darker-stained cells observable in the same field correspond to the "
+     "gram-positive component of the mixed smear, consistent with the expected "
+     "behavior of ", {}),
+    ("S. epidermidis", {'italic': True}),
+    (". Gram-positive cells have a thick peptidoglycan layer external to the "
+     "plasma membrane that retains the crystal-violet–iodine complex during "
+     "alcohol decolorization, so they remain purple at the end of the procedure "
+     "(Parker et al. 2016, §2.4). ", {}),
+    ("Staphylococcus", {'italic': True}),
+    (" species are gram-positive cocci that grow in characteristic clusters "
+     "(the genus name derives from the Greek word for bunches of grapes), and ", {}),
+    ("S. epidermidis", {'italic': True}),
+    (" is a common member of the normal microbiota of human skin (Parker et al. "
+     "2016, §4.4).", {}),
+])
+
+add_paragraph([
+    ("The simultaneous appearance of both pink (gram-negative) and darker, "
+     "retained-crystal-violet (gram-positive) cells in the same microscope field "
+     "directly demonstrates that the Gram stain reagents acted differentially on "
+     "the two cell-wall types, even when the two organisms were mixed on the "
+     "same slide. The contrast achieved within one preparation indicates that "
+     "the four-step procedure was applied within appropriate time windows: "
+     "over-decolorization (excess alcohol exposure) can cause gram-positive "
+     "cells to lose the crystal-violet complex and incorrectly appear pink, and "
+     "under-decolorization can cause gram-negative cells to retain purple — "
+     "neither error appears to have occurred in this preparation.", {}),
 ])
 
 # ════════════════════════════════════════════════════════════════════════════
@@ -410,18 +420,16 @@ add_paragraph([
 section_heading("Conclusion")
 
 add_paragraph([
-    ("Differential Gram staining of ", {}),
-    ("Bacillus subtilis", {'italic': True}),
-    (" and ", {}),
+    ("Differential Gram staining of a mixed smear containing ", {}),
     ("Escherichia coli", {'italic': True}),
-    (" produced the expected contrasting Gram reactions: ", {}),
-    ("B. subtilis", {'italic': True}),
-    (" cells stained purple (gram-positive), and ", {}),
-    ("E. coli", {'italic': True}),
-    (" cells stained pink (gram-negative). The results are consistent with the "
-     "cell-wall classifications of each organism in OpenStax §4.4 and confirm "
-     "that the four-step Gram stain procedure described in §2.4 was carried out "
-     "correctly.", {}),
+    (" and ", {}),
+    ("Staphylococcus epidermidis", {'italic': True}),
+    (" produced both expected Gram reactions visible in the same microscope "
+     "field: small pink rod-shaped cells (gram-negative) and darker-stained "
+     "cells with retained crystal-violet color (gram-positive). The results are "
+     "consistent with the cell-wall classifications of each organism in "
+     "OpenStax §4.4 and confirm that the four-step Gram stain procedure "
+     "described in §2.4 was carried out correctly.", {}),
 ])
 
 add_paragraph([
@@ -459,7 +467,5 @@ add_reference([
 
 doc.save(OUTPUT)
 print(f"Done -> {OUTPUT}")
-print(f"Bacillus photo: {'EMBEDDED' if BACILLUS_IMG else 'MISSING (placeholder)'}")
-if BACILLUS_IMG: print(f"  {BACILLUS_IMG}")
-print(f"E. coli photo:  {'EMBEDDED' if ECOLI_IMG else 'MISSING (placeholder)'}")
-if ECOLI_IMG: print(f"  {ECOLI_IMG}")
+print(f"Mixed slide photo: {'EMBEDDED' if MIXED_IMG else 'MISSING (placeholder)'}")
+if MIXED_IMG: print(f"  {MIXED_IMG}")
