@@ -1,6 +1,7 @@
 # BIO203A Lab 7: Endospore Staining — Traditional Lab Report (Popa STRICT v2)
 # Author: George Vela
 # References cite ONLY OpenStax Microbiology (Parker et al. 2016). CSE Name-Year style.
+# SINGLE-SLIDE report: one Bacillus slant culture stained; one photograph documented.
 
 import os
 from docx import Document
@@ -114,7 +115,7 @@ run.bold = True; run.font.name = 'Times New Roman'; run.font.size = Pt(16)
 p_subtitle = doc.add_paragraph()
 p_subtitle.alignment = WD_ALIGN_PARAGRAPH.CENTER
 p_subtitle.paragraph_format.line_spacing_rule = WD_LINE_SPACING.DOUBLE
-run = p_subtitle.add_run("Schaeffer-Fulton Endospore Staining of Bacillus megaterium and Bacillus subtilis Slant Cultures at 24 and 72 Hours")
+run = p_subtitle.add_run("Schaeffer-Fulton Endospore Staining of a Bacillus Slant Culture")
 run.italic = True; run.font.name = 'Times New Roman'; run.font.size = Pt(13)
 
 for _ in range(3):
@@ -143,15 +144,14 @@ doc.add_page_break()
 # ════════════════════════════════════════════════════════════════════════════
 section_heading("Scope")
 add_paragraph([
-    ("This laboratory exercise applied the Schaeffer-Fulton endospore staining "
-     "technique to slant cultures of two endospore-forming bacterial species — ", {}),
-    ("Bacillus megaterium", {'italic': True}),
-    (" and ", {}),
-    ("Bacillus subtilis", {'italic': True}),
-    (" — at different culture ages. The objective was to differentiate "
-     "heat-resistant endospores from the surrounding vegetative cells in a single "
-     "stained preparation by using two stains of contrasting color and to observe "
-     "the resulting differential stain at oil-immersion magnification.", {}),
+    ("This laboratory exercise applied the Schaeffer-Fulton endospore-staining "
+     "technique to a slant culture of a ", {}),
+    ("Bacillus", {'italic': True}),
+    (" species, an endospore-forming gram-positive bacterium provided by the "
+     "instructor. The objective was to use a two-stain procedure to "
+     "differentiate heat-resistant endospores from the surrounding vegetative "
+     "cells in a single stained preparation and to observe the resulting "
+     "differential stain at oil-immersion magnification.", {}),
 ])
 
 # ════════════════════════════════════════════════════════════════════════════
@@ -178,10 +178,7 @@ add_paragraph([
      "separating a forespore that will form the core of the endospore. A cortex "
      "of calcium and dipicolinic acid is laid down around the forespore, a "
      "protein coat then forms around the cortex, and the endospore is released "
-     "upon disintegration of the mother cell (Parker et al. 2016, §3.3). Because "
-     "sporulation accelerates as a culture ages and exhausts its nutrient supply, "
-     "older cultures of a sporeforming species typically contain a higher "
-     "proportion of endospores than younger cultures of the same species.", {}),
+     "upon disintegration of the mother cell (Parker et al. 2016, §3.3).", {}),
 ])
 
 add_paragraph([
@@ -198,14 +195,21 @@ add_paragraph([
      "endospores appear either within pink vegetative cells or as separate "
      "green particles after the mother cell has disintegrated; if no endospores "
      "are present, only pink vegetative cells are visible (Parker et al. 2016, "
-     "§2.4). Endospore-staining techniques are important for identifying ", {}),
+     "§2.4).", {}),
+])
+
+add_paragraph([
+    ("Endospore-staining techniques are important for identifying ", {}),
     ("Bacillus", {'italic': True}),
     (", ", {}),
     ("Clostridium", {'italic': True}),
     (", and ", {}),
     ("Clostridioides", {'italic': True}),
     (", three genera of endospore-producing bacteria that contain clinically "
-     "significant species (Parker et al. 2016, §2.4).", {}),
+     "significant species (Parker et al. 2016, §2.4). Members of the genus ", {}),
+    ("Bacillus", {'italic': True}),
+    (" are large gram-positive bacilli that include aerobes or facultative "
+     "anaerobes and form endospores (Parker et al. 2016, §4.4).", {}),
 ])
 
 # ════════════════════════════════════════════════════════════════════════════
@@ -215,18 +219,16 @@ section_heading("Materials and Methods")
 
 subhead("Materials")
 for item in [
-    "24-hour Bacillus megaterium slant",
-    "24-hour Bacillus subtilis slant",
-    "72-hour Bacillus subtilis slant",
-    "Clean glass microscope slides",
+    "Bacillus slant culture (provided by the instructor)",
+    "Clean glass microscope slide",
     "Distilled water in a dropper",
-    "Sterile inoculating loops",
+    "Sterile inoculating loop",
     "Bunsen burner with striker (for slide heat-fixation)",
     "Clothespin (to hold slide during heat fixation)",
     "Malachite green stain (primary stain)",
     "Safranin stain (counterstain)",
     "Hot plate with beaker of water (for steaming the slide during staining)",
-    "Small pieces of absorbent paper (to retain malachite green on the smear)",
+    "Small piece of absorbent paper (to retain malachite green on the smear)",
     "Forceps (to remove paper if it adheres to the slide)",
     "Staining tray, wash bottle of water, and waste beaker",
     "Bibulous paper for blotting",
@@ -244,48 +246,44 @@ for item in [
 subhead("Methods")
 
 add_paragraph([
-    ("On May 9, 2026, three smears were prepared on separate, labeled glass "
-     "slides — one each from a 24-hour ", {}),
-    ("B. megaterium", {'italic': True}),
-    (" slant, a 24-hour ", {}),
-    ("B. subtilis", {'italic': True}),
-    (" slant, and a 72-hour ", {}),
-    ("B. subtilis", {'italic': True}),
-    (" slant. For each smear, a loopful of distilled water was placed on the "
-     "slide, a small amount of culture was transferred from the slant into the "
-     "water using a sterile inoculating loop, and the resulting suspension was "
-     "spread thinly across a marked area of the slide. Each slide was air-dried "
-     "and then heat-fixed by passing it through the outer cone of the Bunsen "
-     "flame two to three times with the smear side up.", {}),
+    ("On May 9, 2026, a smear was prepared on a labeled glass slide from a ", {}),
+    ("Bacillus", {'italic': True}),
+    (" slant culture provided by the instructor. A loopful of distilled water "
+     "was placed on the slide, a small amount of culture was transferred from "
+     "the slant into the water using a sterile inoculating loop, and the "
+     "resulting suspension was spread thinly across a marked area of the "
+     "slide. The slide was air-dried and then heat-fixed by passing it through "
+     "the outer cone of the Bunsen flame two to three times with the smear "
+     "side up.", {}),
 ])
 
 add_paragraph([
     ("A beaker filled approximately one-third with water was placed on a hot "
      "plate and brought to a gentle simmer to produce steam without active "
-     "boiling. Each heat-fixed slide was placed across the rim of the beaker "
+     "boiling. The heat-fixed slide was placed across the rim of the beaker "
      "with the smear over the steam, and a small piece of absorbent paper was "
-     "laid over the smear. Malachite green was applied to the paper to saturate "
-     "it over the smear, and steaming was continued for five to seven minutes; "
-     "additional malachite green was added as needed to keep the paper moist and "
-     "prevent the slide from drying during steaming.", {}),
+     "laid over the smear. Malachite green was applied to the paper to "
+     "saturate it over the smear, and steaming was continued for five to seven "
+     "minutes; additional malachite green was added as needed to keep the "
+     "paper moist and prevent the slide from drying during steaming.", {}),
 ])
 
 add_paragraph([
-    ("After steaming, each slide was removed from the heat and allowed to cool "
-     "briefly. The absorbent paper was rinsed off gently with distilled water "
-     "(or removed with forceps if it adhered), and the slide was washed with "
-     "distilled water to decolorize any malachite green that had not been "
-     "trapped in endospore coats. Safranin was applied as a counterstain to "
-     "the smear and was left in contact for one minute, then rinsed with "
-     "distilled water and blotted dry with bibulous paper.", {}),
+    ("After steaming, the slide was removed from the heat and allowed to cool "
+     "briefly. The absorbent paper was rinsed off gently with distilled water, "
+     "and the slide was washed with distilled water to decolorize any "
+     "malachite green that had not been trapped in endospore coats. Safranin "
+     "was applied as a counterstain to the smear and was left in contact for "
+     "one minute, then rinsed with distilled water and blotted dry with "
+     "bibulous paper.", {}),
 ])
 
 add_paragraph([
-    ("Each stained slide was placed on the microscope stage, located at 4×, and "
-     "brought into focus through the parfocal objective progression. A drop of "
-     "immersion oil was applied directly to the smear and the 100× oil "
-     "immersion objective was rotated into the oil for final observation at "
-     "1000× total magnification. A representative field was photographed "
+    ("The stained slide was placed on the microscope stage, located at 4×, "
+     "and brought into focus through the parfocal objective progression. A "
+     "drop of immersion oil was applied directly to the smear and the 100× "
+     "oil immersion objective was rotated into the oil for final observation "
+     "at 1000× total magnification. A representative field was photographed "
      "through the ocular.", {}),
 ])
 
@@ -295,143 +293,77 @@ add_paragraph([
 doc.add_page_break()
 section_heading("Results and Discussion")
 
-add_paragraph([
-    ("All three slides were stained successfully and produced visible cells "
-     "under oil immersion at 1000× total magnification. The stained smears "
-     "showed the characteristic pink color of safranin-counterstained "
-     "vegetative cells together with smaller numbers of darker-staining "
-     "structures consistent with malachite-green-stained endospores. A "
-     "representative microscope field from the stained preparations is shown "
-     "in Figure 1.", {}),
-])
-
 subhead("Photomicrograph")
 add_image(STAIN_IMG, width_inches=4.5)
 add_caption([
     ("Figure 1. ", {'bold': True, 'italic': True}),
-    ("Representative field of a Schaeffer-Fulton endospore-stained smear at "
-     "1000× total magnification (100× oil immersion × 10× ocular). Pink "
+    ("Schaeffer-Fulton endospore stain of a ", {'italic': True}),
+    ("Bacillus", {'italic': True}),
+    (" slant culture, photographed through the ocular at 1000× total "
+     "magnification (100× oil immersion × 10× ocular). Numerous pink "
      "rod-shaped vegetative cells (safranin counterstain) are visible across "
-     "the field, with small darker-stained structures distributed among them "
-     "consistent with malachite-green-retaining endospores. The black "
+     "the field, with smaller darker-stained structures distributed among "
+     "them consistent with malachite-green-retaining endospores. The black "
      "needle-like feature in the lower portion of the field is the microscope "
      "stage pointer, not part of the specimen.", {'italic': True}),
 ])
 
-subhead("Stain Observations")
+subhead("Description of Observed Cells")
 add_paragraph([
-    ("All three slants — 24-hour ", {}),
-    ("B. megaterium", {'italic': True}),
-    (", 24-hour ", {}),
-    ("B. subtilis", {'italic': True}),
-    (", and 72-hour ", {}),
-    ("B. subtilis", {'italic': True}),
-    (" — produced pink-stained, rod-shaped vegetative cells in their smears, "
-     "consistent with the typical bacillus morphology of these species. The "
-     "successful uptake of safranin by the vegetative cells, combined with "
-     "visible darker structures consistent with endospores, indicates that the "
-     "Schaeffer-Fulton procedure achieved the expected differential staining: "
-     "vegetative cells took up the safranin counterstain while endospores "
-     "retained the malachite green primary stain (Parker et al. 2016, §2.4). "
-     "Observation details are summarized in Table 1.", {}),
+    ("The smear contained numerous rod-shaped cells that had taken up the "
+     "safranin counterstain and appeared pink against the lighter background. "
+     "Individual cells were visible as relatively uniform, straight bacilli. "
+     "Among the pink vegetative cells, smaller, more darkly-staining structures "
+     "were distributed within and around the rods; these were consistent in "
+     "size and distribution with endospores that had retained the malachite "
+     "green primary stain during the water decolorization step.", {}),
 ])
-
-# Table
-table = doc.add_table(rows=4, cols=4)
-table.style = 'Table Grid'
-table.alignment = WD_ALIGN_PARAGRAPH.CENTER
-
-headers = ['Slide', 'Vegetative Cells', 'Endospores', 'Notes']
-for i, h in enumerate(headers):
-    cell = table.rows[0].cells[i]; cell.text = ''
-    p = cell.paragraphs[0]; p.paragraph_format.line_spacing_rule = WD_LINE_SPACING.SINGLE
-    run = p.add_run(h); run.bold = True; run.font.name = 'Times New Roman'; run.font.size = Pt(11)
-
-rows_data = [
-    ['24-hr B. megaterium', 'Numerous pink rods, dominant',
-     'Few green endospores observed',
-     'Young culture; sporulation not yet extensive'],
-    ['24-hr B. subtilis', 'Numerous pink rods, dominant',
-     'Some green endospores observed within or near vegetative cells',
-     'Early sporulation visible'],
-    ['72-hr B. subtilis', 'Pink rods present but fewer than in 24-hr cultures',
-     'Higher proportion of green endospores, including free endospores',
-     'Older culture; sporulation more advanced'],
-]
-italic_first_col = {(1, 0), (2, 0), (3, 0)}
-for i, row in enumerate(rows_data, start=1):
-    for j, val in enumerate(row):
-        cell = table.rows[i].cells[j]; cell.text = ''
-        p = cell.paragraphs[0]; p.paragraph_format.line_spacing_rule = WD_LINE_SPACING.SINGLE
-        run = p.add_run(val); run.font.name = 'Times New Roman'; run.font.size = Pt(11)
-        if (i, j) in italic_first_col:
-            # Italicize only the species name portion
-            cell.text = ''
-            p = cell.paragraphs[0]; p.paragraph_format.line_spacing_rule = WD_LINE_SPACING.SINGLE
-            # Format: "24-hr B. megaterium" → "24-hr " + italic "B. megaterium"
-            parts = val.split(' ', 1)
-            run1 = p.add_run(parts[0] + ' '); run1.font.name = 'Times New Roman'; run1.font.size = Pt(11)
-            if len(parts) > 1:
-                run2 = p.add_run(parts[1]); run2.italic = True
-                run2.font.name = 'Times New Roman'; run2.font.size = Pt(11)
-
-p = doc.add_paragraph()
-p.alignment = WD_ALIGN_PARAGRAPH.CENTER
-p.paragraph_format.line_spacing_rule = WD_LINE_SPACING.SINGLE
-p.paragraph_format.space_before = Pt(2); p.paragraph_format.space_after = Pt(12)
-run = p.add_run("Table 1. ")
-run.bold = True; run.italic = True; run.font.name = 'Times New Roman'; run.font.size = Pt(11)
-run = p.add_run("Summary of endospore-stain observations from the three Bacillus slant smears.")
-run.italic = True; run.font.name = 'Times New Roman'; run.font.size = Pt(11)
 
 subhead("Interpretation")
 add_paragraph([
+    ("The contrast between the pink-stained vegetative cells and the darker "
+     "endospore-consistent structures in the same preparation indicates that "
+     "the Schaeffer-Fulton procedure achieved its intended differential effect "
+     "on the smear. The Schaeffer-Fulton method uses heat to push the primary "
+     "stain (malachite green) into the endospore; washing with water "
+     "decolorizes the cell but the endospore retains the green stain, and the "
+     "cell is then counterstained pink with safranin (Parker et al. 2016, "
+     "§2.4). The resulting image — pink vegetative cells with green endospores "
+     "within or beside them — is the expected outcome of a successful "
+     "Schaeffer-Fulton stain, and is what was observed on this slide.", {}),
+])
+
+add_paragraph([
     ("Vegetative cells are sensitive to extreme temperatures and radiation and "
      "have normal water content and enzymatic activity, whereas endospores are "
-     "resistant to extreme temperatures and radiation, are dehydrated, and have "
-     "no metabolic activity (Parker et al. 2016, §3.3). The thick spore coat "
-     "that confers this resistance is also responsible for the staining "
-     "behavior observed here: endospores do not absorb Gram stain and require "
-     "special endospore-staining techniques to be visualized, and even with "
-     "the Schaeffer-Fulton method, heat must be applied during the malachite "
-     "green step to drive the primary stain into the spore coat (Parker et al. "
-     "2016, §2.4 and §3.3). Once the malachite green has entered the spore, "
-     "the spore coat also resists rinse-out by water, which is why the "
-     "endospores remain green after the water wash while the vegetative cells "
-     "are decolorized and then take up the safranin counterstain (Parker et "
-     "al. 2016, §2.4).", {}),
+     "resistant to extreme temperatures and radiation, are dehydrated, and "
+     "have no metabolic activity (Parker et al. 2016, §3.3). The thick spore "
+     "coat that confers this resistance is also responsible for the staining "
+     "behavior observed here: endospores do not absorb the Gram stain and "
+     "require special endospore-staining techniques, and even with the "
+     "Schaeffer-Fulton method, heat must be applied during the malachite green "
+     "step to drive the primary stain through the spore coat (Parker et al. "
+     "2016, §2.4 and §3.3).", {}),
 ])
 
 add_paragraph([
-    ("The differences in the relative proportions of vegetative cells to "
-     "endospores across the three slides are consistent with the underlying "
-     "biology of sporulation. Sporulation generally begins when nutrients "
-     "become depleted or environmental conditions become otherwise unfavorable "
-     "(Parker et al. 2016, §3.3); therefore, an older slant culture, in which "
-     "the available nutrients on the agar surface have largely been consumed "
-     "by accumulated bacterial growth, would be expected to contain a larger "
-     "fraction of sporulating cells and free endospores than a freshly "
-     "inoculated 24-hour culture of the same species. The 72-hour ", {}),
-    ("B. subtilis", {'italic': True}),
-    (" smear was therefore expected to show — and was the slide most likely "
-     "to show — a higher density of green-stained endospores than the two "
-     "24-hour smears.", {}),
-])
-
-add_paragraph([
-    ("The visualization of endospores by the Schaeffer-Fulton procedure has "
-     "clinical relevance because three of the four major endospore-producing "
-     "bacterial genera — ", {}),
+    ("Three of the four major endospore-producing bacterial genera — ", {}),
     ("Bacillus", {'italic': True}),
     (", ", {}),
     ("Clostridium", {'italic': True}),
     (", and ", {}),
     ("Clostridioides", {'italic': True}),
-    (" — contain clinically significant species (Parker et al. 2016, §2.4). "
-     "The members of these genera that are encountered in laboratory or "
-     "clinical work are gram-positive bacilli, and endospore presence is a "
-     "key diagnostic feature when identifying suspected isolates of these "
-     "groups.", {}),
+    (" — contain clinically significant species, and endospore staining is a "
+     "diagnostic technique used to identify suspected isolates of these "
+     "groups (Parker et al. 2016, §2.4). Within ", {}),
+    ("Bacillus", {'italic': True}),
+    (", important pathogens include ", {}),
+    ("B. anthracis", {'italic': True}),
+    (" (anthrax) and ", {}),
+    ("B. cereus", {'italic': True}),
+    (" (a food-poisoning agent) (Parker et al. 2016, §4.4). The "
+     "endospore-staining technique practiced in this exercise is therefore a "
+     "diagnostic foundation rather than an end in itself.", {}),
 ])
 
 # ════════════════════════════════════════════════════════════════════════════
@@ -440,19 +372,13 @@ add_paragraph([
 section_heading("Conclusion")
 
 add_paragraph([
-    ("The Schaeffer-Fulton endospore-staining procedure was applied to three "
-     "slant cultures of endospore-forming ", {}),
+    ("The Schaeffer-Fulton endospore-staining procedure was applied to a slant "
+     "culture of a ", {}),
     ("Bacillus", {'italic': True}),
-    (" species (24-hour ", {}),
-    ("B. megaterium", {'italic': True}),
-    (", 24-hour ", {}),
-    ("B. subtilis", {'italic': True}),
-    (", and 72-hour ", {}),
-    ("B. subtilis", {'italic': True}),
-    ("). All three smears produced pink-stained, rod-shaped vegetative cells "
-     "via the safranin counterstain, with darker structures distributed among "
-     "the cells consistent with malachite-green-retaining endospores. The "
-     "results are consistent with the staining behavior described in OpenStax "
+    (" species and produced a stained preparation in which both pink-stained "
+     "vegetative cells and darker-stained endospore-consistent structures were "
+     "visible in the same microscope field at 1000× total magnification. The "
+     "outcome is consistent with the staining mechanism described in OpenStax "
      "§2.4 — endospores retain malachite green after the water rinse while "
      "vegetative cells are decolorized and take up safranin — and with the "
      "endospore-formation biology described in §3.3.", {}),
@@ -466,9 +392,10 @@ add_paragraph([
     ("Clostridium", {'italic': True}),
     (", and ", {}),
     ("Clostridioides", {'italic': True}),
-    (" (Parker et al. 2016, §2.4), and the procedure practiced in this "
-     "exercise will be applied to library-plate isolates in the Antibiotic "
-     "Discovery Project to identify any soil isolates that produce endospores.", {}),
+    (" (Parker et al. 2016, §2.4). The procedure practiced in this exercise "
+     "will be applied to gram-positive rod isolates from the library plate in "
+     "the Antibiotic Discovery Project to determine whether any of the soil "
+     "isolates are endospore-formers.", {}),
 ])
 
 # ════════════════════════════════════════════════════════════════════════════
