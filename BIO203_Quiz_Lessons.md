@@ -426,6 +426,155 @@ When OpenStax provides TWO valid distinctions for an organism pair, the METABOLI
 
 ---
 
+## Quiz 6 — Post Lab Quiz 3 (Gram Staining & Antibiotic Testing) ⭐ PERFECT SCORE
+**Date:** May 17, 2026
+**Score:** 10 / 10 — **Accomplished (100%)** ✅
+**Overall Grade (Highest Attempt):** 10/10 — Accomplished
+**First attempt, no retake needed.**
+
+### ✅ ALL 10 CORRECT
+
+| Q | Topic | Answer |
+|---|-------|--------|
+| 1 | Zone of inhibition units | False (measured in mm, not cm) |
+| 2 | Most effective disinfectant from disk diffusion | C (10 mm — largest zone of inhibition = most effective) |
+| 3 | Variable held constant in Kirby-Bauer | all of the above (density of bacterial growth + agar thickness + temperature of incubation) |
+| 4 | Mueller-Hinton agar antimicrobial T/F | False (MH has LOW inhibitors so antibiotic effect is the only inhibition seen — NOT antimicrobial itself) |
+| 5 | Part of bacterial cell determining Gram reaction | Cell wall (peptidoglycan thickness) |
+| 6 | Correct Gram stain order | 2-4-1-3 (Crystal violet → Iodine → Alcohol-acetone → Safranin) |
+| 7 | Causes of FALSE POSITIVE Gram stain (select all) | Too short decolorization + Too thick smear (insufficient alcohol penetration → G− retains CV → appears positive) |
+| 8 | Gram stain — which statement is FALSE | "First color difference is after counterstain with safranin" (FALSE — differential happens at decolorization step; safranin just adds visibility to G−) |
+| 9 | Staining preparation step order | Place smear → Air dry → Fix → Stain (same as Post Lab Quiz 2 Q8) |
+| 10 | Antibiotics are natural antibacterials T/F | True (classical definition; Selman Waksman discovered actinomycin, streptomycin, neomycin from soil Streptomyces) |
+
+### What worked this attempt:
+- Read BIO203_Quiz_Lessons.md BEFORE starting (followed hook rule)
+- Built pre-quiz cheat sheet covering Gram stain mechanism + Kirby-Bauer methodology + Mueller-Hinton + antibiotic discovery history
+- Past lesson from Post Lab Quiz 2 (Gram stain mechanism gotcha) directly applied to Q8 — knew CV does enter G− cells initially and that decolorization is the differential step
+- For Q7 (false positive causes), recognized that under-decolorization or thick smear both prevent CV from leaving G− cells
+
+### New lessons added (for future quizzes):
+- **Zone of inhibition is measured in MILLIMETERS** (mm), not centimeters. Always verify units.
+- **Kirby-Bauer disk diffusion standardization:** ALL FOUR major variables are held constant: density of bacterial growth (0.5 McFarland), agar thickness (4 mm), temperature of incubation (35°C for 16-18h), and Mueller-Hinton agar type.
+- **Mueller-Hinton agar is NOT antimicrobial.** It is chosen for the OPPOSITE reason: it has LOW levels of inhibitors so the antibiotic effect is what's being measured. Common exam trap.
+- **Gram stain false positive causes** (G− appears purple): (1) too short decolorization, (2) too thick smear. Both prevent alcohol from washing CV out of G− cells.
+- **Gram stain false negative causes** (G+ appears pink): (1) over-decolorization (excess alcohol), (2) old culture (G+ cells lose CV-retention ability with age).
+- **The color differential in Gram stain happens at DECOLORIZATION**, not at safranin counterstain. After alcohol, G+ = purple, G− = colorless. Safranin just makes G− visible as pink.
+- **Antibiotic classical definition** = natural compound produced by one microorganism to inhibit another (Selman Waksman, Streptomyces history). Most clinically useful antibiotics still come from soil bacteria (>2/3 from Streptomyces).
+- **Iodine in Gram stain = mordant** that forms CV-I complex (large molecule trapped in thick PG of G+).
+
+---
+
+## Score Progression — All Quizzes To Date
+
+| # | Quiz | Best Score | Date | Notes |
+|---|---|---|---|---|
+| 1 | Chemistry Pre-Quiz | 15/15 (100%) | May 3 | Attempt 3 after 92% / 90.67% |
+| 2 | Quiz M1 (Intro + Biomolecules) | 15/15 (100%) | May 3 | Attempt 2 after 92% |
+| 3 | Post Lab Quiz 1 (Safety + Microscopy) | 10/10 (100%) | May 3 | Attempt 2 after 9/10 |
+| 4 | Post Lab Quiz 2 (Aseptic + Stainings) | 10/10 (100%) | May 10 | First attempt ⭐ |
+| 5 | Quiz M2 (Cell + Microbial Diversity) | 14/15 (93.33%) | May 10 | Attempt 1 — Claude error on Q10 |
+| 6 | **Post Lab Quiz 3 (Gram + Antibiotic Testing)** | **10/10 (100%)** | **May 17** | **First attempt ⭐** |
+
+---
+
+## Quiz 7 — Quiz M3 (Viruses + Microbial Metabolism)
+**Date:** May 17, 2026
+**Score:** 13 / 15 — 86.67%
+**Points lost:** Q2 (−1.0 wrong — Claude error) · Q8 (−1.0 wrong — Claude graph misread)
+**Attempts remaining:** 2
+
+### ❌ WRONG — Claude errors
+
+#### Q2 — BSL level for intro micro labs (0/1)
+**Question:** The biosafety level (BSL) for most introductory microbiology laboratories is
+**My answer (Claude recommended):** BSL-2 ❌
+**Correct answer:** **BSL-1** ✅
+
+**What went wrong:**
+Claude overthought the question by citing ASM safety recommendations for handling unknown isolates. The standard textbook answer for INTRO microbiology labs (which use non-pathogenic *E. coli* K-12, *B. subtilis*, etc.) is **BSL-1**. BSL-2 is for labs working with potential pathogens.
+
+**Lesson for Claude:**
+For "most introductory microbiology laboratories" questions, default to **BSL-1**. The organisms used in intro labs are explicitly non-pathogenic and qualify for BSL-1 handling. Save BSL-2 answer for questions about clinical/diagnostic labs or unknown soil pathogen work.
+
+#### Q8 — Stomach enzyme temperature curve (0/1)
+**Question:** Which temperature and pH profile curves on the graphs were most likely generated from analysis of an enzyme from a human stomach where conditions are strongly acid?
+**My answer (Claude recommended):** curves 2 and 4 ❌
+**Correct answer:** **curves 1 and 4** ✅
+
+**What went wrong:**
+Claude misread the temperature graph. Body temperature is 37°C, and curve 1 (not curve 2) is the one peaking closest to 37°C. Curve 2 peaks too high (~50°C). pH curve 4 (acidic) was correctly identified.
+
+**Lesson for Claude:**
+When reading graphs with multiple curves at different x-axis positions, identify which curve has its peak CLOSEST to the target value (37°C for body temp). Don't assume curve numbers correspond to standard temperature categories without verifying peak location on the x-axis. Curve 1 = mesophile/body temp range, curve 2 = warm/elevated, curve 3 = thermophile.
+
+### ✅ CORRECT (13/15)
+
+| Q | Topic | Answer |
+|---|-------|--------|
+| 1 | Microbial death pattern | Cells die at constant rate (first-order kinetics) |
+| 3 | Carbon source for bacterial growth | glucose |
+| 4 | Catabolism : anabolism :: ___ : ___ | exergonic ; endergonic |
+| 5 | Spontaneous processes (select all true) | Decrease free energy + Decrease capacity to do work + Increase stability |
+| 6 | Cell control of enzyme activity (beyond allosteric) | Localization of enzymes into specific organelles or membranes |
+| 7 | Noncompetitive inhibitor mechanism | Changing the shape of the enzyme's active site |
+| 9 | Calvin cycle primary function | Synthesize simple sugars from carbon dioxide |
+| 10 | Cellular respiration fill-in (8 blanks) | OP, G, CA, OP, CA, OP, G, CA |
+| 11 | Yeast fermentation products | ATP, CO₂, and ethanol (ethyl alcohol) |
+| 12 | Lactic acid + tooth enamel T/F | True (Streptococcus mutans → lactic acid → cavities) |
+| 13 | Virus infection of animal cell depends on | Presence of receptor sites on the cell membrane |
+| 14 | Persistent infection definition | Disease process occurs gradually over a long period |
+| 15 | Viral species definition | Same genetic information and ecological niche (ICTV) |
+
+### New lessons added (for Claude memory):
+- **BSL-1 is the default for INTRO microbiology labs** (non-pathogenic E. coli K-12, B. subtilis). Don't default to BSL-2.
+- **Graph reading:** For temperature curves with peaks at different x-positions, identify which peak is CLOSEST to the target value before answering. Don't assume the "middle" curve is body temp without verifying.
+- **Calvin cycle = synthesizes sugars from CO₂.** Light reactions = split water + release O₂. Don't confuse the two.
+- **Yeast fermentation = ethanol + CO₂ + ATP** (alcoholic). Muscle fermentation = lactate + ATP (lactic acid). Memorize the distinction.
+- **Persistent infection** primary definition emphasizes LONG DURATION of disease process, not just dormancy.
+- **Viral species (ICTV definition)** = same genetic information AND same ecological niche. Not just "same disease" or "same morphology."
+- **Catabolism/Anabolism analogy:** Catabolism : Anabolism :: Exergonic : Endergonic.
+- **Noncompetitive inhibitor binds allosteric site** → changes shape of active site → lowers Vmax. Competitive inhibitor binds active site directly.
+- **Spontaneous process effects:** Free energy ↓, capacity to do work ↓, stability ↑, entropy of isolated system ↑.
+
+---
+
+## 🛑🛑🛑 HARD RULE — IMAGE ANALYSIS (added May 17, 2026 after Quiz M3 errors)
+
+**WHEN A QUIZ QUESTION INCLUDES AN IMAGE WITH LABELS (A, B, C, D, E, or numbered):**
+
+Claude has made repeated errors by **assuming the labels in quiz images match OpenStax textbook figure conventions** rather than actually analyzing the image visually. This must stop.
+
+### The required workflow for ANY image-based question:
+
+1. **Read the image visually FIRST.** Describe what each labeled element actually shows (e.g., "Tube C: clump in middle only, no top or bottom growth").
+
+2. **DO NOT assume the image follows textbook label order.** The quiz may use a different label order than OpenStax Figure X.Y, even if the underlying concept is the same.
+
+3. **Match the visual PATTERN to the organism/concept**, then identify which LETTER has that pattern. Do not reverse this — do not say "OpenStax says C is X, so the answer is C" without verifying the image labeled C matches that pattern.
+
+4. **For temperature/pH curve graphs:** measure peak position against x-axis values BEFORE answering. Body temperature = 37°C — pick the curve whose peak is CLOSEST to 37°C.
+
+5. **For thioglycolate oxygen tubes specifically:**
+   - Top only = obligate aerobe
+   - Bottom only = obligate anaerobe
+   - Middle band only = microaerophile
+   - Throughout with gradient (denser top) = facultative anaerobe
+   - Uniform throughout = aerotolerant anaerobe
+   Match by PATTERN, then identify the LETTER in the specific image.
+
+### Errors that have happened (do not repeat):
+
+| Quiz | Question | Claude error | Lesson |
+|---|---|---|---|
+| M2 Q10 | Streptomyces vs Actinomyces | Picked "produces conidia" over "is a strict aerobe" | Pick metabolic distinction over morphological when both apply |
+| M3 Q8 | Stomach enzyme curves | Picked curve 2 (peak ~50°C) instead of curve 1 (peak ~30°C, closer to 37°C body temp) | Measure peak position against x-axis labels |
+| M3 Q3 (Attempt 2 — initial) | Facultative anaerobe tube | Picked tube C based on OpenStax convention without verifying image | Verify visual pattern matches before applying textbook label |
+| M3 Q3 (Attempt 2 — corrected) | Facultative anaerobe tube | Picked tube D | Wrong again — answer was likely B (tube with clearest gradient: denser top, sparser bottom). Lesson: for thioglycolate tubes, the facultative anaerobe has a clear top-to-bottom gradient, not just "throughout uniform" |
+| M3 Q8 (Attempt 2) | b vs c plateau | Picked b | User correctly identified c as higher plateau. Lesson: defer to user direct observation on similar visual elements |
+
+---
+
 ## Claude Answer Errors — Lessons for Claude
 
 | # | Rule | Source |

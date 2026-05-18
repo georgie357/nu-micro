@@ -115,7 +115,7 @@ run.bold = True; run.font.name = 'Times New Roman'; run.font.size = Pt(16)
 p_subtitle = doc.add_paragraph()
 p_subtitle.alignment = WD_ALIGN_PARAGRAPH.CENTER
 p_subtitle.paragraph_format.line_spacing_rule = WD_LINE_SPACING.DOUBLE
-run = p_subtitle.add_run("Schaeffer-Fulton Endospore Staining of a Bacillus Slant Culture")
+run = p_subtitle.add_run("Schaeffer-Fulton Endospore Staining of a Clostridium sporogenes Slant Culture")
 run.italic = True; run.font.name = 'Times New Roman'; run.font.size = Pt(13)
 
 for _ in range(3):
@@ -145,9 +145,9 @@ doc.add_page_break()
 section_heading("Scope")
 add_paragraph([
     ("This laboratory exercise applied the Schaeffer-Fulton endospore-staining "
-     "technique to a slant culture of a ", {}),
-    ("Bacillus", {'italic': True}),
-    (" species, an endospore-forming gram-positive bacterium provided by the "
+     "technique to a slant culture of ", {}),
+    ("Clostridium sporogenes", {'italic': True}),
+    (", an endospore-forming gram-positive obligate anaerobe provided by the "
      "instructor. The objective was to use a two-stain procedure to "
      "differentiate heat-resistant endospores from the surrounding vegetative "
      "cells in a single stained preparation and to observe the resulting "

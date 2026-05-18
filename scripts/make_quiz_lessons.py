@@ -90,6 +90,8 @@ story.append(tbl([
     ['Quiz M1 (Intro + Biomolecules)', '15/15 (100%) ⭐', 'May 3', 'Attempt 2 — perfect after 92.03%'],
     ['Post Lab Quiz 1 (Safety + Microscopy)', '10/10 (100%) ⭐', 'May 3', 'Attempt 2 — perfect after 9/10'],
     ['Post Lab Quiz 2 (Aseptic + Stainings)', '10/10 (100%) ⭐', 'May 10', 'First attempt, no retake needed'],
+    ['Quiz M2 (Cell + Microbial Diversity)', '14/15 (93.33%)', 'May 10', 'Attempt 1 — Claude error on Q10 (Streptomyces vs Actinomyces)'],
+    ['Post Lab Quiz 3 (Gram + Antibiotic Testing)', '10/10 (100%) ⭐', 'May 17', 'First attempt, no retake needed'],
 ], [2.5*inch, 1.2*inch, 0.7*inch, 2.9*inch]))
 story.append(sp(2))
 
@@ -166,6 +168,34 @@ story.append(tbl([
     ['38', 'Broth cultures in glass tubes → decontamination (bleach soak), NOT sharps', 'PLQ1 Q8'],
     ['39', 'Lens cleaning: ONLY lens paper. Never Kleenex, tissue, or paper towel (they scratch).', 'PLQ1 Q6'],
     ['40', 'Coarse focus knob: ONLY for 4× and 10× objectives. Fine focus only for 40× and 100×.', 'PLQ1 Q9'],
+], [0.25*inch, 5.5*inch, 1.5*inch]))
+story.append(sp(1))
+
+story.append(Paragraph('🛑 HARD RULE — Image Analysis (added May 17 from M3 errors)', h3))
+story.append(tbl([
+    ['Step', 'Required action for image-based questions'],
+    ['1', 'READ THE IMAGE VISUALLY FIRST. Describe what each labeled element shows (e.g., "Tube C: clump in middle only").'],
+    ['2', 'DO NOT assume image labels match OpenStax textbook figure order. The quiz may relabel things.'],
+    ['3', 'Match visual PATTERN to organism/concept FIRST, then identify which LETTER has that pattern. Never reverse this order.'],
+    ['4', 'For temperature/pH curves: measure peak position against x-axis labels. Body temp = 37°C. Pick the curve whose peak is CLOSEST to 37°C.'],
+    ['5', 'Thioglycolate tubes pattern → organism: top only = obligate aerobe; bottom only = obligate anaerobe; middle band = microaerophile; throughout with gradient = facultative anaerobe; uniform throughout = aerotolerant anaerobe.'],
+], [0.4*inch, 6.8*inch]))
+story.append(sp(1))
+
+story.append(Paragraph('Gram Stain & Antibiotic Testing Facts (added May 17 from PLQ3)', h3))
+story.append(tbl([
+    ['#', 'Rule', 'Source'],
+    ['41', 'Zone of inhibition is measured in MILLIMETERS (mm), NOT centimeters.', 'PLQ3 Q1'],
+    ['42', 'Larger zone of inhibition = MORE effective antibiotic/disinfectant. (e.g. 10 mm > 2.5 mm)', 'PLQ3 Q2'],
+    ['43', 'Kirby-Bauer standardized variables: density of bacterial growth (0.5 McFarland) + agar thickness (4 mm) + temperature of incubation (35°C) + Mueller-Hinton agar type — ALL held constant.', 'PLQ3 Q3'],
+    ['44', 'Mueller-Hinton agar is NOT antimicrobial. It is chosen because it has LOW inhibitor levels — so the antibiotic effect is the ONLY inhibition observed. (Common exam trap.)', 'PLQ3 Q4'],
+    ['45', 'Gram reaction determined by the CELL WALL (peptidoglycan thickness). Not nucleus (bacteria lack one), not capsule, not plasma membrane.', 'PLQ3 Q5'],
+    ['46', 'Gram stain order (memorize): Crystal violet → Iodine → Alcohol-acetone → Safranin. Memory hook: CIAS.', 'PLQ3 Q6'],
+    ['47', 'Gram stain FALSE POSITIVE causes (G− appears purple): (a) too short decolorization, (b) too thick smear. Both prevent alcohol from washing CV out of G− cells.', 'PLQ3 Q7'],
+    ['48', 'Gram stain FALSE NEGATIVE causes (G+ appears pink): (a) over-decolorization (excess alcohol), (b) old culture (G+ cells lose CV-retention with age).', 'PLQ3 Q7+'],
+    ['49', 'Gram stain differential happens at DECOLORIZATION, not at safranin. After alcohol: G+ = purple, G− = colorless. Safranin just adds visibility to G− (makes it pink).', 'PLQ3 Q8'],
+    ['50', 'Iodine in Gram stain = MORDANT. Function: forms CV-I complex (large) trapped in thick PG of G+ cells.', 'PLQ3 Q8'],
+    ['51', 'Antibiotic classical definition = natural compound produced by one microorganism to inhibit another. Most clinical antibiotics from soil Streptomyces (>2/3). Selman Waksman discovered actinomycin/streptomycin/neomycin.', 'PLQ3 Q10'],
 ], [0.25*inch, 5.5*inch, 1.5*inch]))
 
 story.append(PageBreak())

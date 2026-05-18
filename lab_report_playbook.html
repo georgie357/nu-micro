@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>BIO203A Lab Report Playbook</title>
+  <style>
+    /* Default styles provided by pandoc.
+    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+    */
+    html {
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 12px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      html {
+        background-color: white;
+      }
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    svg {
+      height: auto;
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      white-space: pre-wrap;
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+      font-size: 85%;
+      margin: 0;
+      hyphens: manual;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      border: none;
+      border-top: 1px solid #1a1a1a;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+    /* CSS for syntax highlighting */
+    html { -webkit-text-size-adjust: 100%; }
+    pre > code.sourceCode { white-space: pre; position: relative; }
+    pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+    pre > code.sourceCode > span:empty { height: 1.2em; }
+    .sourceCode { overflow: visible; }
+    code.sourceCode > span { color: inherit; text-decoration: inherit; }
+    div.sourceCode { margin: 1em 0; }
+    pre.sourceCode { margin: 0; }
+    @media screen {
+    div.sourceCode { overflow: auto; }
+    }
+    @media print {
+    pre > code.sourceCode { white-space: pre-wrap; }
+    pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+    }
+    pre.numberSource code
+      { counter-reset: source-line 0; }
+    pre.numberSource code > span
+      { position: relative; left: -4em; counter-increment: source-line; }
+    pre.numberSource code > span > a:first-child::before
+      { content: counter(source-line);
+        position: relative; left: -1em; text-align: right; vertical-align: baseline;
+        border: none; display: inline-block;
+        -webkit-touch-callout: none; -webkit-user-select: none;
+        -khtml-user-select: none; -moz-user-select: none;
+        -ms-user-select: none; user-select: none;
+        padding: 0 4px; width: 4em;
+        color: #aaaaaa;
+      }
+    pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+    div.sourceCode
+      {   }
+    @media screen {
+    pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+    }
+    code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+    code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+    code span.at { color: #7d9029; } /* Attribute */
+    code span.bn { color: #40a070; } /* BaseN */
+    code span.bu { color: #008000; } /* BuiltIn */
+    code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+    code span.ch { color: #4070a0; } /* Char */
+    code span.cn { color: #880000; } /* Constant */
+    code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+    code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+    code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+    code span.dt { color: #902000; } /* DataType */
+    code span.dv { color: #40a070; } /* DecVal */
+    code span.er { color: #ff0000; font-weight: bold; } /* Error */
+    code span.ex { } /* Extension */
+    code span.fl { color: #40a070; } /* Float */
+    code span.fu { color: #06287e; } /* Function */
+    code span.im { color: #008000; font-weight: bold; } /* Import */
+    code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+    code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+    code span.op { color: #666666; } /* Operator */
+    code span.ot { color: #007020; } /* Other */
+    code span.pp { color: #bc7a00; } /* Preprocessor */
+    code span.sc { color: #4070a0; } /* SpecialChar */
+    code span.ss { color: #bb6688; } /* SpecialString */
+    code span.st { color: #4070a0; } /* String */
+    code span.va { color: #19177c; } /* Variable */
+    code span.vs { color: #4070a0; } /* VerbatimString */
+    code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+  </style>
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">BIO203A Lab Report Playbook</h1>
+</header>
+<h1 id="bio203a-lab-report-playbook">BIO203A Lab Report Playbook</h1>
+<p><strong>Course:</strong> BIO203A Microbiology Laboratory (Spring
+2026, Dr. Radu Popa) <strong>Author:</strong> George Vela
+<strong>Purpose:</strong> How to write and condense traditional lab
+reports to fit 2 pages while keeping the student’s own voice.</p>
+<hr />
+<h2 id="hard-rule-students-voice-is-law">🛑 HARD RULE — STUDENT’S VOICE
+IS LAW</h2>
+<p>When condensing a finished draft, <strong>never rewrite the student’s
+wording</strong>. Only: - Delete non-essential sentences - Merge
+adjacent sentences with light connectors (<code>and</code>,
+<code>while</code>, <code>then</code>, <code>—</code>) - Fix obvious
+typos that change meaning (e.g. <code>Subtitles</code> →
+<code>subtilis</code>, <code>ecoli</code> → <code>E. coli</code>) -
+Combine fragmented paragraphs by removing line breaks</p>
+<p><strong>Do NOT:</strong> - Reword for “better” grammar - Change
+scientific terminology - Substitute synonyms - Rephrase citations — keep
+<code>(Parker et al. 2016, §X.X)</code> verbatim</p>
+<hr />
+<h2 id="standard-report-structure-every-lab">Standard Report Structure
+(every lab)</h2>
+<table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr>
+<th>Section</th>
+<th>Length target</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Title block</td>
+<td>6–8 lines</td>
+<td>Lab N + subtitle / Name / Course / Date / Instructor / Dates</td>
+</tr>
+<tr>
+<td><strong>Scope</strong></td>
+<td>2–3 sentences</td>
+<td>What we did + why</td>
+</tr>
+<tr>
+<td><strong>Introduction</strong></td>
+<td>2 paragraphs max</td>
+<td>Background + theory + key citations</td>
+</tr>
+<tr>
+<td><strong>Materials</strong></td>
+<td>Bullet list</td>
+<td>Keep tight, one item per line</td>
+</tr>
+<tr>
+<td><strong>Methods</strong></td>
+<td>2–3 short paragraphs</td>
+<td>Procedure only — drop carrying, cord wrap, over-flaming</td>
+</tr>
+<tr>
+<td><strong>Results and Discussion</strong></td>
+<td>1–2 paragraphs + figures/tables</td>
+<td>What was observed</td>
+</tr>
+<tr>
+<td><strong>Figure/Table captions</strong></td>
+<td>1–2 sentences each</td>
+<td>What it shows + date</td>
+</tr>
+<tr>
+<td><strong>Interpretation</strong> (optional)</td>
+<td>1 short paragraph</td>
+<td>New insights only — don’t repeat Intro/Results</td>
+</tr>
+<tr>
+<td><strong>Conclusion</strong></td>
+<td>3–5 sentences</td>
+<td>Objective met + main result + significance</td>
+</tr>
+<tr>
+<td><strong>References</strong></td>
+<td>1 line</td>
+<td>Parker et al. 2016 (OpenStax Microbiology)</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="word-count-targets-body-text-only">Word-Count Targets (body text
+only)</h2>
+<table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr>
+<th>Configuration</th>
+<th>Target</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Plain text only</td>
+<td>≤ 1100 words</td>
+<td>Easiest to fit</td>
+</tr>
+<tr>
+<td>With 1 figure</td>
+<td>≤ 950 words</td>
+<td>Lab 1 fit at 944 words</td>
+</tr>
+<tr>
+<td>With 1 table</td>
+<td>≤ 950 words</td>
+<td>Tables take ~3” vertical</td>
+</tr>
+<tr>
+<td>With table <strong>and</strong> figure</td>
+<td>≤ 800 words</td>
+<td>Tight — be ruthless in Intro/Discussion</td>
+</tr>
+</tbody>
+</table>
+<p>Page setup: US Letter (8.5×11), 1” margins, 12pt, single line
+spacing.</p>
+<hr />
+<h2 id="what-to-cut-first-priority-order">What to Cut FIRST (priority
+order)</h2>
+<ol type="1">
+<li><strong>Redundancy across sections</strong> — Discussion sentences
+that just repeat Introduction or Results. (Pick ONE place to say each
+thing.)</li>
+<li><strong>Conclusion sentences that repeat Discussion</strong> —
+Conclusion ≠ summary of summary.</li>
+<li><strong>Procedural over-detail</strong> — carrying the microscope,
+wrapping the cord, flame-flame-flame, “we re-racked the tube”</li>
+<li><strong>Stacked empty paragraphs</strong> — Word docs often have 3–5
+blank paragraphs between sections. Keep one.</li>
+<li><strong>Self-evident sentences</strong> — “These measurements
+enabled the calculations” / “Next we did the next step”</li>
+<li><strong>Repeated citation phrases</strong> —
+<code>(Parker et al. 2016, §2.3)</code> on every sentence in a row →
+keep once at the end of the paragraph</li>
+<li><strong>Hedge sentences</strong> — “However to be sure we would have
+to do further experiments” can compress to “Definitive identification
+would require more than [X].”</li>
+</ol>
+<hr />
+<h2 id="common-errors-found-in-labs-16-watch-for-these">Common Errors
+Found in Labs 1–6 (watch for these)</h2>
+<ul>
+<li>Typos that need fixing during condense: <code>dohnut</code>,
+<code>ahtough</code>, <code>Subtitles</code> (→ subtilis),
+<code>ecoli</code> (→ E. coli), <code>microscop</code> (→ microscope),
+<code>Epidermedis</code> (→ epidermidis)</li>
+<li>Missing space before section header:
+<code>simple-staining.Introduction</code> /
+<code>Materials and Methods</code></li>
+<li>Duplicated phrase typed twice:
+<code>diversity of colonies. diversity of colonies.</code></li>
+<li>“Conclusion” header accidentally merged into the previous
+paragraph</li>
+<li>Section bleed: Intro paragraph 3 reads like Methods, or Discussion
+paragraph reads like Intro</li>
+</ul>
+<hr />
+<h2 id="pre-submit-checklist-use-before-every-report">Pre-Submit
+Checklist (use before every report)</h2>
+<ul class="task-list">
+<li><label><input type="checkbox" />Scope ≤ 3 sentences</label></li>
+<li><label><input type="checkbox" />Introduction is 2 paragraphs, every
+citation has a <code>§X.X</code> reference</label></li>
+<li><label><input type="checkbox" />Methods don’t include carrying the
+scope, wrapping cords, or over-detailed flame steps</label></li>
+<li><label><input type="checkbox" />Results lists actual observations +
+at least one citation back to Parker for theoretical
+context</label></li>
+<li><label><input type="checkbox" />Discussion (or “Interpretation”)
+adds insights NOT already in Results or Intro</label></li>
+<li><label><input type="checkbox" />Conclusion: 4–5 sentences (objective
+met + main result + significance for Antibiotic Discovery
+Project)</label></li>
+<li><label><input type="checkbox" />No section text bleeding into next
+section header line</label></li>
+<li><label><input type="checkbox" />Body word count under target for
+this lab’s table/figure config</label></li>
+<li><label><input type="checkbox" />All
+<code>Parker et al. 2016, §X.X</code> citations present</label></li>
+<li><label><input type="checkbox" />Typos fixed (run a quick visual scan
+for the common ones above)</label></li>
+</ul>
+<hr />
+<h2 id="how-claude-condenses-a-report-technical-procedure">How Claude
+Condenses a Report (technical procedure)</h2>
+<p>When asked to condense a <code>.docx</code> lab report:</p>
+<ol type="1">
+<li><p><strong>Unpack:</strong></p>
+<pre><code>python scripts/office/unpack.py &quot;lab.docx&quot; unpacked_labN/</code></pre></li>
+<li><p><strong>Read</strong>
+<code>unpacked_labN/word/document.xml</code> and the joined paragraph
+text to identify cut targets.</p></li>
+<li><p><strong>Plan cuts</strong> by section, applying the priority
+order above. Show the user the planned condensed version BEFORE
+writing.</p></li>
+<li><p><strong>Apply edits</strong> via Python script that matches
+paragraphs by their joined text content (because Word splits text into
+multiple <code>&lt;w:r&gt;</code> runs, simple find/replace on raw XML
+often fails):</p>
+<div class="sourceCode" id="cb2"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Match paragraph by normalized text, replace all runs with a single run</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> norm(para_text(p)) <span class="op">==</span> norm(find_str):</span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>    replace_para_text(p, new_text)</span></code></pre></div></li>
+<li><p><strong>Delete redundant empty paragraphs</strong> to compress
+vertical space.</p></li>
+<li><p><strong>Pack back:</strong></p>
+<pre><code>python scripts/office/pack.py unpacked_labN/ lab.docx --original lab.docx --validate false</code></pre>
+<p>Use <code>--validate false</code> on Windows — the validator’s
+<code>→</code> print throws cp1252 errors.</p></li>
+<li><p><strong>Word count check:</strong></p>
+<div class="sourceCode" id="cb4"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> t <span class="kw">in</span> tree.<span class="bu">iter</span>(<span class="st">&#39;{http://schemas.openxmlformats.org/wordprocessingml/2006/main}t&#39;</span>):</span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> t.text: total <span class="op">+=</span> t.text <span class="op">+</span> <span class="st">&#39; &#39;</span></span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="bu">len</span>(total.split()))</span></code></pre></div></li>
+<li><p><strong>Tell the user</strong> to open in Word and verify page
+count — if it spills, suggest shrinking the figure or further
+cuts.</p></li>
+</ol>
+<hr />
+<h2 id="whats-left-this-semester-labs-7">What’s Left This Semester (Labs
+7+)</h2>
+<p>Based on the syllabus pattern, upcoming labs likely include: -
+Acid-Fast / Endospore staining - Streak-plate isolation -
+Selective/differential media - Antibiotic susceptibility testing
+(Kirby-Bauer) - Antibiotic Discovery Project (uses the library plate
+from Lab 3) - Possibly: UV mutagenesis, biochemical tests,
+identification keys</p>
+<p>Each follow-up report can reuse the same structure. The
+<strong>Antibiotic Discovery Project</strong> thread runs through the
+back half of the semester — make sure each related lab’s Discussion /
+Conclusion refers back to it (“This patch will be useful for the
+antibiotic-screening portion…”).</p>
+<hr />
+<h2 id="citations-style-sheet">Citations Style Sheet</h2>
+<ul>
+<li>Always:
+<code>Parker N, Schneegurt M, Tu A-HT, Lister P, Forster BM. 2016. Microbiology. Houston (TX): OpenStax. Available from: https://openstax.org/details/books/microbiology</code></li>
+<li>In-text: <code>(Parker et al. 2016, §X.X)</code></li>
+<li>Common sections used so far:
+<ul>
+<li>§1.3 — microbe sizes</li>
+<li>§2.3 — light microscopy</li>
+<li>§2.4 — staining (basic/acidic dyes, Gram, differential)</li>
+<li>§3.3 — cell shapes &amp; arrangements</li>
+<li>§4.1 — soil microbiota diversity</li>
+<li>§4.4 — Streptomyces, Bacillus, E. coli, S. epidermidis traits</li>
+<li>§9.1 — CFU / viable plate count / serial dilution</li>
+<li>§9.2 — oxygen requirements / facultative anaerobes</li>
+<li>§13.1 — aseptic technique</li>
+<li>§13.2 — flaming the loop</li>
+<li>§14.1 — history of antimicrobial discovery (Waksman)</li>
+<li>§14.7 — current sources for new antimicrobials</li>
+</ul></li>
+</ul>
+<hr />
+<h2 id="file-locations">File Locations</h2>
+<ul>
+<li>Final reports:
+<code>C:\Users\User\Dropbox\Nu micro\lab reports\final traditional reports\</code></li>
+<li>This playbook:
+<code>C:\Users\User\Dropbox\Nu micro\lab_report_playbook.md</code></li>
+<li>Format reference PDF:
+<code>C:\Users\User\Dropbox\Nu micro\BIO203_Lab_Report_Format_Reference.pdf</code></li>
+<li>Quiz lessons (separate file, separate workflow):
+<code>BIO203_Quiz_Lessons.md</code></li>
+<li>Syllabus:
+<code>Syllabus Lab micro Popa Bio203A May2026 v03RP.docx</code></li>
+</ul>
+</body>
+</html>
