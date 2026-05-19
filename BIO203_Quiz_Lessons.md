@@ -475,6 +475,44 @@ When OpenStax provides TWO valid distinctions for an organism pair, the METABOLI
 | 4 | Post Lab Quiz 2 (Aseptic + Stainings) | 10/10 (100%) | May 10 | First attempt ⭐ |
 | 5 | Quiz M2 (Cell + Microbial Diversity) | 14/15 (93.33%) | May 10 | Attempt 1 — Claude error on Q10 |
 | 6 | **Post Lab Quiz 3 (Gram + Antibiotic Testing)** | **10/10 (100%)** | **May 17** | **First attempt ⭐** |
+| 7 | Quiz M3 (Viruses + Microbial Metabolism) | 13/15 (86.67%) | May 17 | Attempt 1 — 2 Claude errors |
+| 8 | **Quiz M4 (Microbial Genetics + Biotechnology)** | **15/15 (100%)** | **May 18** | **First attempt ⭐** |
+
+---
+
+## Quiz 8 — Quiz M4: Microbial Genetics and Biotechnology ⭐ PERFECT SCORE
+**Date:** May 18, 2026
+**Score:** 15 / 15 — **100%** ✅
+**Overall Grade (Highest Attempt):** 15/15 — 100%
+**First attempt, no retake needed.**
+
+### ✅ ALL 15 CORRECT
+
+| Q | Topic | Answer |
+|---|-------|--------|
+| 1 | DNA structure | Two strands of nucleotides running antiparallel (NOT A–C / G–T pairing) |
+| 2 | Central dogma in eukaryotes | DNA → RNA → proteins |
+| 3 | RNA vs DNA difference | Type of sugar (deoxyribose vs ribose) |
+| 4 | Nucleic acid structure drag-fill | nucleotides / sugar / phosphate / purines / pyrimidines / deoxyribose / ribose |
+| 5 | Why PCR identifies bacteria | The primer is specific |
+| 6 | Thymine dimer repair enzymes | DNA polymerase (changed from "both A and B" — DNA gyrase is NOT required for NER) |
+| 7 | Prevents translation from starting | AUG codon (universal start codon; needed in all organisms) |
+| 8 | Translation definition | Proteins are made |
+| 9 | Pro vs eukaryote protein synthesis similarity | Use codons to determine polypeptide sequences |
+| 10 | Codon table — 5' UUU UCU UAU UGU CUU 3' | Phe – Ser – Tyr – Cys – Leu |
+| 11 | DNA replication drag-fill | S / helicase / topoisomerase / leading / lagging / DNA polymerase III / RNA / primase / lagging / RNA / ligase |
+| 12 | Cookbook analogy drag-fill | DNA / nucleus / gene / mRNA / transcription / translation / ribosomes / protein |
+| 13 | Short doubling time = slower growth T/F | False (short doubling time = faster growth) |
+| 14 | Growth phase most susceptible to penicillin | Log phase (active cell wall synthesis) |
+| 15 | Agar + blood + beef heart medium type | Complex medium (undefined biological ingredients) |
+
+### Key lessons confirmed/new:
+- **Q1 trap:** "A–C and G–T" base pairing answer is a distractor — correct pairs are A–T and G–C. DNA structure = two antiparallel strands.
+- **Q6 confirmed:** DNA gyrase = replication topoisomerase, NOT a thymine dimer repair enzyme. NER uses DNA polymerase + helicase + ligase. Only DNA polymerase was a listed option.
+- **Penicillin susceptibility = log phase** — β-lactams only kill actively dividing cells building new cell wall.
+- **Complex vs differential media:** Blood agar is both, but classified as **complex** by composition (natural ingredients of variable chemistry). Differential = classification by *function*.
+- **Doubling time inversely proportional to growth rate** — short doubling time = fast growth, not slow.
+- **Cookbook analogy:** DNA=cookbook; nucleus=location; gene=recipe; mRNA=copied recipe; transcription=copying; translation=cooking; ribosomes=kitchen; protein=food.
 
 ---
 
