@@ -5,7 +5,108 @@
 
 ---
 
+## 📁 TEXTBOOK LOCATION — READ BEFORE WRITING ANY CITATION
+
+**The textbook is local. There is no excuse for inventing citations.**
+
+### Per-chapter plain text (use these to verify claims):
+```
+C:\Users\User\Dropbox\Nu micro\source_text\ch1_textbook_raw.txt
+C:\Users\User\Dropbox\Nu micro\source_text\ch2_textbook_raw.txt
+... (all 26 chapters available)
+C:\Users\User\Dropbox\Nu micro\source_text\ch26_textbook_raw.txt
+```
+
+### Full PDF (read-only, never delete):
+```
+C:\Users\User\Dropbox\Nu micro\original textbook\microbiology_-_WEB.pdf
+```
+
+### Chapter page-number map:
+```
+C:\Users\User\Dropbox\Nu micro\source_text\chapter_map.json
+```
+
+### Verification procedure (mandatory before adding ANY `(Parker et al. 2016, §X.X)` citation):
+1. Identify which chapter the topic is in (Lab 9 antibiotic susceptibility → Chapter 14)
+2. Open `source_text/ch[N]_textbook_raw.txt` (e.g. `ch14_textbook_raw.txt`)
+3. Use Grep on key terms from the student's sentence (e.g. "Kirby-Bauer", "Mueller-Hinton", "MIC")
+4. Find the section header (e.g. `14.6 Testing the Effectiveness of Antimicrobials`) where the content lives
+5. ONLY THEN write the §X.X citation
+
+### Companion reference docs in this folder:
+- `CLAUDE.md` — full production rules including 4 hard rules for traditional reports
+- `NU_Micro_Study_Method.md` — extended study and report-writing procedures
+- `BIO203_Quiz_Lessons.md` — separate; do NOT read during lab report work
+
+---
+
 ## 🛑 HARD RULES — IN PRIORITY ORDER
+
+### 🛑 RULE −2 — NEVER INVENT CITATIONS (added May 21, 2026)
+
+**Every citation in the report must come from a source that is physically open in the conversation.** No exceptions.
+
+- The textbook (Parker et al. 2016, OpenStax Microbiology) is allowed by default.
+- Anything else must be present in either (a) the lab manual the student dropped into the chat, or (b) a source the student explicitly named.
+- If a fact "feels like it should have a citation," that is **not** permission to add one. Either find the source in the manual/textbook or do not make the claim.
+
+**What happened (Lab 9, May 21, 2026):** Added "CLSI 2020 Performance Standards" to references list on the very first build. The breakpoint values came from the lab manual's Table 1, but I attributed them to CLSI from training memory before ever reading the manual carefully. The user spent multiple rounds catching and removing this fake citation. **Second offense — Lab 1 was broken by fake citations earlier in the semester, and `CLAUDE.md` in `C:\Users\User\Dropbox\Nu micro\` already had this rule. The reason I missed it: my session working directory was elsewhere, so the auto-loaded `CLAUDE.md` was a different file. The textbook locations were never re-stated in `lab_report_playbook.md` or in the lab hook injection. That is now fixed.**
+
+**Specific guards:**
+1. Before adding ANY non-Parker citation, paste the exact source text from the manual/file proving it's required.
+2. Never write "(Parker et al. 2016, §X.X)" for a fact unless you can name §X.X content from the actual textbook section.
+3. Never name a section number unless verified.
+
+### 🛑 RULE −1 — READ THE LAB MANUAL END-TO-END BEFORE WRITING ANY WORD (added May 21, 2026)
+
+**When the student drops a lab manual into the chat, extract it with pandoc and read all of it — including footnotes, table captions, "Adapted from:" notes, and Report instructions.** Then write the report.
+
+- Do NOT start drafting until you have read the entire manual at least once.
+- After drafting, before delivering, do a SECOND read targeted at: required sections, required table columns, required questions to answer, citation sources mentioned in footnotes.
+- If you make a claim about "what the lab guide says" or "what the lab guide doesn't say," that claim must be backed by a quotation you can produce on demand.
+
+**What happened (Lab 9):** I asserted "the lab guide doesn't cite CLSI" when the manual literally says "(Table 1 is adapted from: Clinical and Laboratory Standards Institute (CLSI). Performance Standards for Antimicrobial Susceptibility Testing. 30th ed. 2020.)" — text I had already extracted earlier. I asserted a negative I had not verified.
+
+### 🛑 RULE −0.5 — NEVER FABRICATE MEASUREMENTS (added May 21, 2026)
+
+**If the student does not have measurements, do not invent them.** Specifically:
+
+- Do NOT produce zone sizes in mm from a phone photo of a plate. Phones are not calipers.
+- Do NOT produce specific percentages, OD values, CFU counts, or any other numeric measurement without source data.
+- Qualitative descriptions (large/moderate/small/none) are acceptable AS LONG AS you say they are qualitative.
+- If the student has actual data, use exactly what they provide. Do not "interpret" their numbers into different numbers.
+
+**What happened (Lab 9):** First draft contained "AM ~30 mm, TE ~33 mm, N ~34 mm, P ~22 mm" for B. subtilis and "AM ~15, TE ~14, N ~9, P ~13" for C. sporogenes. These numbers were eyeballed from a phone photo at an angle. The student pushed back; we replaced with qualitative scheme.
+
+### 🛑 RULE −0.25 — LOOK AT THE PHOTO BEFORE WRITING ABOUT THE PHOTO (added May 21, 2026)
+
+**Read every image the student provides with the Read tool, look carefully, and only then describe.** When the student says you misread an image, look again before defending the original description.
+
+**What happened (Lab 9):** Looked at C. sporogenes plate, concluded "no lawn, test failed." Student had to say "definitely measurable. there is lawn. maybe you are looking at wrong image." There was a clear textured lawn with visible zones around all four disks.
+
+### 🛑 RULE −0.1 — ASK BEFORE DELETING REQUIRED CONTENT (added May 21, 2026)
+
+**If the student asks "why do we need X in the table/report," do not delete X. Ask whether they want it removed or want consistency restored.**
+
+The lab manual is the source of truth for "what is required." If X is in the manual's Table 2 / Report Instructions / required-questions list, X stays. If the student is questioning whether it's needed, point them at the manual's requirement and ask.
+
+**What happened (Lab 9):** Student said "we are not using sir anymore, why do we need it in the table" — pointing out a text/table inconsistency. I deleted S/I/R from both, then student pointed out the lab manual's Table 1 has Resistant/Intermediate/Susceptible columns and S/I/R is REQUIRED in the report. Should have asked, not deleted.
+
+### 🛑 RULE −0.05 — EDIT CONSISTENTLY: TABLE + TEXT + REFERENCES TOGETHER (added May 21, 2026)
+
+**When removing or changing a concept, edit every location of that concept in one pass.** Table cells, figure captions, results text, discussion text, conclusion, references list — all in one go.
+
+**What happened (Lab 9):** Removed CLSI from text but left in references list. Removed S/I/R from table but left in text. Each round of inconsistent edits cost the student trust.
+
+**Checklist before delivering any edit:**
+- [ ] Table cells updated
+- [ ] Figure caption updated
+- [ ] All references to the concept in Results updated
+- [ ] All references to the concept in Discussion updated
+- [ ] All references to the concept in Conclusion updated
+- [ ] References list entry added/removed
+- [ ] Scope updated if relevant
 
 ### 🛑 RULE 0 — CHECK LINE SPACING FIRST (added May 17, 2026)
 
@@ -210,19 +311,30 @@ Each follow-up report can reuse the same structure. The **Antibiotic Discovery P
 
 - Always: `Parker N, Schneegurt M, Tu A-HT, Lister P, Forster BM. 2016. Microbiology. Houston (TX): OpenStax. Available from: https://openstax.org/details/books/microbiology`
 - In-text: `(Parker et al. 2016, §X.X)`
-- Common sections used so far:
+- Verified sections (cross-checked against `source_text/chN_textbook_raw.txt` on May 21, 2026):
   - §1.3 — microbe sizes
   - §2.3 — light microscopy
   - §2.4 — staining (basic/acidic dyes, Gram, differential)
   - §3.3 — cell shapes & arrangements
-  - §4.1 — soil microbiota diversity
-  - §4.4 — Streptomyces, Bacillus, E. coli, S. epidermidis traits
-  - §9.1 — CFU / viable plate count / serial dilution
-  - §9.2 — oxygen requirements / facultative anaerobes
+  - §4.1 — Prokaryote Habitats, Relationships, and Microbiomes (soil microbiota diversity)
+  - §4.2 — Proteobacteria (E. coli, P. aeruginosa, Pseudomonas pigments)
+  - §4.4 — Gram-Positive Bacteria (S. aureus, S. epidermidis, Bacillus, Streptomyces)
+  - §7.5 — Using Biochemistry to Identify Microorganisms (pyocyanin/pyoverdin yellow-green pigments on cetrimide agar)
+  - §9.2 — Oxygen Requirements for Microbial Growth (obligate anaerobes, facultative)
+  - §9.6 — Media Used for Bacterial Growth (selective, differential, MSA, MacConkey, phenol red, neutral red, bile salts)
   - §13.1 — aseptic technique
   - §13.2 — flaming the loop
-  - §14.1 — history of antimicrobial discovery (Waksman)
-  - §14.7 — current sources for new antimicrobials
+  - §14.1 — History of Chemotherapy and Antimicrobial Discovery (Fleming, Florey, Chain, Waksman)
+  - §14.2 — Fundamentals of Antimicrobial Chemotherapy (bacteriostatic vs bactericidal)
+  - §14.3 — Mechanisms of Antibacterial Drugs (β-lactams, aminoglycosides like neomycin, tetracyclines)
+  - §14.5 — Drug Resistance (β-lactamases, ESKAPE pathogens)
+  - §14.6 — Testing the Effectiveness of Antimicrobials (Kirby-Bauer, MIC, Mueller-Hinton)
+  - §14.7 — Current Strategies for Antimicrobial Discovery
+  - §21.2 — Bacterial Infections of the Skin and Eyes (pyocyanin and pyoverdin as siderophores)
+
+**Previous WRONG entries (do not reuse):**
+- ~~§9.1 — CFU / viable plate count / serial dilution~~ (§9.1 is actually "How Microbes Grow", general metabolism — selective/differential media live in §9.6, NOT §9.1)
+- ~~§14.1 — for anything Kirby-Bauer related~~ (§14.1 is discovery history; Kirby-Bauer is §14.6)
 
 ---
 

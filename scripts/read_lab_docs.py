@@ -41,9 +41,72 @@ def build_context() -> str:
     L.append("Author: George Vela")
     L.append("")
 
-    L.append("HARD RULE: When condensing existing lab reports, NEVER rewrite the")
-    L.append("student's words. Only delete, merge, join with light connectors.")
-    L.append("No grammar fixes, no synonym swaps, no rephrased citations.")
+    L.append("=" * 70)
+    L.append("📁 TEXTBOOK IS LOCAL — USE IT. NEVER INVENT A CITATION.")
+    L.append("=" * 70)
+    L.append("")
+    L.append("Per-chapter plain text files (one Grep call away):")
+    L.append("  C:\\Users\\User\\Dropbox\\Nu micro\\source_text\\ch1_textbook_raw.txt")
+    L.append("  C:\\Users\\User\\Dropbox\\Nu micro\\source_text\\ch2_textbook_raw.txt")
+    L.append("  ... ch1 through ch26 all available")
+    L.append("  C:\\Users\\User\\Dropbox\\Nu micro\\source_text\\ch26_textbook_raw.txt")
+    L.append("")
+    L.append("Full PDF (do NOT delete — see CLAUDE.md):")
+    L.append("  C:\\Users\\User\\Dropbox\\Nu micro\\original textbook\\microbiology_-_WEB.pdf")
+    L.append("")
+    L.append("Companion reference (READ BEFORE WRITING LAB REPORTS):")
+    L.append("  C:\\Users\\User\\Dropbox\\Nu micro\\CLAUDE.md")
+    L.append("    — contains the 4 strict hard rules from May 10, 2026 onward")
+    L.append("")
+    L.append("MANDATORY VERIFICATION before writing any (Parker et al. 2016, §X.X):")
+    L.append("  1. Identify the chapter (e.g. Kirby-Bauer = ch14)")
+    L.append("  2. Grep ch[N]_textbook_raw.txt for the key term")
+    L.append("  3. Find the section header (e.g. '14.6 Testing the Effectiveness')")
+    L.append("  4. Only then write the §X.X")
+    L.append("")
+    L.append("If you write a citation without doing this, you are repeating the")
+    L.append("May 21, 2026 Lab 9 failure AND the earlier Lab 1 failure. Don't.")
+    L.append("")
+    L.append("=" * 70)
+    L.append("🛑 CRITICAL RULES — READ BEFORE WRITING A SINGLE WORD")
+    L.append("=" * 70)
+    L.append("")
+    L.append("Added May 21, 2026 after Lab 9 incident — multiple failures of trust.")
+    L.append("")
+    L.append("1. NEVER INVENT CITATIONS. Only Parker et al. 2016 (textbook,")
+    L.append("   located in source_text/ — see paths above) and sources literally")
+    L.append("   present in the lab manual. NO CLSI, NO journal articles, NO")
+    L.append("   'I think this is from...' citations. If you cannot quote the")
+    L.append("   source text from source_text/ch[N]_textbook_raw.txt, do not cite it.")
+    L.append("")
+    L.append("2. READ THE LAB MANUAL END-TO-END FIRST. Extract with pandoc, read")
+    L.append("   ALL of it — footnotes, table captions, 'adapted from:' notes,")
+    L.append("   Report Instructions. Never assert 'the manual says X' or 'the")
+    L.append("   manual does not say X' without a quotation ready to produce.")
+    L.append("")
+    L.append("3. NEVER FABRICATE MEASUREMENTS. No mm zone sizes from phone photos.")
+    L.append("   No invented percentages, CFU, OD. Qualitative descriptions")
+    L.append("   (large/moderate/small/none) are OK if labeled qualitative.")
+    L.append("")
+    L.append("4. LOOK AT PHOTOS BEFORE DESCRIBING THEM. When student says 'look")
+    L.append("   again' or 'you missed X,' re-read the image — do not defend the")
+    L.append("   original description.")
+    L.append("")
+    L.append("5. ASK BEFORE DELETING REQUIRED CONTENT. If student questions")
+    L.append("   whether X is needed, point them at the manual's requirement and")
+    L.append("   ASK. The lab manual is the source of truth for what is required.")
+    L.append("")
+    L.append("6. EDIT CONSISTENTLY. Table + figure caption + Scope + Results +")
+    L.append("   Discussion + Conclusion + References — all in ONE pass. No")
+    L.append("   inconsistent edits where table says one thing and text says")
+    L.append("   another.")
+    L.append("")
+    L.append("7. STUDENT'S VOICE IS LAW. When condensing finished writing, never")
+    L.append("   rewrite — only delete, merge with light connectors, fix")
+    L.append("   meaning-changing typos. No grammar fixes, no synonyms, no")
+    L.append("   rephrased citations.")
+    L.append("")
+    L.append("=" * 70)
     L.append("")
 
     # List existing final reports
@@ -82,16 +145,20 @@ def build_context() -> str:
     return "\n".join(L)
 
 
+# Strictly lab-report-specific keywords ONLY.
+# Do NOT add: "bio203", "popa", "nu micro", "gram stain", "streptomyces",
+# or any organism/technique name — those overlap with quiz/exam work,
+# which uses BIO203_Quiz_Lessons.md, a separate workflow.
 LAB_KEYWORDS = [
-    "lab report", "lab 1", "lab 2", "lab 3", "lab 4", "lab 5",
-    "lab 6", "lab 7", "lab 8", "lab 9", "lab 10", "lab 11",
-    "lab1", "lab2", "lab3", "lab4", "lab5", "lab6", "lab7",
-    "bio203", "microbiology lab", "traditional report",
-    "condense", "playbook", "popa", "nu micro",
-    "serial dilution", "pick and patch", "gram stain",
-    "library plate", "antibiotic discovery",
-    "streptomyces", "tsa plate", "agar slant",
-    "methylene blue", "simple stain", "aseptic technique",
+    "lab report",
+    "lab 1 ", "lab 2 ", "lab 3 ", "lab 4 ", "lab 5 ",
+    "lab 6 ", "lab 7 ", "lab 8 ", "lab 9 ", "lab 10 ", "lab 11 ", "lab 12 ",
+    "lab1 ", "lab2 ", "lab3 ", "lab4 ", "lab5 ", "lab6 ", "lab7 ",
+    "lab8 ", "lab9 ", "lab10 ", "lab11 ", "lab12 ",
+    "traditional report",
+    "condense the report", "condense lab",
+    "lab report playbook", "lab_report_playbook",
+    "lab.docx",
 ]
 
 
