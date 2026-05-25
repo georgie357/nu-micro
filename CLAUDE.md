@@ -97,20 +97,48 @@ Required sections, in order:
 7. Conclusion
 8. References
 
-### ⛔⛔⛔ HARD RULE #1 — TEXTBOOK ONLY FOR CITATIONS, CSE NAME-YEAR FORMAT
+### ⛔⛔⛔ HARD RULE #1 — TWO APPROVED CITATION SOURCES, CSE NAME-YEAR FORMAT (updated May 24, 2026)
 
-**ONLY OpenStax Microbiology may be cited.** No Popa slide cites. No Tiny Earth manual cites. No lab handout cites. No Wikipedia, Google, AI, or journal cites — ever.
+**Two sources may be cited — both are REQUIRED in every traditional report's References from May 24, 2026 onward (per Popa's Lab 6 & 7 feedback):**
+
+1. **Parker et al. 2016** (OpenStax Microbiology) — primary source for general microbiology theory
+2. **Handelsman et al.** Tiny Earth: A Research Guide to Studentsourcing Antibiotic Discovery — primary source for lab procedure / Antibiotic Discovery Project content
+
+**Still FORBIDDEN:** No Popa slide cites. No lab handout cites (other than Tiny Earth itself). No CLSI. No Wikipedia, Google, AI, or journal cites. No source the student hasn't physically dropped into the chat.
 
 **Citation style: CSE Name-Year** (gold standard for biology lab reports)
 
-In-text format: `(Parker et al. 2016)` or `(Parker et al. 2016, §2.3)`
+In-text format: `(Parker et al. 2016)` or `(Parker et al. 2016, §2.3)` for textbook; `(Handelsman et al.)` for the lab manual.
 
-Reference list entry (one per textbook, regardless of how many sections are cited):
+Reference list entries (BOTH should appear in every report from now on):
 ```
 Parker N, Schneegurt M, Tu A-HT, Lister P, Forster BM. 2016. Microbiology.
 Houston (TX): OpenStax. Available from:
 https://openstax.org/details/books/microbiology
+
+Handelsman J, et al. Tiny Earth: A Research Guide to Studentsourcing
+Antibiotic Discovery. ISBN: 9798385167371.
 ```
+
+*Tiny Earth year + full publisher to be confirmed from the physical copy. Until then, the minimal entry above matches what Popa provided in his Lab 7 feedback.*
+
+### ⛔⛔⛔ HARD RULE #1B — SCOPE = PURPOSE ONLY (added May 24, 2026)
+
+**Popa flagged this on FIVE separate labs (1, 2, 4, 5, 7) — it is THE most common correction.** The Scope is one sentence stating the **learning objective / purpose** of the lab. It is NOT a mini-methods summary AND NOT background theory.
+
+**Wrong (will get marked down):**
+- "Four bacteria were compared on three media..." (describes what was done — that's M&M)
+- "Endospores are dormant structures that allow bacteria to survive..." (Background — that's Introduction)
+
+**Right (Popa-verified patterns):**
+- "The scope is to learn the aseptic techniques for TSA slant and Deep culture tubes." (Lab 4)
+- "To isolate microorganisms from soil and to determine their abundance." (Lab 2)
+- "The Scope was to learn to stain and observe endospore using the [name] method." (Lab 7)
+
+### ⛔⛔⛔ HARD RULE #1C — TITLE CASE + ITALICIZED ORGANISM NAMES (added May 24, 2026)
+
+- **Title:** Title Case for ALL main words — "the Use of Light" not "the use of light" (Lab 1 feedback)
+- **Italics:** Scientific names italicized in the **Title** and the **References** list, not just body text (Lab 4 feedback)
 
 ### ⛔⛔⛔ HARD RULE #2 — NO EDITORIAL PARAPHRASING
 
@@ -122,13 +150,13 @@ The traditional lab report is a science paper, NOT a fill-in-the-handout documen
 
 Test for any sentence: would it appear in a published paper, or only on a worksheet? If worksheet → leave it out.
 
-### 📖 READ vs CITE — pipeline distinction
+### 📖 READ vs CITE — pipeline distinction (updated May 24, 2026)
 
-**READ to understand the lab (not cited):** lab .docx handout, Tiny Earth manual, Popa slides, student's data/photos.
+**READ to understand the lab (not cited):** lab .docx handout, Popa slides, student's data/photos.
 
-**CITE to back factual claims:** OpenStax textbook only.
+**CITE to back factual claims:** OpenStax textbook (Parker et al. 2016) for theory; Tiny Earth (Handelsman et al.) for lab procedure / Antibiotic Discovery Project content.
 
-This is normal scientific practice — read broadly, cite only the authoritative source.
+This is normal scientific practice — read broadly, cite the authoritative sources Popa has approved.
 
 ### ⛔⛔⛔ HARD RULE #3 — VERIFY BEFORE CITING
 

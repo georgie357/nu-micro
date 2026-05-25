@@ -41,6 +41,46 @@ C:\Users\User\Dropbox\Nu micro\source_text\chapter_map.json
 
 ---
 
+## 📚 ALLOWED REFERENCE SOURCES (updated May 24, 2026)
+
+**Popa explicitly requires the Tiny Earth manual in References — flagged on BOTH Lab 6 and Lab 7:**
+
+> *"You can also add our textbook to References. Search for: Tiny Earth, A Research Guide to Studentsourcing Antibiotic Discovery. ISBN: 9798385167371. By: Handelsman et al"* (Lab 7 feedback)
+
+> *"Add the lab manual in References 'Tiny Earth'"* (Lab 6 feedback)
+
+**Pattern:** Tiny Earth is THE lab manual — every traditional report should list it in References from now on. **This supersedes the earlier "ONLY Parker et al." rule.**
+
+Two reference sources are now required/allowed:
+
+### 1. Parker et al. 2016 (OpenStax Microbiology) — primary
+```
+Parker N, Schneegurt M, Tu A-HT, Lister P, Forster BM. 2016. Microbiology.
+Houston (TX): OpenStax. Available from:
+https://openstax.org/details/books/microbiology
+```
+
+### 2. Tiny Earth Manual (Handelsman et al.) — REQUIRED in every report from May 24, 2026 onward
+```
+Handelsman J, et al. Tiny Earth: A Research Guide to Studentsourcing
+Antibiotic Discovery. ISBN: 9798385167371.
+```
+*(Year and full publisher not yet confirmed — verify from physical copy before final submission. Until then, the above minimal entry matches what Popa provided in his feedback.)*
+
+**Still NOT allowed without explicit student confirmation:**
+- CLSI (the Lab 9 incident)
+- Journal articles
+- Wikipedia, AI, generic web sources
+- Popa slides
+- Any source not in the lab manual and not explicitly named by the student
+
+**When to cite which:**
+- **Parker et al. 2016** — general microbiology theory, mechanism, structure (e.g. phenol red mechanism, bacterial cell wall, Gram stain principle)
+- **Tiny Earth (Handelsman et al.)** — lab procedure specifics, Antibiotic Discovery Project content, anything traceable to the lab manual itself
+- **Both** — when a topic is in both, cite both. Default to Parker for theory and Tiny Earth for procedure.
+
+---
+
 ## 🛑 HARD RULES — IN PRIORITY ORDER
 
 ### 🛑 RULE −2 — NEVER INVENT CITATIONS (added May 21, 2026)
@@ -108,6 +148,61 @@ The lab manual is the source of truth for "what is required." If X is in the man
 - [ ] References list entry added/removed
 - [ ] Scope updated if relevant
 
+### 🛑 RULE −0.01 — POPA'S EXPLICIT FORMATTING REQUIREMENTS (added May 24, 2026)
+
+**Direct feedback from Dr. Popa on Labs 1 and 4 (both got 10/10 but with these corrections noted):**
+
+**1. Title — Title Case for ALL main words**
+> *"Title: If main words are capitalized, the word light should be capitalized too .... Light"* (Lab 1 feedback)
+
+Every main word in the title is capitalized. Articles (a, an, the), short prepositions (of, on, in, for), and conjunctions (and, or, but) stay lowercase UNLESS they're the first word.
+
+Examples:
+- ✅ `Lab 11: Selective and Differential Media — Special Media Comparison`
+- ✅ `Lab 1: Microscopy and the Use of Light`
+- ❌ `Lab 1: Microscopy and the use of light`
+
+**2. Scientific names italicized in title AND references list** (not just body text)
+> *"Scientific names in Italics. Including in Title and References"* (Lab 4 feedback)
+
+If an organism name appears in the title or any reference entry, it must be italicized — same as it would be in the body. Example: `Lab 7: Endospore Staining of `*`Clostridium sporogenes`*
+
+**3. Scope = PURPOSE ONLY — never describe what was done OR background theory**
+
+This is **the single most common Popa correction** — flagged on Labs 1, 2, 4, 5, AND 7.
+
+Direct quotes from feedback:
+> *"The Scope section should not contain work done but only the purpose of this work. For example: The scope is to learn the aseptic techniques for TSA slant and Deep culture tubes…"* (Lab 4)
+
+> *"Do no exceed what is needed in the Scope. No explanation of what you did."* (Lab 1)
+
+> *"This is not the Scope (those are methods or work done). The scope was: To isolate microorganisms from soil and to determine their abundance"* (Lab 2)
+
+> *"Distinguish between Scope and Background/Introduction"* (Lab 5) ← Scope ≠ Intro either
+
+> *"Remove methodology from Scope. The Scope was to learn to stain and observe endospore using the ..... method"* (Lab 7)
+
+The Scope is **one sentence** stating the **learning objective / purpose**. It is NOT:
+- A mini-methods (bacteria list, media list, procedure) → goes in M&M
+- Background theory or context → goes in Introduction
+
+**Template (Popa's preferred form):**
+> "The scope is to learn [technique/concept] for [application/system]."
+> OR
+> "To [verb] [object] and to [verb] [object]."
+
+**Verified-correct examples** (from Popa's own feedback):
+- ✅ "The scope is to learn the aseptic techniques for TSA slant and Deep culture tubes."
+- ✅ "To isolate microorganisms from soil and to determine their abundance."
+- ✅ "The Scope was to learn to stain and observe endospore using the [name] method."
+
+**Wrong patterns** (what NOT to write):
+- ❌ "Four bacteria were compared on three media…" (describes what was done)
+- ❌ "Endospores are dormant structures that allow bacteria to survive harsh conditions…" (Background theory)
+- ❌ "Using the Schaeffer-Fulton method, we stained C. sporogenes and observed under microscopy…" (mixes purpose + methods)
+
+**What happened (Labs 1, 2, 4, 5, 7):** All five got 10/10 but ALL FIVE got the Scope correction. The pattern is unambiguous. Every traditional report from Labs 9, 10, 11 currently violates this rule and will get the same feedback. Fix going forward and audit older ones at next condense pass.
+
 ### 🛑 RULE 0 — CHECK LINE SPACING FIRST (added May 17, 2026)
 
 **Before ANY text condensing, fix line spacing.** A doc set to double-spacing (`line="480"`) at 950 words will print as **5 pages**, not 2. At single (`line="240"`) the same content fits in 2 pages.
@@ -169,8 +264,8 @@ When condensing a finished draft, **never rewrite the student's wording**. Only:
 
 | Section | Length target | Notes |
 |---|---|---|
-| Title block | 6–8 lines | Lab N + subtitle / Name / Course / Date / Instructor / Dates |
-| **Scope** | 2–3 sentences | What we did + why |
+| Title block | 6–8 lines | Lab N + subtitle (Title Case, italicize organism names) / Name / Course / Date / Instructor / Dates |
+| **Scope** | 1–2 sentences | **PURPOSE ONLY** — "The scope is to learn …" — NEVER describe what was done (Rule −0.01) |
 | **Introduction** | 2 paragraphs max | Background + theory + key citations |
 | **Materials** | Bullet list | Keep tight, one item per line |
 | **Methods** | 2–3 short paragraphs | Procedure only — drop carrying, cord wrap, over-flaming |
@@ -221,7 +316,13 @@ Page setup: US Letter (8.5×11), 1" margins, 12pt, **1.15× line spacing** (NOT 
 
 ## Pre-Submit Checklist (use before every report)
 
-- [ ] Scope ≤ 3 sentences
+**Popa's explicit formatting requirements (Rule −0.01) — check these FIRST:**
+- [ ] **Title** is in Title Case — every main word capitalized (no "of light" → "of Light")
+- [ ] **Scientific names** italicized in Title (if present) AND References list (not just body)
+- [ ] **Scope** is PURPOSE ONLY — "The scope is to learn …" — does NOT describe bacteria, media, or procedure (those go in M&M)
+- [ ] **Scope** ≤ 2 sentences
+
+**Standard report checks:**
 - [ ] Introduction is 2 paragraphs, every citation has a `§X.X` reference
 - [ ] Methods don't include carrying the scope, wrapping cords, or over-detailed flame steps
 - [ ] Results lists actual observations + at least one citation back to Parker for theoretical context

@@ -478,6 +478,7 @@ When OpenStax provides TWO valid distinctions for an organism pair, the METABOLI
 | 7 | Quiz M3 (Viruses + Microbial Metabolism) | 13/15 (86.67%) | May 17 | Attempt 1 — 2 Claude errors |
 | 8 | **Quiz M4 (Microbial Genetics + Biotechnology)** | **15/15 (100%)** | **May 18** | **First attempt ⭐** |
 | **MIDTERM** | **Midterm Exam (Ch 2, 3, 8, 10–11)** | **96/100 (96%)** | **May 22** | **1 attempt only — 48/50 correct ⭐** |
+| **LAB MIDTERM** | **Lab Midterm Exam (Labs 1–11)** | **195/200 (97.5%)** | **May 24** | **1 attempt only — 39/40 correct ⭐ Proficient** |
 
 ---
 
@@ -743,3 +744,145 @@ Possible candidates to scrutinize when breakdown is available:
 - **Q47** ("all of the above" for recombination) — could be a stricter answer if "vertical transfer" was treated as not-recombination.
 
 Update this section when the graded breakdown is available.
+
+---
+
+## Lab Midterm Exam — May 24, 2026 ⭐ 97.5%
+**Date:** May 24, 2026
+**Score:** 195 / 200 — **97.5%** (Proficient)
+**Format:** 40 questions, 5 points each, 110 minutes (used ~65 min)
+**Coverage:** Labs 1–11 (Microscopy, Soil Plating, Pick & Patch, Aseptic, Smears/Simple Staining, Gram Staining, Endospore Staining, Antibiotic Screening, Kirby-Bauer, Streak Plate, Special Media)
+**Points lost:** 5 (1 question wrong — specific question TBD when breakdown is available)
+
+---
+
+### What worked this exam:
+
+1. **Read `BIO203_Quiz_Lessons.md` BEFORE starting** (followed hook rule). Past mistakes were applied in real time.
+2. **Past-mistake repeats answered correctly** — disposal matching (Q1), Kleenex trap (Q8), microscope matching (Q9), resolution T/F (Q10 & Q12 duplicate), coccobacilli (Q18), basic dyes "all" (Q21), endospore colors reversed (Q22), staining order Smear-Dry-Fix-Stain (Q23), Gram stain factors (Q25), heat+methanol alternatives (Q27), crystal violet first dye (Q26). All previously-tested concepts answered with confidence.
+3. **Image analysis discipline** — caught 2 image misreads when student pushed back: Q16 (c=flagellated bacillus, not vibrio → c and d both bacilli) and Q39 (A=arborescent, E=rhizoid distinction). Both saved points.
+4. **Trap recognition** — Q35 had a Staphylococcus test asked about *E. coli* effectiveness → "cannot be determined" was the right answer. Caught the mismatch.
+5. **Calculation discipline** — Q5/Q6 CFU math executed cleanly with unit checks. Noted equivalent-answer trap (30,000 = 3×10⁴ both shown as distractors).
+6. **Time management** — finished with 1+ hour buffer.
+
+---
+
+### Full answer set submitted (for reference if breakdown reveals which 1 was wrong):
+
+| Q | Topic | Answer |
+|---|---|---|
+| 1 | Disposal matching | Biohazard=Petri dishes; Sharps=slides; Regular=paper towels; Decon=broth tubes |
+| 2 | Safety rules EXCEPT | All are safety rules |
+| 3 | Soil horizon with most life | A (topsoil) |
+| 4 | Subsoil layer | B |
+| 5 | CFU/mL original solution (30 colonies, 10⁻⁴, 0.1 mL) | 3 × 10⁶ CFU/mL |
+| 6 | CFU/g soil (same setup) | 3 × 10⁷ CFU/g |
+| 7 | Microscope #4 ID | Stage |
+| 8 | Microscope guidelines EXCEPT | Wipe lenses with Kleenex (lens paper only) |
+| 9 | Microscope parts matching | Lenses=Magnify; Iris=Light amount; Arm=Carry; Stage=Hold slide; Condenser=Light cone |
+| 10 | Shorter wavelength = higher resolution | True |
+| 11 | Microscope #1 ID | Focusing knob |
+| 12 | Shorter wavelength = higher resolution (duplicate) | True |
+| 13 | Why flame loop between sectors | To dilute bacterial growth from one sector to another |
+| 14 | Aseptic technique excludes contaminants T/F | True |
+| 15 | Immerse hot loop immediately into broth T/F | False (let loop cool first) |
+| 16 | Which arrangement is a bacillus (c had flagella) | c and d (both rods — flagella don't change shape classification) |
+| 17 | Colony descriptors EXCEPT | All are used to describe colonies |
+| 18 | Very short straight individual rods | Coccobacilli |
+| 19 | Tetrad arrangement | b (4 cocci in square) |
+| 20 | Streptococcus arrangement | a (chain of cocci) |
+| 21 | Dyes for simple staining | All of them can be used |
+| 22 | FALSE endospore statement | "Endospores stain pink, vegetative cells green" (REVERSED — should be spores green, vegetative pink) |
+| 23 | Staining steps order | 1=Smear, 2=Air dry, 3=Fix, 4=Stain |
+| 24 | Why heat slide during endospore stain | So the dye penetrates the endospore |
+| 25 | NOT a factor for good Gram staining | Use mostly Gram-positive cells |
+| 26 | Color of G+ after first Gram stain dye | Purple |
+| 27 | Pass through heat THEN add methanol for fixation T/F | False (alternatives, not sequential) |
+| 28 | Violet amorphous groups of circular cells | Gram positive staphylococci |
+| 29 | Causes of false negative Gram (multi) | Too old culture + Too extensive ethanol decolorization + Too long heat fixing |
+| 30 | Purpose of alcohol in Gram (multi, 2 answers) | Disrupt cell wall + Remove stain from G− cells |
+| 31 | Isolation methods for dense mixed culture (multi, 2) | Dilution + Streak plate |
+| 32 | Why flame loop between sectors (duplicate of Q13) | To dilute bacterial growth from one sector to another |
+| 33 | Streak plates used to count viable cells T/F | False (streak plates ISOLATE, spread plates COUNT) |
+| 34 | Kirby-Bauer: which antibiotic to treat (table) | Cefepime (24 mm = S; only one with S category) |
+| 35 | Disinfectant test on Staph asked about *E. coli* | Cannot be determined (organism mismatch) |
+| 36 | Most effective disinfectant against Staph (10 mm) | C |
+| 37 | Why grow soil colonies at room temperature | Closer to their natural temperature |
+| 38 | INCORRECT statement on antibiotic isolation | "Tested against true ESKAPE pathogens" (uses SAFE RELATIVES) |
+| 39 | Arborescent slant growth | A (tree-like — after student correction; initially called E) |
+| 40 | Beaded slant growth | B (separate colonies like beads) |
+
+---
+
+### Likely candidate for the 1 missed question (5 pts):
+
+- **Q39 (arborescent)** — flip-flopped between E and A. Final answer A after student correction. If the textbook convention places arborescent at a different letter, this is where the point went. Lesson: pattern terminology (arborescent vs rhizoid vs echinulate) needs better visual reference for next time.
+- **Q29 (false negative Gram, multi-select)** — included "too long heat fixing" which isn't in classic textbook list. If only the standard 2 (old culture + over-decolorization) were correct, the third checkbox cost the point.
+- **Q37 (room temp reasoning)** — chose "natural temperature" but the Tiny-Earth-specific answer might be "more antibiotics produced at room temperature" (option 4).
+- **Q15 (hot loop into broth)** — answered False (let loop cool first), confident, but worth checking phrasing.
+
+Update this section when the graded breakdown is available.
+
+---
+
+### New lessons added (for future quizzes):
+
+- **Slant growth patterns vocab to memorize visually:**
+  - Filiform = smooth uniform line
+  - Echinulate = tooth-like perpendicular spikes off main line (looks like fish skeleton)
+  - **Arborescent = tree-like with substantial branches off a central trunk (compact tree silhouette)**
+  - **Rhizoid = root-like with fine delicate spreading branches (more diffuse than arborescent)**
+  - Beaded = separate distinct colonies along streak (like beads on string)
+  - Effuse = thin spreading veil
+
+- **The "test organism mismatch" trap:** When a question shows data from one organism (e.g., disk diffusion on *Staphylococcus*) but asks about effectiveness against a DIFFERENT organism (e.g., *E. coli*), the correct answer is "cannot be determined." Different organisms have different susceptibility profiles. Always check that the test organism matches the question organism before applying data.
+
+- **Equivalent-answer distractor pattern:** In calculation MCQs, when two answer choices represent the same number written differently (e.g., 30,000 and 3 × 10⁴), neither is the right answer — that's a flag that the correct answer is one of the other choices. Pattern-spotting saves time.
+
+- **Multi-select discipline:** "Select ALL applicable" and "Select 2 correct" questions need careful evaluation of EACH option independently. Don't stop at the first obvious correct one.
+
+- **Tiny Earth ESKAPE safe relatives** (matched testing organism for each ESKAPE pathogen):
+  - *E. faecium* → *E. raffinosus*
+  - *S. aureus* → *S. epidermidis*
+  - *K. pneumoniae* → *E. coli* (or *K. aerogenes*)
+  - *A. baumannii* → *A. baylyi*
+  - *P. aeruginosa* → *P. putida*
+  - *Enterobacter* spp. → *E. aerogenes*
+  - **Never use true ESKAPE pathogens** in undergraduate teaching labs — BSL-2 vs BSL-1.
+
+- **Recurring exam topics across labs and exams (memorize for final):**
+  - Disposal matching (4 places: biohazard / sharps / decon / regular)
+  - Gram stain order (CV → I → alcohol → safranin), mechanism, and timing (1 min / 30 sec / 10-20 sec / 30 sec)
+  - Gram stain false positive vs false negative causes
+  - Endospore stain (Schaeffer-Fulton): spores GREEN, vegetative PINK; heat = mordant
+  - Smear preparation order: Place → Air dry → Fix → Stain
+  - Microscope parts and functions (matching question reliably appears)
+  - Coccobacilli vs cocci vs bacilli vs vibrio
+  - Streak plate purpose (isolation, NOT counting)
+  - Mueller-Hinton agar (LOW inhibitors — chosen so antibiotic effect is what's measured)
+  - Zone of inhibition measured in MM (not cm)
+  - S/I/R interpretation from breakpoint tables
+  - Room-temperature incubation for soil organisms
+
+- **Image analysis hard rule paid off again:** Q16 (rod with flagella = bacillus, not vibrio) and Q39 (arborescent vs rhizoid) were both corrected after student pushback. Rule −0.25 (look again when student says look again) saved 10 points (2 questions × 5 pts each).
+
+- **Question recycling pattern:** Q10 and Q12 were literally identical T/F questions. Q13 and Q32 were literally identical streak-plate flaming questions. When you see the same question twice, answer the same way both times.
+
+---
+
+## Score Progression — Updated through May 24, 2026
+
+| # | Quiz/Exam | Best Score | Date |
+|---|---|---|---|
+| 1 | Chemistry Pre-Quiz | 15/15 (100%) | May 3 |
+| 2 | Quiz M1 (Intro + Biomolecules) | 15/15 (100%) | May 3 |
+| 3 | Post Lab Quiz 1 (Safety + Microscopy) | 10/10 (100%) | May 3 |
+| 4 | Post Lab Quiz 2 (Aseptic + Stainings) | 10/10 (100%) | May 10 |
+| 5 | Quiz M2 (Cell + Microbial Diversity) | 14/15 (93.33%) | May 10 |
+| 6 | Post Lab Quiz 3 (Gram + Antibiotic) | 10/10 (100%) | May 17 |
+| 7 | Quiz M3 (Viruses + Metabolism) | 13/15 (86.67%) | May 17 |
+| 8 | Quiz M4 (Microbial Genetics) | 15/15 (100%) | May 18 |
+| 9 | **Lecture Midterm (Ch 2, 3, 8, 10–11)** | **96/100 (96%)** | **May 22** |
+| 10 | **Lab Midterm (Labs 1–11)** | **195/200 (97.5%)** | **May 24** ⭐ |
+
+**Course average so far:** ~96–97% (A range)
