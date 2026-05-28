@@ -479,6 +479,77 @@ When OpenStax provides TWO valid distinctions for an organism pair, the METABOLI
 | 8 | **Quiz M4 (Microbial Genetics + Biotechnology)** | **15/15 (100%)** | **May 18** | **First attempt ⭐** |
 | **MIDTERM** | **Midterm Exam (Ch 2, 3, 8, 10–11)** | **96/100 (96%)** | **May 22** | **1 attempt only — 48/50 correct ⭐** |
 | **LAB MIDTERM** | **Lab Midterm Exam (Labs 1–11)** | **195/200 (97.5%)** | **May 24** | **1 attempt only — 39/40 correct ⭐ Proficient** |
+| 11 | Quiz M5 (Control of Growth) | 14/15 (93.33%) | May 27 | Attempt 1 — Claude error on Q9 (bactericidal vs effective) |
+
+---
+
+## Quiz M5 — Control of Microbial Growth (Module 5)
+**Date:** May 27, 2026
+**Score:** 14 / 15 — **93.33%**
+**Points lost:** Q9 (−1.0 wrong — Claude error: conflated "most effective" with "bactericidal")
+
+### ❌ WRONG — Claude error
+
+#### Q9 — Bactericidal compound from disk diffusion table
+**Question:** Table 7.1 disk-diffusion test using *Staphylococcus*: A=0mm, B=2.5mm, C=10mm, D=5mm. "Which compound was bactericidal?"
+**My answer (Claude recommended):** C ❌
+**Correct answer:** **Can't tell** ✅
+
+**What went wrong:**
+Claude told the student "largest zone = most likely bactericidal." That's wrong. Zone of inhibition diameter measures **effectiveness/potency** but **cannot distinguish bactericidal from bacteriostatic**. Both produce clear zones — to determine cidal vs static you must SUBCULTURE from within the zone (if colonies grow on fresh media → bacteriostatic; if no growth → bactericidal). From zone size alone, the answer is "Can't tell."
+
+**Why this is a critical distinction:**
+- Q11 of the same quiz used the SAME table and asked "most effective against *Staphylococcus*" → answer = C (correct, 10mm largest zone)
+- Q9 used the SAME table and asked "bactericidal" → answer = "Can't tell" (different question, different answer)
+- Same data, two different questions, two different answers. Different verbs (effective vs bactericidal) demand different interpretations.
+
+**Lesson for Claude (HARD RULE):**
+**Zone of inhibition diameter measures EFFECTIVENESS/POTENCY, NOT mechanism (cidal vs static).**
+- "Most effective" / "biggest zone" / "most active" → largest zone wins (C in this case)
+- "Bactericidal" specifically → CANNOT be determined from zone size alone → "Can't tell" or "requires subculture" if that option exists
+- "Bacteriostatic" specifically → also cannot be determined from zone alone
+- To distinguish cidal vs static, you need a SECONDARY test (subculture from the zone)
+
+This is the same kind of trap as Q35 on the lab midterm (Staph test asked about *E. coli* → "cannot be determined") — when the data answers a DIFFERENT question than what's being asked, the answer is "cannot be determined" / "can't tell."
+
+### ✅ CORRECT (14/15)
+
+| Q | Topic | Answer |
+|---|---|---|
+| 1 | Salts/sugars preserve foods by creating | Hypertonic environment |
+| 2 | Factors affecting bacterial elimination | All of the above (temperature, # bacteria, organic matter, pH) |
+| 3 | Bone/tendon transplant sterilization | Supercritical fluids |
+| 4 | All mutations are lethal T/F | False |
+| 5 | UV light penetrates in depth T/F | False |
+| 6 | Sterilize plastic Petri plates in plastic wrapper | Gamma radiation |
+| 7 | UV causes irreversible breaks in DNA T/F | False (causes thymine dimers, NOT strand breaks; damage IS repairable via NER + photoreactivation) |
+| 8 | Iodophor definition | Iodine mixed with a surfactant |
+| 10 | Which substance can sterilize | Ethylene oxide (only true sterilant in list — others are disinfectants; alcohol notably does NOT kill spores) |
+| 11 | Most effective against Staphylococcus (Table 7.1) | C (10mm largest zone) |
+| 12 | Most resistant to chemical biocides | Mycobacteria (mycolic acid waxy layer) |
+| 13 | Surgical hand scrub agent | Chlorhexidine (Hibiclens — broad spectrum + residual activity + skin-safe) |
+| 14 | Will NOT preserve foods | Microwaves (cook food but don't preserve long-term) |
+| 15 | Most effective ethanol bactericide concentration | 70% (textbook answer — 100% creates protein shell that prevents penetration; 70% has enough water to penetrate cells) |
+
+### New lessons added (for Claude memory):
+
+- **HARD RULE — Zone of inhibition interpretation:** Zone diameter measures EFFECTIVENESS only. It cannot distinguish bactericidal vs bacteriostatic. If a question asks specifically about cidal/static mechanism without subculture data, the answer is "can't tell" or "requires further testing."
+
+- **Microbicidal resistance hierarchy (memorize):** Prions > Endospores > Mycobacteria > Protozoan cysts > Non-enveloped viruses > Fungi > Vegetative bacteria > Lipid-enveloped viruses. Mycobacteria are highly resistant due to mycolic acid waxy cell wall.
+
+- **Ethanol 70% is the textbook bactericide concentration** — 100% creates an instant protein shell that prevents penetration. 70% has enough water to allow ethanol to penetrate the cell and denature interior proteins. Don't pick 100%.
+
+- **Surgical hand scrub = chlorhexidine.** Surgical scrub specifically requires broad spectrum + residual activity + skin safety. Chlorhexidine (Hibiclens) is the standard. Glutaraldehyde is for INSTRUMENTS, not skin.
+
+- **True sterilants (kill spores):** ethylene oxide, gamma radiation, autoclave (steam under pressure), supercritical fluids, plasma sterilization, dry heat (long exposure). NOT sterilants: alcohol, chlorine, phenolics, soap, microwaves.
+
+- **Supercritical CO₂** is specifically used for bone/tendon allograft sterilization — penetrates tissue without damaging proteins, no toxic residue.
+
+- **Microwaves are NOT a food preservation method.** They cook/heat food but don't prevent re-contamination or spoilage afterward. Food preservation = methods that allow long-term storage (drying, salting, freezing, canning, irradiation, HPP, acidification, smoking).
+
+- **UV damage is NOT irreversible.** Bacteria repair UV-induced thymine dimers via photoreactivation (photolyase) and NER (nucleotide excision repair). This is why UV alone doesn't always sterilize completely.
+
+- **Iodophor = iodine + surfactant carrier** (Betadine/povidone-iodine). Surgical/wound antiseptic. Sustained release of iodine.
 
 ---
 
